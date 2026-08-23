@@ -61,4 +61,4 @@ flowchart LR
 
 ---
 
-[&larr; How we got here](02_how-we-got-here.md) · [Next: Play 1 &rarr;](04_play-1-context.md) · [Run](run.md)
+[&larr; How we got here](03_how-we-got-here.md) · [Next: Play 1 &rarr;](05_play-1-context.md) · [Run](run.md)

@@ -40,4 +40,4 @@ flowchart LR
 
 ---
 
-[&larr; Play 2](05_play-2-communications.md) · [Next: Play 4 &rarr;](07_play-4-constitution.md) · [Run](run.md)
+[&larr; Play 2](06_play-2-communications.md) · [Next: Play 4 &rarr;](08_play-4-constitution.md) · [Run](run.md)
