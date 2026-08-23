@@ -42,4 +42,4 @@ flowchart TD
 
 ---
 
-[&larr; Play 1](03_play-1-context.md) · [Next: Play 3 &rarr;](05_play-3-confidence.md) · [Run](run.md)
+[&larr; Play 1](04_play-1-context.md) · [Next: Play 3 &rarr;](06_play-3-confidence.md) · [Run](run.md)

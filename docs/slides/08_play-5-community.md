@@ -38,4 +38,4 @@ flowchart LR
 
 ---
 
-[&larr; Play 4](06_play-4-constitution.md) · [Next: The honest part &rarr;](08_the-honest-part.md) · [Run](run.md)
+[&larr; Play 4](07_play-4-constitution.md) · [Next: The honest part &rarr;](09_the-honest-part.md) · [Run](run.md)
