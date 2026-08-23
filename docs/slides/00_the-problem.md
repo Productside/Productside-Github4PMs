@@ -36,4 +36,4 @@ Nothing you know lives anywhere your tools can find it.
 
 ---
 
-[Next: How we got here &rarr;](01_how-we-got-here.md) · [Run](run.md)
+[Next: Why not SharePoint? &rarr;](01_why-not-sharepoint.md) · [Run](run.md)
