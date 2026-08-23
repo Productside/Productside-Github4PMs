@@ -32,4 +32,4 @@ The claim is narrower: **your strategy, your decisions, and your research belong
 
 ---
 
-[&larr; The problem](00_the-problem.md) · [Next: How we got here &rarr;](02_how-we-got-here.md) · [Run](run.md)
+[&larr; The problem](00_the-problem.md) · [Next: Why not Cowork? &rarr;](02_why-not-cowork.md) · [Run](run.md)

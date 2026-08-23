@@ -57,4 +57,4 @@ flowchart LR
 
 ---
 
-[&larr; Play 3](06_play-3-confidence.md) · [Next: Play 5 &rarr;](08_play-5-community.md) · [Run](run.md)
+[&larr; Play 3](07_play-3-confidence.md) · [Next: Play 5 &rarr;](09_play-5-community.md) · [Run](run.md)
