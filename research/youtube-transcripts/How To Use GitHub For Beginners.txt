@@ -1,0 +1,298 @@
+ Let's learn everything we need to know about GitHub
+ as if we are a complete beginner as fast as possible.
+ Welcome back y'all.
+ I'm gonna show you everything we need to know about GitHub
+ when it comes to software development, web app development,
+ why we even use GitHub.
+ And the reason I'm creating this video actually
+ is 'cause I realize I've done a ton of content
+ when it comes to how to approach coding
+ if you have no experience using artificial intelligence.
+ And I just gotta go over GitHub, right?
+ This is like one of the most fundamental things
+ for software development to understand.
+ So let me just break it down as easy as possible.
+ Everything you should really know about this platform.
+ First major thing.
+ What's amazing is that basically
+ for most of what you wanna do,
+ you won't have to pay a single dime.
+ This is completely free, simply just sign up.
+ I'll leave a link in the description down below.
+ So then your second question might be
+ is when would I pay for this?
+ That's when you transition from a solo to a small team
+ to much more of a GitHub organization.
+ And even then when managing and running teams,
+ you're looking at $4 a month for a seat.
+ Regardless though, let's just see what this is about.
+ So I'm gonna come up here, I'm gonna click my name,
+ I'm gonna say your profile.
+ So this page right here is kind of like the collection
+ of everything that's going on.
+ First thing I want you to understand, repositories.
+ What is a repository?
+ This is where we store our code in the cloud.
+ If you've created something of wind serve, cursor, VS code,
+ like you know where that code is at within that,
+ what we call IDE, integrated development environment.
+ Like when you're playing around with the code on here,
+ that's on your machine, that's local.
+ We like to use things like GitHub
+ so we can put this in the cloud.
+ Putting in the cloud has a ton of different advantages,
+ which we'll jump into.
+ The first thing you just need to understand as a baseline
+ is a repository is where we store our code.
+ Second thing that you may be looking at
+ is 25 contributions.
+ Anytime there is a green little dot here for a day,
+ that just means when you actually push something
+ to a repo publicly, and then obviously
+ that's just your profile.
+ So let's actually look at a repository here.
+ We're gonna create a new one
+ just to kind of walk through it a little bit.
+ So the idea is this.
+ We have our owner that's gonna be you as a individual,
+ and then you repo name.
+ This could be public facing if it is a public repository.
+ So I just put test here.
+ Next is gonna be whether or not it's public or private.
+ So public means anyone on the internet
+ could find this repository, find the code in it,
+ and take it, or use it, or download it.
+ Private is very clear in the sense of
+ once you make it private, only you as an account owner
+ has access to this code.
+ Now when it comes to setting this all up,
+ connecting GitHub here to VS Code here,
+ I'm gonna leave a video down below
+ that shows you how to do with Cursor AI.
+ Very simple, connect both GitHub and your IDE
+ so you can start doing pushes and commits with branches.
+ What I wanna go over in this video though
+ is what to understand fundamentally
+ about your repo in general.
+ So I have a repo here that I created
+ in a two hour and 30 minute series
+ when it came to creating a backend.
+ So let's walk through this user interface a little bit
+ so it doesn't look so crazy.
+ So the first major thing that you need to understand
+ when looking at this is what we call branches.
+ So right now there is only one branch, main.
+ Here's what that means.
+ We have a line here and this is main.
+ Main is how the code exists right now.
+ So all these files, source, Python functions,
+ that's how the code exists now.
+ What we do when we create a branch
+ is we're taking this exact code of how it sits now
+ and we're creating a duplication of the code.
+ So we'll come over here, exact same code,
+ we're naming it so we'll just say new footer,
+ we'll just say new, but new F for new footer,
+ footer like the footer of the website.
+ New footer has the exact same code as main branch,
+ exact same.
+ But the reason we're creating this branch
+ is so that when we start making changes to the code file,
+ e.g. we come over here, we go to our source,
+ let's just say we go to app.js
+ and we change something here,
+ that won't affect the original main branch.
+ When I make a change in new F, new footer,
+ that doesn't change the main branch code.
+ This is a whole separate branch now
+ that's built off the main branch.
+ So what this allows us to do
+ is that when I'm in new F, the branch,
+ and I make a change in the code,
+ I keep going, I keep going, I keep going, I like it.
+ At any point, if I mess up,
+ so I keep going down that path,
+ I'm adding code, I'm changing files,
+ if at any point I mess up
+ and I completely break the application
+ or I'm just like what's going on,
+ what I can do is simply delete this branch,
+ if I chose to equal this extreme.
+ Delete this branch and I'm back at main.
+ Main hasn't been touched, main's all good,
+ main's where I left it.
+ That's one of the reasons why we do branches,
+ so that we don't mess with the main branch.
+ And the reason the main branch is so fundamental,
+ this is supposed to be the code that's not broken.
+ It functionally works throughout.
+ Now yes, obviously when you're just starting,
+ it's gonna be like, okay, well the code doesn't work anyways
+ because I just started.
+ Well, that's fine.
+ But the idea is that the main branch
+ is never really supposed to update
+ unless it's absolutely clear
+ that the new code that it's updating with is good to go.
+ So what does that mean in this context
+ is let's assume that I kept going down
+ this little path of new f, new footer.
+ Then what we can do here,
+ and we're assuming the code is actually good,
+ like everything looks good, we like it,
+ we do something called merge
+ and that's where we merge back to main.
+ And then we'll delete new f because it's no longer needed
+ as all the code changes that were here
+ has now been merged back to main,
+ so now main's updated with all the code there.
+ So we delete new f.
+ So now we have a new version of main.
+ So your next question might be, is Corbin how do I merge?
+ This is what we call pull request.
+ So we can check out some close ones here.
+ When you have a new branch,
+ so for example here, we created auth done.
+ This is when we added authentication to this repo.
+ You can click it.
+ What this was is notice a commit from main,
+ that main branch from the auth branch.
+ And what we do here, and notice how it says merge as well,
+ there were files changed.
+ These files changed are what's different
+ from the original code in the main to now auth.
+ So for example, if I went to my source app.js,
+ the green means it was added, the red means it was removed.
+ In the auth branch, we added these two lines,
+ which means in the main branch at this point
+ before merging it, they don't exist.
+ Therefore, once we merge though from auth to main,
+ now they exist.
+ This workflow is called PR request.
+ It's not absolutely necessary.
+ If you're really a true beginner
+ and you're just learning and just wanting to go,
+ you don't have to do new branches, new PRs
+ and all this craziness.
+ You could just keep committing to main.
+ There's no reason you can't.
+ It's just not a good practice long-term.
+ I also wanna make clear that in that video
+ I referenced at the beginning of this one,
+ I go over showing you how to do all this in terminal
+ and actually doing the commands
+ and teaching you step-by-step here.
+ This video I wanna make very high level
+ so you can kind of understand
+ what the heck is the point of a PR
+ and all these different things that you see
+ like right off the bat.
+ Therefore, let me show you an effective way
+ that you can actually download public repo
+ so you can start playing around
+ and you can even download this one right here.
+ The way we're gonna do this
+ because this doesn't require an SSH key
+ or any type of access token as I go over in other videos
+ is all we need to do is simply is copy this HTTPS.
+ You're gonna come over to your IDE like VS code, CursorAI,
+ and what you wanna do is just simply create a folder
+ anywhere so in theory,
+ you could just create a folder in your documents.
+ When I say folder, I literally mean folder.
+ Like, you know, you right click
+ and then just hit new folder, new folder.
+ Once you create your folder,
+ you're gonna do file, open folder.
+ So I created a simple folder here called backinab.
+ This could have been called anything.
+ Gonna call it apples and cheese.
+ Now I'm gonna come down here to the little warning sign
+ and go to terminal.
+ What I'll do here since this is a public repo
+ and this is the advantages of GitHub,
+ first off, let's make sure you install GitHub,
+ which will be brew install git.
+ Now, if you're like Corbin, I don't even have brew.
+ The NPM command is not working, all that.
+ Check out that 30 minute video below.
+ I'll show you how to do all that
+ and make sure you have no JS installed
+ so you can do these kinds of commands.
+ So once you do have git installed though,
+ all we need to do to get a public repo is very simple.
+ You do git colon, copy the HTTPS,
+ paste this URL, hit enter.
+ And I wanna show you this
+ as this is gonna allow you to get really cool repos
+ that are just publicly available
+ and you can kind of dive through the code yourself
+ like, what's going on here?
+ This is interesting.
+ And you kind of click through, see what's up and keep going.
+ So come over here to unauth, go to homepage.js
+ and be like, whoa, what's happening here?
+ And kind of scroll through.
+ That's the baseline.
+ Yes, there is a ton of other stuff going on here,
+ but you clicked on this video as a beginner's guide.
+ Therefore, a lot of this other stuff,
+ you'll slowly just start understanding more and more
+ as you get going, but I gave you the fundamental tools
+ and ways of approaching GitHub that as you get going
+ and as you keep working in this kind of work environment,
+ everything else has become a lot more clear.
+ Like for example,
+ you don't need to know what projects is right now.
+ You don't need to know what insights mean.
+ You don't really need to know most of what settings have here
+ but you do need to know is the fundamental idea
+ of building software when it comes to creating branches,
+ merging the branch, how to commit,
+ how to pull local code to your computer.
+ This is just fundamental.
+ Let's just learn how to ride the bike
+ before we jump on the motorcycle.
+ So here's what I'm gonna do
+ so you can get a full comprehensive idea
+ of how to approach this.
+ I'm gonna leave my entire two hour 30 minute backend series
+ that shows you how to build out real backends
+ for applications in the description down below.
+ And then before you jump into that,
+ I would encourage you to check out
+ my three hour and 11 minute video
+ that goes over how to build out front ends.
+ It's gonna be a little bit more simple
+ and allow you to grasp these ideas a lot easier
+ when building out a front end.
+ Backends are obviously a lot more complex.
+ So this is a nice little pairing here
+ where you'd start the front end, then the backend,
+ and then by the end, you'd have a very good comprehension
+ of how to approach GitHub in the context
+ of web app development, software development,
+ any type of development.
+ And just for reference in that three hour video,
+ this is what we create.
+ We created an entire front end that's actually live,
+ webcafeai.com, check it out.
+ This is all built with raw code.
+ This doesn't cost me any money any month
+ because the fact that we actually built it out
+ and we're not using something like Webflow,
+ that's why it costs me no money.
+ I'm hosting it all, we're all good to go.
+ So that covers understanding how to use GitHub
+ on a service level.
+ I plan on doing another video here
+ that dives more into branch commits
+ and understanding why we do a branch commit
+ and all the implications of how to do a PR,
+ how to delete a branch, how to even merge.
+ A lot of this stuff, to be honest with you,
+ is found in my longer videos,
+ but I'll make a short, concise, nice little video.
+ I'll see you in the next video.
+ GitHub, two random videos.
+ That's my face, I'll see you in the next video.
