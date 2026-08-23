@@ -12,11 +12,11 @@ SharePoint, Google Drive, and Confluence are good at what they do. The question 
 | | **SharePoint / Drive** | **GitHub** |
 |---|---|---|
 | **Stores files** | Yes | Yes |
-| **Tracks who changed what, when, and why** | Partial. Version history exists, but no required explanation for changes. | Every change carries a message. The history is the audit trail. |
-| **Separates "should we?" from "we decided"** | No. Conversations live in email, chat, or comment threads detached from the file. | Discussions for questions. Issues for commitments. Both searchable, both linked to the files they produced. |
-| **Review gate before changes go live** | Optional. Anyone with edit access can overwrite the current version. | Pull requests require review. The main copy does not change until someone approves. |
-| **Gives AI tools full project context** | No. Your AI cannot read across SharePoint permissions, follow folder hierarchies, or find the email thread that explains a decision. | One repo, one URL. Clone it and every AI tool you use starts with everything the team knows. |
-| **Records decisions that did not ship** | Rarely. Rejected ideas vanish from the doc or rot in someone's inbox. | A closed issue or declined pull request stays on the record. The next person who asks "did we consider X?" finds the answer. |
+| **Tracks who changed what and why** | Partial. Version history exists, but no required explanation. | Every change carries a message. The history is the audit trail. |
+| **Separates "should we?" from "we decided"** | No. Conversations live in email, chat, or threads detached from the file. | Discussions for questions. Issues for commitments. Both linked to the files. |
+| **Review gate** | Optional. Anyone with edit access can overwrite. | Pull requests require review before the main copy changes. |
+| **AI tools get full context** | No. Your AI cannot read across permissions or find the thread that explains a decision. | One repo, one URL. Every tool starts with everything the team knows. |
+| **Records what did not ship** | Rarely. Rejected ideas vanish or rot in an inbox. | Closed issues and declined pull requests stay on the record. |
 
 &nbsp;
 
