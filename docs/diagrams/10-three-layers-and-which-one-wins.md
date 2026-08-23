@@ -1,0 +1,22 @@
+# Three layers, and which one wins
+
+**Play 1 · Context · 0:09**
+
+Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
+
+```mermaid
+flowchart TD
+  CN["Constitution<br/>what we will not do<br/>CONSTITUTION.md"]
+  CT["Contract<br/>how we work here<br/>CLAUDE.md"]
+  CX["Context<br/>what we know and decided<br/>README and the files"]
+
+  CN -->|"overrides"| CT
+  CT -->|"overrides"| CX
+  CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
+```
+
+**Three files, three jobs, and the third one wins.** Say it here; call back to it in Play 4.
+
+---
+
+[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
