@@ -77,7 +77,7 @@ Kenny is on Windows, Dean is on a Mac. **Do not hide this — narrate it.** Kenn
 | 0:00–0:02 | Hold and title, people arriving | — |
 | 0:02–0:05 | Cold open | Dean |
 | 0:05–0:08 | Speakers, housekeeping, agenda | Both |
-| 0:08–0:10 | **Poll 1** · where does your team lose the most time | Kenny reads results |
+| 0:08–0:10 | **Poll 1** · which one hurts most right now | Kenny reads results |
 | 0:10–0:12 | How git got here | Dean's terminal |
 | 0:12–0:13 | Rules of the show; Kenny takes the screen | Dean |
 | 0:13–0:20 | **Play 1 — Context** · private repo, cloned, Claude Desktop | Kenny |

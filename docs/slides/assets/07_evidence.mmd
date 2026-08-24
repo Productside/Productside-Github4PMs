@@ -1,0 +1,12 @@
+flowchart LR
+  AS["Assumption<br/>we believe X"]
+  EX["Experiment<br/>here is how<br/>we would know"]
+  EV["Evidence<br/>cited, dated"]
+  DE{"Were we<br/>right"}
+  KE["Decision recorded<br/>and acted on"]
+  WR["Wrong, recorded<br/>as such"]
+
+  AS --> EX --> EV --> DE
+  DE -->|"yes"| KE
+  DE -->|"no"| WR
+  WR -.->|"sharpens the<br/>next assumption"| AS

@@ -1,0 +1,10 @@
+flowchart LR
+  T["A thing<br/>rectangle"]
+  D{"A decision<br/>diamond"}
+  Y["One outcome"]
+  N["The other outcome"]
+
+  T --> D
+  D -->|"a labelled choice"| Y
+  D -->|"the other choice"| N
+  Y -.->|"dotted means feedback,<br/>or a path back"| T

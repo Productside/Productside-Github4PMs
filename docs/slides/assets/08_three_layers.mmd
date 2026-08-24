@@ -1,0 +1,8 @@
+flowchart TD
+  CN["Constitution<br/>what we will not do<br/>CONSTITUTION.md"]
+  CT["Contract<br/>how we work here<br/>CLAUDE.md"]
+  CX["Context<br/>what we know and decided<br/>README and the files"]
+
+  CN -->|"overrides"| CT
+  CT -->|"overrides"| CX
+  CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
