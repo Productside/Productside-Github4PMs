@@ -2,84 +2,76 @@
 
 Five for Kenny to ask Dean if the Q&A opens quiet. Runs 0:54–1:00, after Poll 2.
 
-**Kenny asks these from where he actually sat all session** — the person who just did this for the first time, on his own machine, an hour ago. That is why they will not sound planted. A moderator asking "so Dean, tell us more about governance" sounds like a script. Kenny asking "what happens when I go back to my team and nobody wants to touch this" sounds like a man who just realized something.
+**Every one of these is a product management problem, not a GitHub question.** Nobody registered because they wanted to learn a tool. They registered because something in their week is broken. The seed questions name the broken thing; the answer happens to involve what we just built.
 
-**Use them in this order.** The first two are the objections that actually block adoption. The last two are the ones that buy credibility, and they are the better note to end on if only one gets used.
+**Kenny asks as a moderator relaying the room** — "something we hear a lot is…" — which lets him raise problems he has not personally lived, and keeps it from sounding like a setup.
 
-**Do not use all five if real questions arrive.** One seed to warm the room is normal. Five is a monologue.
+**Use them in this order,** and stop as soon as real questions arrive. One seed to warm the room is normal. Five is a monologue.
 
----
-
-## 1. The people problem
-
-> **Kenny:** "Okay, I've got this working. What happens when I go back to my team on Monday and nobody else wants to touch it?"
-
-**What it opens:** the single biggest reason this fails, and the one thing the whole session could not demo.
-
-**The answer's spine:**
-- Do not ask anyone to adopt anything. Announcing a new system is how you get resistance before you have anything to show.
-- Use it yourself for a month. Let the artifact do the selling.
-- The moment it spreads is not a meeting. It is someone asking "why did we decide that?" and you having the answer with a date on it. Do that twice and someone asks how you did it.
-- If you are trying to convince people, you are too early.
+**Every answer has an honest limit in it.** These are hard problems and none of them is solved by a folder. Saying so is what makes the rest believable.
 
 ---
 
-## 2. The permission problem
+## 1. "I've tried using AI for product work and it gives me generic answers. Is that a prompting problem?"
 
-> **Kenny:** "What if engineering owns GitHub where I work, and I can't just go make myself an account?"
-
-**What it opens:** the objection that sounds like a hard blocker and mostly is not.
+**The real problem:** every AI tool the room has tried has produced strategy that could be about any company. They have concluded they are bad at prompting.
 
 **The answer's spine:**
-- You do not need their instance, their org, or their permission. A free personal account and a private repo costs nothing and touches nothing of theirs.
-- Nothing in the first four plays requires anyone else to be involved.
-- And gently: if you need approval to write down what your team decided, that is worth noticing on its own.
-- The one thing that does need a conversation is the fifth play, because participation needs other people by definition.
+- It is not a prompting problem. A better prompt describing your product is still you typing your product into a box every morning.
+- Generic in, generic out. The tool has no idea what you sell, who you sell it to, or what you already ruled out.
+- The fix is not a longer prompt. It is that the answers to those questions exist somewhere the tool can read.
+- **The limit:** it will not make judgment calls for you. It gets much better at drafting and much better at arguing with you. It still does not know which customer matters most.
 
 ---
 
-## 3. Where to start
+## 2. "Every time leadership changes, we relitigate decisions we already made. Does writing it down actually stop that?"
 
-> **Kenny:** "If somebody only has time for one of these five, which one?"
-
-**What it opens:** a Monday action, which is what most of the room actually wants.
+**The real problem:** a new VP arrives and reopens the same six questions. The PM spends a quarter defending choices instead of making new ones.
 
 **The answer's spine:**
-- Context. Everything else needs somewhere to live.
-- It is also the only one with a same-day payoff — you can point an AI tool at four files this afternoon and feel the difference immediately.
-- Concretely: one repo, one file about what you know, one file about what you have not settled. Not four folders and a template.
-- Skip the rest until something forces the issue. A constitution written before there is anything to govern is a document nobody reads.
+- **No, and do not promise the room it will.** A new executive is entitled to ask.
+- What changes is what the answer costs. You go from defending your memory against someone's fresh conviction, to showing what you knew, when, and what you traded away.
+- That reframes the conversation from who is right to what has changed since. Which is the conversation you actually want.
+- And sometimes you open the record and find you were wrong. That is worth more than winning.
 
 ---
 
-## 4. The scar tissue
+## 3. "We have the same prioritization argument every quarter. Same people, same positions. Does this help?"
 
-> **Kenny:** "What did you get wrong the first time you set this up?"
-
-**What it opens:** credibility. An hour of things working is less convincing than two minutes of what did not.
+**The real problem:** planning cycles with no memory. Everyone re-argues from scratch because nothing recorded what was decided or why the losing option lost.
 
 **The answer's spine:**
-- Over-structured it. Folders for material that never arrived. The version that survived was much smaller than the version that got built.
-- Wrote the rules before there was anything to apply them to.
-- Treated it like a migration instead of a place to stop losing things, which meant it competed with tools the team already liked.
-- Whatever the real specifics are, tell them. This is the answer where being unpolished is the point.
+- The argument is not the problem. Having it from zero is.
+- Most prioritization fights are not disagreements about priorities. They are disagreements about facts nobody wrote down — what we assumed, what we tested, what we already tried.
+- When the last round is readable, the argument starts at "what changed" instead of "here is my case again."
+- **The limit:** if the disagreement is genuinely about values or strategy, a record will not resolve it. It will make the disagreement legible, which is not the same as ending it.
 
 ---
 
-## 5. The boundary
+## 4. "Our discovery work is good and it still doesn't reach the people building. Is that a documentation problem?"
 
-> **Kenny:** "What have you put in GitHub and then taken back out again?"
-
-**What it opens:** the honest limit, which is more persuasive than another benefit.
+**The real problem:** research gets done, gets presented, and then the roadmap does something else. The findings and the decisions live different lives.
 
 **The answer's spine:**
-- Anything with a heartbeat. Status, dates that move weekly, anything that needs to notify someone.
-- Anything the team already does well somewhere else. This is the layer underneath, not a replacement.
-- Anything that was actually a conversation and got written up as a document to look rigorous.
-- The test: if it changes because time passed rather than because someone decided something, it probably belongs elsewhere.
+- Partly location, partly not. Research that lives in a deck gets consumed once, at the meeting, by whoever attended.
+- The gap is usually that the finding and the decision it should have influenced are not connected to each other. Nobody can trace one to the other later, so nobody does.
+- Keeping them together is what makes the next round build on the last one instead of starting over.
+- **The limit:** this will not make anyone read your research. It removes the excuse that they could not find it.
+
+---
+
+## 5. "What happens to everything I know about this product when I move to another team?"
+
+**The real problem:** the PM is the single point of failure for the product's reasoning. Everyone knows it. Nobody has time to fix it.
+
+**The answer's spine:**
+- Right now, most of it leaves with you. Your replacement inherits the backlog and none of the reasoning behind it.
+- That is also why you get interrupted constantly. You are the lookup service.
+- The version of this that matters is not a handover document written in your last two weeks. It is a record that was accumulating the whole time, as a side effect of working.
+- **The limit:** you cannot back-fill two years of context in an afternoon. Start with the decisions still being questioned, and let the rest go.
 
 ---
 
 ## Already covered elsewhere
 
-The run-of-show carries prepared answers for the questions that tend to arrive unprompted — is this just a wiki, what about Confluence and Jira, do I need to be technical, will my engineers hate this, what does it cost, can I use the market intelligence library. Those are reactive. These five are the ones Kenny opens with if nothing arrives.
+The run-of-show carries prepared answers for the tool questions that tend to arrive unprompted — is this just a wiki, what about Confluence and Jira, do I need to be technical, will my engineers hate this, what does it cost. Those are reactive, and they are about GitHub. These five are about the job.
