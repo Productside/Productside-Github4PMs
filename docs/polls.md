@@ -29,7 +29,7 @@ Productside webinars run two polls: one after the agenda to set up the topic, on
 | `02` | We keep relitigating decisions we already made | Communications |
 | `03` | We keep redoing discovery we already did | Confidence |
 | `04` | We keep policing standards nobody follows | Constitution |
-| `05` | We keep losing good ideas that never got a hearing | Community |
+| `05` | We keep losing ideas that never got explored | Community |
 
 **How to run it.** Launch it right after the agenda, leave it open about a minute, then read the results out loud and **name the play that covers the winner**. That one sentence turns the agenda from a feature list into a list of answers.
 
@@ -53,7 +53,7 @@ Productside's house closing question. Do not reword it.
 | `02` | Have the argument once, not every quarter | Communications | `02` |
 | `03` | Make the next discovery build on the last | Confidence | `03` |
 | `04` | Let standards hold without me policing them | Constitution | `04` |
-| `05` | Give every idea a front door and an answer | Community | `05` |
+| `05` | Give every idea a place to be explored | Community | `05` |
 
 **How to run it.** Launch it after the closing hero slide, before Q&A. **Compare the results against Poll 1 out loud.** Saying the comparison in the room is what makes the audience feel the arc close, and it costs fifteen seconds.
 
@@ -67,7 +67,7 @@ Productside's house closing question. Do not reword it.
 
 Both polls follow the Copy Guidelines in the design system: second person, pain-led, conversational, no em dashes, no banned words.
 
-**What they deliberately avoid:** repo, versioned, guardrails, evidence chain, front door *for requests*, and every other phrase that describes the mechanism instead of the result. The audience is product managers, not engineers. An option that names a thing you set up is an output. An option that names a thing that stops happening is an outcome, and outcomes are what Productside teaches.
+**What they deliberately avoid:** repo, versioned, guardrails, evidence chain, front door *for requests*, intake, triage, and every other phrase that describes the mechanism instead of the result. The audience is product managers, not engineers. An option that names a thing you set up is an output. An option that names a thing that stops happening is an outcome, and outcomes are what Productside teaches.
 
 **The test for any future edit:** read the option aloud and ask whether a product manager would say it about their own week. "Give strategy and decisions one versioned home" fails. "We keep re-explaining the same context" passes.
 
