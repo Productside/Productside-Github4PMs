@@ -6,7 +6,9 @@ Five for Kenny to ask Dean if the Q&A opens quiet. Runs 0:54–1:00, after Poll 
 
 **Kenny asks as a moderator relaying the room** — "something we hear a lot is…" — which lets him raise problems he has not personally lived, and keeps it from sounding like a setup.
 
-**Use them in this order,** and stop as soon as real questions arrive. One seed to warm the room is normal. Five is a monologue.
+**Seven available; the first five are the core.** Use them in order and stop as soon as real questions arrive. One seed to warm the room is normal. Five in a row is a monologue.
+
+**Six and seven are for a room that has told you what it is.** If the chat has been full of AI tooling talk, lead with `6`. If registrations skew team leads and heads of product rather than individual PMs, lead with `7`.
 
 **Every answer has an honest limit in it.** These are hard problems and none of them is solved by a folder. Saying so is what makes the rest believable.
 
@@ -69,6 +71,32 @@ Five for Kenny to ask Dean if the Q&A opens quiet. Runs 0:54–1:00, after Poll 
 - That is also why you get interrupted constantly. You are the lookup service.
 - The version of this that matters is not a handover document written in your last two weeks. It is a record that was accumulating the whole time, as a side effect of working.
 - **The limit:** you cannot back-fill two years of context in an afternoon. Start with the decisions still being questioned, and let the rest go.
+
+---
+
+## 6. "I can vibe-code a prototype in an afternoon now. How do I stop someone finding it and thinking it's the roadmap?"
+
+**The real problem:** prototyping got cheap, and the room has already been burned by it. An executive sees a working mockup and treats it as a commitment. Now the PM is negotiating a delivery date for something built to be thrown away.
+
+**The answer's spine:**
+- The fear is correct and it is not a reason to stop. Cheap prototypes are the best thing to happen to discovery in a decade.
+- The problem is that a throwaway with no label is indistinguishable from a plan. Somebody found an artifact and supplied their own context, because none came with it.
+- So it needs a place that says what it is: what assumption it was testing, what happened, and whether it is dead. A prototype with that attached stops being a promise and becomes evidence.
+- The second failure is quieter. Six months later nobody remembers which four prototypes you built or what any of them taught you, so the next PM builds one of them again.
+- **The limit:** none of this stops an executive from getting excited. It gives you something better than "that wasn't real" — it gives you what you learned and why you stopped.
+
+---
+
+## 7. "We've sent people to training and six months later everyone's doing it their own way again. Does this help any?"
+
+**The real problem:** method does not stick. Four people learn the same approach, return to different teams, and quality ends up depending on who happened to run the work.
+
+**The answer's spine:**
+- Training that lives in a binder competes with the way people already work, and loses. Not because anyone disagrees with it, but because remembering it is extra effort under deadline.
+- A method that lives where the work happens does not have to be remembered. It gets picked up because it is the thing sitting there when you start.
+- The version that survives is the one the team can improve. When somebody hits a case the method handles badly and can fix it for everyone, they stop treating it as someone else's process.
+- That is the whole reason the fifth play is a contribution rather than a download.
+- **The limit:** this does not make anyone use a method they do not believe in, and a mediocre method applied consistently is worse than inconsistency. Consistency is only worth buying once the method is good.
 
 ---
 

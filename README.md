@@ -26,7 +26,7 @@ Beyond September 2, this material is intended for reuse in Productside classes, 
 docs/
   run-of-show.md         The live-build script: timings, who does what, failure recovery
   polls.md               The two audience polls — SOURCE OF TRUTH for question and option text
-  seed-questions.md      Five Q&A seeds for Kenny to ask if the room is quiet
+  seed-questions.md      Seven Q&A seeds for Kenny to ask if the room is quiet
   slide-plan.md          Deck spec, built on the canonical Productside webinar template
   kenny-prep.md          Kenny's 10-day track: what he sets up, what he rehearses, by when
   mi-repo-publication.md Audit + checklist for making the market intelligence Project public
