@@ -1,7 +1,7 @@
 # Handoff — Beyond the Backlog
 
 **Webinar: Wednesday, September 2, 2026 · 1PM ET / 10AM PT.**
-Written 2026-08-23. Read [`README.md`](README.md) first for what this Project is.
+Last updated 2026-08-24. Read [`README.md`](README.md) first for what this Project is.
 
 ---
 
@@ -15,7 +15,51 @@ Written 2026-08-23. Read [`README.md`](README.md) first for what this Project is
 - [`docs/slide-plan.md`](docs/slide-plan.md) — the deck spec, built on the canonical Productside webinar template.
 - [`docs/mi-repo-publication.md`](docs/mi-repo-publication.md) — what it takes to publish the market intelligence Project, which the webinar's ending depends on.
 
-**Not done.** The deck does not exist. The market intelligence Project is still private. Kenny has not started his track. The Play 5 contribution has not been written.
+**Not done.** The market intelligence Project is still private. Kenny has not started his track. The Play 5 contribution has not been written. The play page copy needs a PM-problem rewrite (see below).
+
+### Done since 2026-08-23
+
+**Repo play pages** — 11 numbered markdown pages in `docs/slides/` (00 through 10), each with a branded SVG banner, mermaid diagrams, and prev/next navigation. A `run.md` teleprompter page links them sequentially. These are the teaching middle of the webinar: Kenny navigates them in the browser during the live build instead of switching between slides and a demo.
+
+**PowerPoint deck** — 29-slide deck at `docs/slides/Webinar_09.02.2026_BeyondtheBacklog_Presentation.pptx`, built from the Productside webinar template. Structure: 7 fixed open, 16 teaching middle (diagrams + text from the play pages), 6 fixed close. Slides 9 and 10 have the SharePoint and Cowork comparison tables. The .pptx is NOT tracked by git (in `.gitignore`).
+
+**Diagrams in the deck** — mermaid diagrams exported as PNG and inserted into 8 slides. Separately, all 9 flowchart diagrams were generated in FigJam with Productside branding (dark green `#0B3D2E`, accent `#4ADE80`) for optional polish. The gitGraph and notation legend remain mermaid-only.
+
+**FigJam diagram links** (editable, all LR layout):
+
+| Slide | Diagram | FigJam |
+|---|---|---|
+| 8 | Where Thinking Dies | `figma.com/board/qLiNXtPPp0ah6mD6wx0eeo` |
+| 11 | Four Steps, None of Them Planned | `figma.com/board/rKsjQsgk2ZacVJ8un5OBi5` |
+| 12 | Two Repos, Two Jobs | `figma.com/board/WpuUH9G0lWBRnCsqdnefzQ` |
+| 14 | Context: Session vs Repo | `figma.com/board/W6pF3SBUpthCD3dThJK8ki` |
+| 16 | Discussion vs Issue Fork | `figma.com/board/c8KrnQt9zo84MwdbirCCxU` |
+| 18 | Assumption to Decision Chain | `figma.com/board/qwV82m9Cf1yTDgjGuDvIhp` |
+| 20a | Three Layers | `figma.com/board/uyifdrh4bbSsmR3fA7Ca1B` |
+| 20b | Pull Request Path | `figma.com/board/sE3HIihB2o0ve22n5YHMOz` |
+| 22 | Participation System Loop | `figma.com/board/TgT4edB1iixrISiiuVZ3Jq` |
+
+**Comparison pages** — `01_why-not-sharepoint.md` and `02_why-not-cowork.md` address the two objections the audience will have before they listen to anything else.
+
+**Binary hygiene** — `.gitignore` updated to exclude `*.pptx` and `~$*.pptx`. The `.docx` exclusion is a separate pending item.
+
+---
+
+## Next: PM-problem rewrite of play page copy
+
+**The single biggest content task remaining.** The play pages and their slide counterparts currently explain what GitHub features do. They need to lead with the PM problems those features solve. The audience is product managers who have never typed `git commit`. They will not care about Discussions vs Issues until they hear their own pain described first.
+
+The reframe pattern, per Dean's voice: **name the PM's pain, concede what they do now, show how the tool changes the outcome.**
+
+Example shift for Play 2 (Communications):
+- **Now:** "Discussion: should we do something about this. Issue: we have decided to investigate or change."
+- **Reframed:** "Your team has an idea. Right now it lives in Slack, dies in a thread, and six months later someone proposes the same thing again. The fork: is this still a question, or have we already decided? GitHub gives that fork a home."
+
+Example shift for Play 4 (Constitution):
+- **Now:** "Three files, three jobs. CONSTITUTION.md overrides CLAUDE.md overrides README."
+- **Reframed:** "Every PM has rules that should never be broken: no client names in public, no shipping without legal review. Right now those rules live in someone's head. The three layers make them findable, enforceable, and impossible to override by accident."
+
+This applies to both the markdown play pages (`docs/slides/00-10`) AND the corresponding PowerPoint slides. The diagrams are fine; the surrounding copy needs the reframe. Pages 00 (the problem) and 10 (the honest part) are already problem-first and probably need the least work.
 
 ---
 
@@ -31,7 +75,7 @@ Written 2026-08-23. Read [`README.md`](README.md) first for what this Project is
 | **Fri Aug 28** | **Dry run #2**, 60 min, on the clock, recorded | Both |
 | **Sat–Sun Aug 29–30** | Buffer. Deliberately empty. | — |
 | **Mon Aug 31** | Publish the market intelligence Project + all configuration | Dean |
-| **Mon Aug 31** | Deck built and reviewed | Deck owner |
+| **Mon Aug 31** | Deck updated after PM-problem rewrite | Deck owner |
 | **Tue Sep 1** | Tech check, 30 min | Both |
 | **Wed Sep 2** | Show | Both |
 
@@ -41,18 +85,21 @@ Written 2026-08-23. Read [`README.md`](README.md) first for what this Project is
 
 ## The deck
 
-Full spec in [`docs/slide-plan.md`](docs/slide-plan.md). The short version:
+The deck exists: `docs/slides/Webinar_09.02.2026_BeyondtheBacklog_Presentation.pptx` (29 slides, not tracked by git). Built programmatically from the Productside webinar template using python-pptx.
 
-- Built on `~/Code/productside-marketing-and-sales-design-system/ui_kits/deck-webinar/`. **Note the path** — the design systems live at `~/Code/`, not under `~/Code/Productside/`. There are two; this webinar uses **marketing-and-sales**, not training-and-product.
-- **Two or three slides per beat, one of them always the diagram.** 33 slides total, of which 13 are brand-mandated open and close chrome.
+Full spec in [`docs/slide-plan.md`](docs/slide-plan.md). Current state:
+
+- **29 slides:** 7 fixed open, 16 teaching middle (text + diagrams from play pages), 6 fixed close.
+- **Slides 9-10** have comparison tables (SharePoint, Cowork).
+- **8 slides** have diagram images inserted (Figma-rendered where available, mermaid PNG fallback for gitGraph, notation legend, and evidence chain).
 - The deck is **bumpers between live segments**, not the teaching surface. The audience spends most of the hour on a screen share.
 
-**Four things the deck owner has to solve, all flagged in the spec:**
+**Remaining deck work:**
 
-1. The kit has **no diagram layout**. Eleven slides are diagram-led. Either add a `w-diagram` variant upstream in `ui_kits/deck/layouts.css` or repurpose `w-hero`.
-2. **Mermaid will not render in a static deck.** Export SVG with `mmdc` from `docs/diagrams/*.md`. Do not screenshot.
-3. **Slide copy follows the Copy Guidelines; the run-of-show does not.** No em dashes, banned word list, every claim anchored or marked `[Verify]`. Do not paste from the run-of-show into slides.
-4. The "$20–80 per user per month" tool-cost figure comes from a 2020 talk and needs re-verification or a `[Verify]` mark.
+1. **Slide copy needs the PM-problem rewrite** (see section above). This is the same rewrite as the play pages; do both together.
+2. **Slide copy follows the Copy Guidelines; the run-of-show does not.** No em dashes, banned word list, every claim anchored or marked `[Verify]`. Do not paste from the run-of-show into slides.
+3. The "$20-80 per user per month" tool-cost figure comes from a 2020 talk and needs re-verification or a `[Verify]` mark.
+4. **Optional: polish Figma diagrams** and re-export to replace the mermaid PNGs. Links above in the "Done since 2026-08-23" section.
 
 ---
 
