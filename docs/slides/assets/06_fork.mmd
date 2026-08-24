@@ -1,0 +1,14 @@
+flowchart TD
+  I["An idea<br/>arrives"]
+  Q{"Which is it"}
+  DS["Discussion<br/>should we do<br/>something about this"]
+  IS["Issue<br/>we have decided<br/>to investigate or change"]
+  K["Dies here,<br/>cheaply, on the record"]
+  C["Closed, with<br/>what happened next"]
+
+  I --> Q
+  Q -->|"still a question"| DS
+  Q -->|"already a commitment"| IS
+  DS --> K
+  DS -.->|"survives the argument"| IS
+  IS --> C

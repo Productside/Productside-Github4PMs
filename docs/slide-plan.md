@@ -70,7 +70,7 @@ The template's opening sequence is brand-mandated. Swap content, keep the skelet
 | 5 | `w-intro` | Please ask questions / how to watch later |
 | 6 | `w-intro` | Connect with us on LinkedIn |
 | 7 | `w-agenda` | The five plays, numbered. No durations — this session runs live and timings will move. |
-| 8 | `w-poll` | **Poll 1** — see below |
+| 8 | `w-poll` | **Poll 1** — see [`polls.md`](polls.md) |
 
 ---
 
@@ -82,10 +82,10 @@ Placement in the deck:
 
 | Slide | Layout | Poll |
 |---|---|---|
-| 8, after the agenda | `w-poll` | **Poll 1** — where does your team lose the most time |
+| 8, after the agenda | `w-poll` | **Poll 1** — which one hurts most right now |
 | after the close hero | `w-poll` | **Poll 2** — starting today, what will you do differently |
 
-Both share one taxonomy: the five plays. Poll 1 asks where the pain is, Poll 2 asks what they will act on.
+Both share one taxonomy: the five plays. Poll 1 names five pains; Poll 2 offers the same five in their resolved state, in the same order, so the two result sets are directly comparable.
 
 ---
 
