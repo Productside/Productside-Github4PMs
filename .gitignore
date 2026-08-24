@@ -11,6 +11,10 @@
 scratch/
 *.tmp
 
+# Binary presentation files
+*.pptx
+~$*.pptx
+
 # Never commit local secrets
 .env
 .env.*
