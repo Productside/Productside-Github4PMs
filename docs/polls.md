@@ -4,6 +4,8 @@
 
 Productside webinars run two polls: one after the agenda to set up the topic, one at the close asking what the audience will do differently. Both use the `w-poll` layout (one question, options `01`–`05`).
 
+> **Open problem:** options `02` and `03` both describe versioning and history, which is Context territory. As written, Poll 1 covers Context three times and never covers Communications or Confidence. Either drop the one-to-one play mapping for Poll 1, or swap one option for a Communications pain and one for a Confidence pain. Dean's call — see the note at the end of this file.
+
 **They share a single taxonomy: the five plays.** Poll 1 names five problems before the agenda names five answers. Poll 2 asks the same five back as commitments. The delta between them is the signal.
 
 | | Poll 1 | Poll 2 |
@@ -25,11 +27,11 @@ pol## Poll 1 · Setup
 
 | | Option | Play |
 |---|---|---|
-| `01` | We keep re-explaining the same context | Context |
-| `02` | We keep relitigating decisions we already made | Communications |
-| `03` | We keep redoing discovery we already did | Confidence |
-| `04` | We keep relying on people to remember the standards | Constitution |
-| `05` | We keep losing ideas that never got explored | Community |
+| `01` | We keep copying context everywhere | Context |
+| `02` | We have v.nn versions of files everywhere | ? |
+| `03` | We have incomplete project histories | ? |
+| `04` | We don't do document standards well | Constitution |
+| `05` | We don't have file locations to experiment | Community |
 
 **How to run it.** Launch it right after the agenda, leave it open about a minute, then read the results out loud and **name the play that covers the winner**. That one sentence turns the agenda from a feature list into a list of answers.
 
@@ -45,15 +47,15 @@ pol## Poll 1 · Setup
 
 Productside's house closing question. Do not reword it.
 
-**Options — each one is Poll 1's pain, ended:**
+**Options — each one is Poll 1's pain, ended.** *Drafted to mirror Dean's Poll 1 wording; not yet his.*
 
-| | Option | Play | Answers Poll 1 |
-|---|---|---|---|
-| `01` | Stop re-explaining the same context | Context | `01` |
-| `02` | Have the argument once, not every quarter | Communications | `02` |
-| `03` | Make the next discovery build on the last | Confidence | `03` |
-| `04` | Bake the standards into the work | Constitution | `04` |
-| `05` | Give every idea a place to be explored | Community | `05` |
+| | Option | Answers Poll 1 |
+|---|---|---|
+| `01` | Stop copying context around | `01` |
+| `02` | Kill the v.nn filenames | `02` |
+| `03` | Keep a complete project history | `03` |
+| `04` | Make document standards automatic | `04` |
+| `05` | Have a place to experiment | `05` |
 
 **How to run it.** Launch it after the closing hero slide, before Q&A. **Compare the results against Poll 1 out loud.** Saying the comparison in the room is what makes the audience feel the arc close, and it costs fifteen seconds.
 
@@ -69,12 +71,9 @@ Both polls follow the Copy Guidelines in the design system: second person, pain-
 
 **What they deliberately avoid:** repo, versioned, guardrails, evidence chain, front door *for requests*, intake, triage, and every other phrase that describes the mechanism instead of the result. The audience is product managers, not engineers. An option that names a thing you set up is an output. An option that names a thing that stops happening is an outcome, and outcomes are what Productside teaches.
 
-**No option blames the team.** An early draft of `04` read "we keep policing standards nobody follows." That does two things wrong at once: it casts the product manager as an enforcer, and it blames colleagues for what is a system failure. A standard that depends on someone remembering it is a badly built standard. The fix is to bake it into how the work flows, which is what the play actually teaches and what the abstract already promises — guardrails that hold *without making you the process cop*.
+**No option blames the team.** A standard that depends on someone remembering it is a badly built standard, so the pain is stated as a system failure, not as colleagues failing to comply. The abstract already promises guardrails that hold without making you the process cop; the poll should not describe the problem in the terms the play exists to eliminate.
 
-**Two tests for any future edit:**
-
-1. Read the option aloud and ask whether a product manager would say it about their own week. "Give strategy and decisions one versioned home" fails. "We keep re-explaining the same context" passes.
-2. Ask who the option blames. If the answer is anyone other than the system, rewrite it.
+**No option names a mechanism.** Repo, versioned, guardrails, evidence chain — all describe how it works rather than what it costs. The audience is product managers.
 
 ---
 
@@ -84,3 +83,26 @@ Both polls follow the Copy Guidelines in the design system: second person, pain-
 - No "other" option and no free text. Five categories is the taxonomy the session teaches.
 - Results need to be visible to the presenters in the moment, not just exported afterward.
 - **Export both result sets after the session.** The comparison is the deliverable.
+
+---
+
+## The Poll 1 mapping problem
+
+Dean's Poll 1 options are more concrete than the drafts they replaced, and they name things product managers actually live with. But three of the five point at the same play.
+
+| Option | What it is really about | Play |
+|---|---|---|
+| `01` We keep copying context everywhere | context duplication | **Context** |
+| `02` We have v.nn versions of files everywhere | versioning | **Context** |
+| `03` We have incomplete project histories | history | **Context** |
+| `04` We don't do document standards well | standards | **Constitution** |
+| `05` We don't have file locations to experiment | space to try things | **Community** |
+
+Communications and Confidence get no option at all, so if either wins the room's attention there is nothing in Poll 1 that points at it.
+
+**Two ways out, both fine:**
+
+1. **Drop the mapping for Poll 1.** Let it name five real pains without pretending each one owns a play. The plays answer them collectively, and Poll 2 carries the mapping. Simplest, and it keeps Dean's wording exactly as written.
+2. **Swap two options.** Keep `01`, `04`, `05`. Replace `02` and `03` with a Communications pain and a Confidence pain in the same concrete register — something like *"decisions get made in chat and vanish"* and *"nobody knows whether we already tested this."*
+
+Option 1 costs nothing and keeps the wording. Option 2 makes the poll do more work but changes two of Dean's five.
