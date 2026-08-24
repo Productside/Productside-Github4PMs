@@ -349,7 +349,7 @@ Kenny reads the results. **Compare them against Poll 1 out loud.** That comparis
 
 ## 0:54–1:00 · Q&A
 
-Kenny moderates. Pre-loaded:
+Kenny moderates. **If the room is quiet, five seed questions are in [`seed-questions.md`](seed-questions.md).** Prepared answers for what tends to arrive unprompted:
 
 - **"Isn't this just a wiki?"** A wiki has no history you can diff, no review before change, and no automation that can say no.
 - **"What about Confluence / Notion / Jira?"** Keep them. This is the durable layer underneath, and it's the one your AI can read.
