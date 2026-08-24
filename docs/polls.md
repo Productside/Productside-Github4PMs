@@ -15,7 +15,7 @@ Productside webinars run two polls: one after the agenda to set up the topic, on
 
 ---
 
-## Poll 1 · Setup
+pol## Poll 1 · Setup
 
 **Question:**
 
@@ -28,7 +28,7 @@ Productside webinars run two polls: one after the agenda to set up the topic, on
 | `01` | We keep re-explaining the same context | Context |
 | `02` | We keep relitigating decisions we already made | Communications |
 | `03` | We keep redoing discovery we already did | Confidence |
-| `04` | We keep policing standards nobody follows | Constitution |
+| `04` | We keep relying on people to remember the standards | Constitution |
 | `05` | We keep losing ideas that never got explored | Community |
 
 **How to run it.** Launch it right after the agenda, leave it open about a minute, then read the results out loud and **name the play that covers the winner**. That one sentence turns the agenda from a feature list into a list of answers.
@@ -52,7 +52,7 @@ Productside's house closing question. Do not reword it.
 | `01` | Stop re-explaining the same context | Context | `01` |
 | `02` | Have the argument once, not every quarter | Communications | `02` |
 | `03` | Make the next discovery build on the last | Confidence | `03` |
-| `04` | Let standards hold without me policing them | Constitution | `04` |
+| `04` | Bake the standards into the work | Constitution | `04` |
 | `05` | Give every idea a place to be explored | Community | `05` |
 
 **How to run it.** Launch it after the closing hero slide, before Q&A. **Compare the results against Poll 1 out loud.** Saying the comparison in the room is what makes the audience feel the arc close, and it costs fifteen seconds.
@@ -69,7 +69,12 @@ Both polls follow the Copy Guidelines in the design system: second person, pain-
 
 **What they deliberately avoid:** repo, versioned, guardrails, evidence chain, front door *for requests*, intake, triage, and every other phrase that describes the mechanism instead of the result. The audience is product managers, not engineers. An option that names a thing you set up is an output. An option that names a thing that stops happening is an outcome, and outcomes are what Productside teaches.
 
-**The test for any future edit:** read the option aloud and ask whether a product manager would say it about their own week. "Give strategy and decisions one versioned home" fails. "We keep re-explaining the same context" passes.
+**No option blames the team.** An early draft of `04` read "we keep policing standards nobody follows." That does two things wrong at once: it casts the product manager as an enforcer, and it blames colleagues for what is a system failure. A standard that depends on someone remembering it is a badly built standard. The fix is to bake it into how the work flows, which is what the play actually teaches and what the abstract already promises — guardrails that hold *without making you the process cop*.
+
+**Two tests for any future edit:**
+
+1. Read the option aloud and ask whether a product manager would say it about their own week. "Give strategy and decisions one versioned home" fails. "We keep re-explaining the same context" passes.
+2. Ask who the option blames. If the answer is anyone other than the system, rewrite it.
 
 ---
 
