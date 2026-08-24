@@ -64,31 +64,39 @@ Kenny is on Windows, Dean is on a Mac. **Do not hide this — narrate it.** Kenn
 
 **Claude Code** does the git: install the plugin, run the sweep, commit, push, branch, open the PR.
 
-**Kenny never types a git command at either stage.** He says sentences. The only command line in the show is Dean's, at 0:04, doing history.
+**Kenny never types a git command at either stage.** He says sentences. The only command line in the show is Dean's, at 0:10, doing history.
 
 ---
 
 ## Timing at a glance
 
+> **Retimed 2026-08-24 to fit the two polls and the fixed open.** The previous version started the clock at the cold open and never accounted for the hold slide, speakers, housekeeping, or the agenda — about five minutes of real time. The two polls cost four more. **The plays absorbed the difference: 35 minutes, down from 41.** If that is too tight, the honest fixes are a 75-minute slot or cutting a play. Not shaving Play 5.
+
 | Time | Segment | Driver |
 |---|---|---|
-| 0:00–0:04 | Cold open | Dean |
-| 0:04–0:07 | How git got here, in three minutes | Dean's terminal |
-| 0:07–0:09 | Rules of the show; Kenny takes the screen | Dean |
-| 0:09–0:18 | **Play 1 — Context** · private repo, cloned, Claude Desktop | Kenny |
-| 0:18–0:25 | **Play 2 — Communications** · Dean joins the repo | Both |
-| 0:25–0:34 | **Play 3 — Confidence** · install `mintel`, run a sweep | Kenny, in Claude Code |
-| 0:34–0:40 | **Play 4 — Constitution** · guardrails on what he just collected | Kenny + Dean |
-| 0:40–0:50 | **Play 5 — Community** · clone, branch, PR, guard, merge | Kenny opens, Dean merges |
-| 0:50–0:52 | What GitHub is bad at | Dean |
-| 0:52–0:55 | Close | Dean |
-| 0:55–1:00 | Q&A | Kenny moderates |
+| 0:00–0:02 | Hold and title, people arriving | — |
+| 0:02–0:05 | Cold open | Dean |
+| 0:05–0:08 | Speakers, housekeeping, agenda | Both |
+| 0:08–0:10 | **Poll 1** · where does your team lose the most time | Kenny reads results |
+| 0:10–0:12 | How git got here | Dean's terminal |
+| 0:12–0:13 | Rules of the show; Kenny takes the screen | Dean |
+| 0:13–0:20 | **Play 1 — Context** · private repo, cloned, Claude Desktop | Kenny |
+| 0:20–0:26 | **Play 2 — Communications** · Dean joins the repo | Both |
+| 0:26–0:34 | **Play 3 — Confidence** · clone the library, run a sweep | Kenny, in Claude Code |
+| 0:34–0:39 | **Play 4 — Constitution** · guardrails on what he just collected | Kenny + Dean |
+| 0:39–0:48 | **Play 5 — Community** · branch, PR, guard, merge | Kenny opens, Dean merges |
+| 0:48–0:50 | What GitHub is bad at | Dean |
+| 0:50–0:52 | Close | Dean |
+| 0:52–0:54 | **Poll 2** · starting today, what will you do differently | Kenny reads results |
+| 0:54–1:00 | Q&A | Kenny moderates |
 
 Plays 1 and 3 are the designated time donors. Play 5 is not — it is the ending.
 
+**The two polls share one taxonomy: the five plays.** Poll 1 names five problems before the agenda names five answers. Poll 2 asks the same five back as commitments. Read Poll 1's winner out loud and say which play covers it; if one option runs away, spend an extra minute there and take it from a play that landed lower. Full option text in [`slide-plan.md`](slide-plan.md).
+
 ---
 
-## 0:00–0:04 · Cold open
+## 0:02–0:05 · Cold open
 
 **On screen:** nothing. Two faces.
 
@@ -102,7 +110,7 @@ Plays 1 and 3 are the designated time donors. Play 5 is not — it is the ending
 
 ---
 
-## 0:04–0:07 · How git got here, in three minutes
+## 0:10–0:12 · How git got here
 
 **Dean's terminal. Dean's hands. Nobody is expected to repeat any of this** — say that before the first command, or half the audience starts panicking about keeping up.
 
@@ -121,7 +129,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:07–0:09 · Rules of the show
+## 0:12–0:13 · Rules of the show
 
 **Kenny shares screen. Empty GitHub account. Windows machine, and say so.**
 
@@ -133,7 +141,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:09–0:18 · Play 1 — Context
+## 0:13–0:20 · Play 1 — Context
 
 **Kenny's problem:** he's been asked to get smart on a domain — call it PM for Manufacturing — and everything he learns is currently scattered across tabs, notes, and one increasingly cursed document.
 
@@ -167,7 +175,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:18–0:25 · Play 2 — Communications
+## 0:20–0:26 · Play 2 — Communications
 
 **Kenny's problem:** he's one person with one view of the domain, and he knows he's wrong about some of it.
 
@@ -195,7 +203,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:25–0:34 · Play 3 — Confidence
+## 0:26–0:34 · Play 3 — Confidence
 
 **Kenny's problem:** he has opinions about the domain and very little evidence.
 
@@ -229,7 +237,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:34–0:40 · Play 4 — Constitution
+## 0:34–0:39 · Play 4 — Constitution
 
 **Kenny's problem:** he has just pulled a pile of competitive material into a repo, and some of what he collects must never leak.
 
@@ -254,7 +262,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:40–0:50 · Play 5 — Community
+## 0:39–0:48 · Play 5 — Community
 
 **Kenny's problem:** using the library, he found a gap.
 
@@ -305,7 +313,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:50–0:52 · What GitHub is bad at
+## 0:48–0:50 · What GitHub is bad at
 
 > **Each play already carried its own limit.** Do not repeat them here — that turns honesty into a disclaimer. This segment covers only what belongs to no single play.
 
@@ -319,7 +327,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:52–0:55 · Close
+## 0:50–0:52 · Close
 
 **The callback:** Kenny's account was empty forty-five minutes ago. Now: a private repo two people share, evidence collected into it with citations, guardrails written down, and a merged contribution to a public library.
 
@@ -331,7 +339,17 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ---
 
-## 0:55–1:00 · Q&A
+## 0:52–0:54 · Poll 2
+
+> **Starting today, what will you do differently?**
+>
+> `01` one versioned home · `02` move the argument somewhere it survives · `03` connect assumptions to evidence · `04` write the guardrails down · `05` a real front door for requests
+
+Kenny reads the results. **Compare them against Poll 1 out loud.** That comparison is the most useful thing this session produces besides registrations, and saying it in the room is what makes the audience feel the arc close.
+
+---
+
+## 0:54–1:00 · Q&A
 
 Kenny moderates. Pre-loaded:
 
