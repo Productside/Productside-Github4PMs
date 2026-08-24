@@ -25,17 +25,20 @@ Beyond September 2, this material is intended for reuse in Productside classes, 
 ```
 docs/
   run-of-show.md         The live-build script: timings, who does what, failure recovery
+  polls.md               The two audience polls — SOURCE OF TRUTH for question and option text
+  slide-plan.md          Deck spec, built on the canonical Productside webinar template
   kenny-prep.md          Kenny's 10-day track: what he sets up, what he rehearses, by when
   mi-repo-publication.md Audit + checklist for making the market intelligence Project public
-  diagrams.md            All 26 diagrams in runbook reading order — SOURCE OF TRUTH
+  diagrams.md            All 29 diagrams in runbook reading order — SOURCE OF TRUTH
   diagrams/              The same diagrams, one file each, plus INDEX.md (generated)
+  *.docx                 Dean's source documents (abstract template, internal training proposal)
 scripts/
   split-diagrams.py      Regenerates docs/diagrams/ from docs/diagrams.md
-  *.docx                 Dean's source documents (abstract template, internal training proposal)
 research/
   findings/              Digested, cross-referenced source material — START HERE
   web-searches/          8 AI-generated research docs (Claude, GPT, Gemini, Google)
   youtube-transcripts/   4 transcripts; the Anne Thomas talk is the strongest single source
+HANDOFF.md               Current state, critical path to Sept 2, deck spec, publication plan
 CLAUDE.md                How AI assistance works in this project
 CONSTITUTION.md          Non-negotiable rules that override everything else
 ```

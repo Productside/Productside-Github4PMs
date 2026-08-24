@@ -76,35 +76,16 @@ The template's opening sequence is brand-mandated. Swap content, keep the skelet
 
 ## The two polls
 
-Both use `w-poll` (01–05 options, gray split). **They share one taxonomy: the five plays.** Poll 1 asks where the pain is, poll 2 asks what they will act on. Same five categories, so the delta between them is a real signal — for the room, and for marketing afterward.
+Full question text, option wording, timings, and run instructions live in **[`polls.md`](polls.md)** — the source of truth. Do not restate the options here; they will drift.
 
-### Poll 1 · after the agenda · sets up the topic
+Placement in the deck:
 
-> **Where does your product team lose the most time?**
->
-> `01` Rebuilding context that already existed
-> `02` Relitigating decisions nobody wrote down
-> `03` Redoing research nobody can find
-> `04` Chasing people to follow the rules
-> `05` Answering the same request in five places
+| Slide | Layout | Poll |
+|---|---|---|
+| 8, after the agenda | `w-poll` | **Poll 1** — where does your team lose the most time |
+| after the close hero | `w-poll` | **Poll 2** — starting today, what will you do differently |
 
-Maps to Context, Communications, Confidence, Constitution, Community, in order.
-
-**Why it works as a setup:** it names five problems before naming five plays, so the agenda stops being a list of features and becomes a list of answers. Read the results out loud and say which play covers the winner. If one option runs away with it, spend the extra minute there and take it from a play that landed lower.
-
-### Poll 2 · at the close · the commitment
-
-> **Starting today, what will you do differently?**
->
-> `01` Give strategy and decisions one versioned home
-> `02` Move the argument somewhere it survives
-> `03` Connect assumptions to the evidence behind them
-> `04` Write the guardrails down
-> `05` Build a real front door for requests
-
-Same five, phrased as actions rather than pains.
-
-**Why it works as a close:** it doubles as a recap without a recap slide, it converts watching into a commitment, and comparing it against Poll 1 tells you which play actually moved someone. That comparison is the most useful thing this webinar produces for Productside besides the registrations.
+Both share one taxonomy: the five plays. Poll 1 asks where the pain is, Poll 2 asks what they will act on.
 
 ---
 
