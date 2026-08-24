@@ -32,6 +32,11 @@ docs/
   mi-repo-publication.md Audit + checklist for making the market intelligence Project public
   diagrams.md            All 29 diagrams in runbook reading order — SOURCE OF TRUTH
   diagrams/              The same diagrams, one file each, plus INDEX.md (generated)
+  slides/
+    00_the-problem.md .. 10_the-honest-part.md   Branded play pages for the teaching middle
+    run.md             Teleprompter page linking all 11 play pages sequentially
+    assets/            Exported diagram PNGs (mermaid + Figma) — not tracked by git
+    *.pptx             The deck — not tracked by git
   *.docx                 Dean's source documents (abstract template, internal training proposal)
 scripts/
   split-diagrams.py      Regenerates docs/diagrams/ from docs/diagrams.md
