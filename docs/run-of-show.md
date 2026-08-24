@@ -92,7 +92,7 @@ Kenny is on Windows, Dean is on a Mac. **Do not hide this — narrate it.** Kenn
 
 Plays 1 and 3 are the designated time donors. Play 5 is not — it is the ending.
 
-**The two polls share one taxonomy: the five plays.** Poll 1 names five problems before the agenda names five answers. Poll 2 asks the same five back as commitments. Read Poll 1's winner out loud and say which play covers it; if one option runs away, spend an extra minute there and take it from a play that landed lower. Full option text in [`slide-plan.md`](slide-plan.md).
+**The two polls share one taxonomy: the five plays.** Poll 1 names five problems before the agenda names five answers. Poll 2 asks the same five back as commitments. Read Poll 1's winner out loud and say which play covers it; if one option runs away, spend an extra minute there and take it from a play that landed lower. **Question and option text: [`polls.md`](polls.md).**
 
 ---
 
@@ -341,9 +341,7 @@ The only command line in the show. It exists to earn one argument: **GitHub outg
 
 ## 0:52–0:54 · Poll 2
 
-> **Starting today, what will you do differently?**
->
-> `01` one versioned home · `02` move the argument somewhere it survives · `03` connect assumptions to evidence · `04` write the guardrails down · `05` a real front door for requests
+> **Starting today, what will you do differently?** — five options, one per play. Exact wording in [`polls.md`](polls.md).
 
 Kenny reads the results. **Compare them against Poll 1 out loud.** That comparison is the most useful thing this session produces besides registrations, and saying it in the room is what makes the audience feel the arc close.
 
