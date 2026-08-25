@@ -1,6 +1,6 @@
 # Productside-Github4PMs
 
-Working project for the Productside webinar **"Beyond the Backlog: Five GitHub Plays for Product Teams"** — Wednesday, September 2, 2026, 1PM ET / 10AM PT.
+Working project for the Productside webinar **"Beyond the Backlog: How GitHub Compounds Your Product Team's Thinking"** — Wednesday, September 2, 2026, 1PM ET / 10AM PT.
 
 **Status: private.** Nothing here is published. See [CONSTITUTION.md](CONSTITUTION.md) before that changes.
 
@@ -8,15 +8,17 @@ Working project for the Productside webinar **"Beyond the Backlog: Five GitHub P
 
 A live, hands-on webinar in which Dean Peters and Kenny Kranseler build a GitHub setup from scratch, on screen, in the wild. No slides about GitHub. No net. Attendees can follow along in their own browser and leave with a working repo instead of notes about one.
 
-The session is organized around five plays, each a C-word so the audience can hold all five in their head at once:
+The session is organized around seven capabilities that answer one question: *Does your product team have a place where its thinking can compound?*
 
-| Play | The promise |
+| Capability | The promise |
 |---|---|
-| **Context** | One versioned home for strategy, research, and decisions — for the team and for the AI |
-| **Communications** | A place to pressure-test ideas before they become expensive commitments |
-| **Confidence** | Assumptions, experiments, and evidence connected so each discovery informs the next |
-| **Constitution** | Guardrails GitHub helps enforce, so nobody has to be the process cop |
-| **Community** | A front door for ideas and requests, with a visible record of what happened next |
+| **Share** | A complete product workspace where research, strategy, decisions, and evidence live together |
+| **Collaborate** | Work together without trampling each other: discussions for questions, issues for commitments |
+| **Review** | Make changes reviewable before they become truth |
+| **Trace** | See what changed, who changed it, and why |
+| **Experiment** | Explore alternatives without breaking what works |
+| **Augment** | Give AI the same persistent context as the team |
+| **Reuse** | Turn practices into reusable assets another PM or team can adopt and improve |
 
 Beyond September 2, this material is intended for reuse in Productside classes, workshops, and advisory engagements.
 
@@ -53,7 +55,7 @@ CONSTITUTION.md          Non-negotiable rules that override everything else
 
 ## Decisions already made
 
-- **Title is final:** "Beyond the Backlog: Five GitHub Plays for Product Teams." The old title ("How to Set Up a GitHub for Your Product Team") appears in older research notes; ignore it.
+- **Title is final:** "Beyond the Backlog." The subtitle "How GitHub Compounds Your Product Team's Thinking" is a placeholder; Dean decides. The old title ("Five GitHub Plays for Product Teams") and the original title ("How to Set Up a GitHub for Your Product Team") both appear in older research notes; ignore them.
 - **Format is live and hands-on**, not slides. Mistakes stay in.
 - **Kenny is a co-presenter at the keyboard**, not just a moderator — he builds, hits the snags, and gets unstuck on camera. Dean narrates and rescues. The abstract document's "Moderator" field understates this.
 - **One webinar, not two.** The Five Plays session and the draft in `productside-launchkit` are the same September 2 event. The Constitution play absorbs the launchkit's category-trap, licensing, and secrets material.
@@ -64,7 +66,7 @@ CONSTITUTION.md          Non-negotiable rules that override everything else
 - **Kenny is on Windows, Dean is on a Mac.** Narrated, not hidden — it's what a real team looks like, and it kills the "I'd need my engineers' setup" objection.
 - **Tool handoff:** Claude Desktop reads and writes the local folder; Claude Code does the git. Kenny never types a git command.
 - **Dean opens with a three-minute git origin story** on his own terminal — history, not a tutorial.
-- **The five plays are one continuous story**, not five demos: Kenny needs shared context, Dean joins him, they need evidence, some of it must not leak, and he contributes back.
+- **The seven capabilities are one continuous story**, not seven demos: the team needs a shared workspace, they need to collaborate and review, trace decisions, experiment safely, let AI work from the same context, and turn what works into reusable assets.
 
 ## Start here
 
@@ -74,7 +76,7 @@ CONSTITUTION.md          Non-negotiable rules that override everything else
 
 Kenny is the student and the audience's proxy. His prep track is in [`docs/kenny-prep.md`](docs/kenny-prep.md) — two joint dry runs (Wed Aug 26, Fri Aug 28), a tech check Sep 1, and a deliberately empty weekend buffer.
 
-- **Play 5's contribution is a new framework skill** — McKinsey Growth Pyramid or BCG growth-share matrix, neither of which exists in the library. Leaning Growth Pyramid because Kenny has presented on it and can speak to it fluently if the demo stalls. Must be prefabbed and green against the validator before Aug 26.
+- **The contribution piece is a new framework skill** — McKinsey Growth Pyramid or BCG growth-share matrix, neither of which exists in the library. Leaning Growth Pyramid because Kenny has presented on it and can speak to it fluently if the demo stalls. Must be prefabbed and green against the validator before Aug 27.
 
 ## Still open
 
