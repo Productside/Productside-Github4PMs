@@ -29,6 +29,8 @@ flowchart LR
   F -.->|"updated"| RV
 ```
 
+<img src="assets/diag_03_review.svg" alt="Pull request review flow" width="800"/>
+
 &nbsp;
 
 This is the single most interesting difference between a repository and ordinary document editing. A proposed change to your strategy, positioning, requirements, a product bet, a prompt, or an operating practice becomes something the team can see, discuss, and approve before it becomes the accepted version.

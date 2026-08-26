@@ -44,6 +44,8 @@ flowchart TD
   end
 ```
 
+<img src="assets/diag_05_experiment.svg" alt="Parallel branch exploration" width="800"/>
+
 &nbsp;
 
 Try competing strategies, hypotheses, problem framings, requirements, prompts, or product bets. The trusted version stays untouched until someone deliberately merges the parts that survived.
