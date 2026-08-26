@@ -30,6 +30,10 @@ flowchart LR
 
 &nbsp;
 
+<img src="assets/diag_00_compound.svg" alt="Context rebuilt vs. context compounded" width="800"/>
+
+&nbsp;
+
 Most product teams do not struggle because they lack effort. They struggle because clarity is missing. The question is whether your team's knowledge gets rebuilt every week or whether it compounds over time.
 
 &nbsp;

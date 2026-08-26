@@ -31,6 +31,8 @@ flowchart LR
   end
 ```
 
+<img src="assets/diag_06_augment.svg" alt="Session-based vs. repo-based AI" width="800"/>
+
 &nbsp;
 
 The shift is not "AI can read your strategy." The shift is that the team and its AI systems work from the same persistent context, instead of everyone maintaining separate chatbot sessions that evaporate at the end of every conversation.

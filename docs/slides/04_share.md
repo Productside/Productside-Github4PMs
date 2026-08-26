@@ -39,6 +39,10 @@ flowchart LR
 
 &nbsp;
 
+<img src="assets/diag_01_share.svg" alt="Scattered artifacts vs. shared repository" width="800"/>
+
+&nbsp;
+
 Research, strategy, decisions, requirements, prompts, templates, and supporting evidence live together. Not in a folder. In a workspace where every piece knows its relationship to every other piece.
 
 In plain English: the whole team stops re-explaining the product to each other and to their tools.

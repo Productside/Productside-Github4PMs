@@ -32,6 +32,10 @@ flowchart TD
 
 &nbsp;
 
+<img src="assets/diag_02_collaborate.svg" alt="Discussion vs. Issue fork" width="800"/>
+
+&nbsp;
+
 Discussions hold the questions. Issues hold the commitments. Both are attached to the work itself, not floating in a chat feed or buried in an inbox.
 
 In plain English: the team can challenge, debate, and build on each other's thinking without every conversation needing to become a formal ticket.

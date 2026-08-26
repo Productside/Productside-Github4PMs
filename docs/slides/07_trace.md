@@ -28,6 +28,8 @@ flowchart LR
   WR -.->|"sharpens the<br/>next assumption"| AS
 ```
 
+<img src="assets/diag_04_trace.svg" alt="Assumption to decision timeline" width="800"/>
+
 &nbsp;
 
 This is not about engineering handoff. Traceability matters to the product team throughout: when reconsidering a strategy, when onboarding a new team member, when your VP asks why you dropped a feature last quarter. The answer is in the record, not in someone's memory.

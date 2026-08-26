@@ -36,6 +36,8 @@ flowchart LR
   T -->|"versioned, reviewed,<br/>available to the team<br/>and its tools"| R
 ```
 
+<img src="assets/diag_07_reuse.svg" alt="Tribal knowledge to team infrastructure" width="800"/>
+
 &nbsp;
 
 When product practices are versioned, structured assets in a shared workspace, they stop being "something one person figured out once" and become something another PM or team can actually adopt, improve, and build on.
