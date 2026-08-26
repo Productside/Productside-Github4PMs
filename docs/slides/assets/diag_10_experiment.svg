@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" text-anchor="middle">Parallel Branch Exploration</text>
+
+  <!-- Main branch line -->
+  <line x1="60" y1="140" x2="940" y2="140" stroke="#0B3D2E" stroke-width="3"/>
+  <text x="60" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#0B3D2E">main</text>
+  <text x="60" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555">The trusted version. Untouched.</text>
+
+  <!-- Commit dots on main -->
+  <circle cx="180" cy="140" r="8" fill="#0B3D2E"/>
+  <circle cx="350" cy="140" r="8" fill="#0B3D2E"/>
+  <circle cx="800" cy="140" r="8" fill="#0B3D2E"/>
+
+  <!-- Branch A: Pricing model A (merges back - success) -->
+  <line x1="180" y1="140" x2="210" y2="240" stroke="#0B3D2E" stroke-width="2"/>
+  <line x1="210" y1="240" x2="580" y2="240" stroke="#0B3D2E" stroke-width="2"/>
+  <circle cx="300" cy="240" r="6" fill="#0B3D2E"/>
+  <circle cx="400" cy="240" r="6" fill="#0B3D2E"/>
+  <circle cx="500" cy="240" r="6" fill="#0B3D2E"/>
+
+  <rect x="210" y="195" width="200" height="32" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="310" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0B3D2E" text-anchor="middle">Pricing model A</text>
+
+  <!-- Merge arrow from A back to main -->
+  <line x1="580" y1="240" x2="800" y2="140" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="800,140 785,148 790,133" fill="#4ADE80"/>
+
+  <!-- Success label -->
+  <rect x="650" y="175" width="100" height="28" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="700" y="194" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">merged</text>
+
+  <!-- Branch B: Pricing model B (parked) -->
+  <line x1="180" y1="140" x2="210" y2="340" stroke="#999999" stroke-width="2"/>
+  <line x1="210" y1="340" x2="480" y2="340" stroke="#999999" stroke-width="2"/>
+  <circle cx="300" cy="340" r="6" fill="#999999"/>
+  <circle cx="400" cy="340" r="6" fill="#999999"/>
+
+  <rect x="210" y="295" width="200" height="32" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="310" y="316" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#555555" text-anchor="middle">Pricing model B</text>
+
+  <!-- Parked label for B -->
+  <rect x="490" y="325" width="90" height="28" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="535" y="344" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#555555" text-anchor="middle">parked</text>
+
+  <!-- Branch C: Pricing model C (rejected) -->
+  <line x1="350" y1="140" x2="380" y2="440" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 3"/>
+  <line x1="380" y1="440" x2="480" y2="440" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 3"/>
+  <circle cx="430" cy="440" r="6" fill="#dc2626"/>
+
+  <rect x="380" y="395" width="200" height="32" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="480" y="416" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#dc2626" text-anchor="middle">Pricing model C</text>
+
+  <!-- Rejected label for C -->
+  <rect x="490" y="425" width="100" height="28" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="540" y="444" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle">rejected</text>
+
+  <!-- Annotation -->
+  <rect x="720" y="80" width="220" height="36" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="830" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">Only the winner merges</text>
+
+  <!-- Bottom takeaway -->
+  <rect x="100" y="500" width="800" height="70" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="500" y="528" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">The trusted version never broke.</text>
+  <text x="500" y="555" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">No duplicate files. No crossed fingers. No "which version is the real one?"</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>
