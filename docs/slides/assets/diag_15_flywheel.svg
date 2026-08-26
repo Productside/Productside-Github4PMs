@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1000 600" width="1000" height="600" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Compounding curve</text>
+
+  <!-- Axes -->
+  <!-- Y-axis -->
+  <line x1="120" y1="80" x2="120" y2="480" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="60" y="285" font-size="15" fill="#555555" text-anchor="middle" transform="rotate(-90, 60, 285)">Product context</text>
+
+  <!-- X-axis -->
+  <line x1="120" y1="480" x2="920" y2="480" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- X-axis labels -->
+  <text x="220" y="510" font-size="14" fill="#555555" text-anchor="middle">Week 1</text>
+  <text x="420" y="510" font-size="14" fill="#555555" text-anchor="middle">Month 1</text>
+  <text x="620" y="510" font-size="14" fill="#555555" text-anchor="middle">Quarter 1</text>
+  <text x="820" y="510" font-size="14" fill="#555555" text-anchor="middle">Quarter 2</text>
+
+  <!-- X-axis tick marks -->
+  <line x1="220" y1="476" x2="220" y2="484" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="420" y1="476" x2="420" y2="484" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="620" y1="476" x2="620" y2="484" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="820" y1="476" x2="820" y2="484" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- Area fill under curve -->
+  <path d="M 120,480 Q 220,470 320,440 Q 420,400 520,340 Q 620,260 720,180 Q 820,110 900,90 L 900,480 Z" fill="#f0fdf4"/>
+
+  <!-- Growth curve -->
+  <path d="M 120,480 Q 220,470 320,440 Q 420,400 520,340 Q 620,260 720,180 Q 820,110 900,90" stroke="#0B3D2E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Milestone markers and labels -->
+  <!-- First shared doc -->
+  <circle cx="220" cy="460" r="6" fill="#0B3D2E"/>
+  <rect x="140" y="415" width="160" height="30" rx="6" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="220" y="435" font-size="13" fill="#0B3D2E" text-anchor="middle">First shared doc</text>
+  <line x1="220" y1="445" x2="220" y2="454" stroke="#0B3D2E" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- First review -->
+  <circle cx="420" cy="395" r="6" fill="#0B3D2E"/>
+  <rect x="340" y="350" width="160" height="30" rx="6" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="420" y="370" font-size="13" fill="#0B3D2E" text-anchor="middle">First review</text>
+  <line x1="420" y1="380" x2="420" y2="389" stroke="#0B3D2E" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- First AI read -->
+  <circle cx="620" cy="255" r="6" fill="#0B3D2E"/>
+  <rect x="540" y="210" width="160" height="30" rx="6" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="620" y="230" font-size="13" fill="#0B3D2E" text-anchor="middle">First AI read</text>
+  <line x1="620" y1="240" x2="620" y2="249" stroke="#0B3D2E" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Team standard -->
+  <circle cx="820" cy="120" r="6" fill="#0B3D2E"/>
+  <rect x="740" y="130" width="160" height="30" rx="6" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1"/>
+  <text x="820" y="150" font-size="13" fill="#0B3D2E" text-anchor="middle">Team standard</text>
+  <line x1="820" y1="126" x2="820" y2="130" stroke="#0B3D2E" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Bottom tagline -->
+  <text x="500" y="560" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Not GitHub mastery. Product context mastery.</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>

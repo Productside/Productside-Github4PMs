@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" text-anchor="middle">Discussion vs. Issue</text>
+
+  <!-- Entry point -->
+  <rect x="350" y="70" width="300" height="50" rx="8" fill="#f8f8f8" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="500" y="101" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">New idea arrives</text>
+
+  <!-- Arrow down to diamond -->
+  <line x1="500" y1="120" x2="500" y2="150" stroke="#999999" stroke-width="2"/>
+  <polygon points="500,160 494,148 506,148" fill="#999999"/>
+
+  <!-- Diamond decision -->
+  <polygon points="500,165 570,210 500,255 430,210" fill="#f8f8f8" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="500" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1a1a1a" text-anchor="middle">Ready?</text>
+
+  <!-- Left branch label -->
+  <text x="350" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0B3D2E" text-anchor="middle">Not yet</text>
+  <!-- Left arrow -->
+  <line x1="430" y1="210" x2="280" y2="210" stroke="#0B3D2E" stroke-width="2"/>
+  <line x1="280" y1="210" x2="280" y2="270" stroke="#0B3D2E" stroke-width="2"/>
+  <polygon points="280,280 274,268 286,268" fill="#0B3D2E"/>
+
+  <!-- Right branch label -->
+  <text x="650" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0B3D2E" text-anchor="middle">Yes</text>
+  <!-- Right arrow -->
+  <line x1="570" y1="210" x2="720" y2="210" stroke="#0B3D2E" stroke-width="2"/>
+  <line x1="720" y1="210" x2="720" y2="270" stroke="#0B3D2E" stroke-width="2"/>
+  <polygon points="720,280 714,268 726,268" fill="#0B3D2E"/>
+
+  <!-- Left: Discussion box -->
+  <rect x="80" y="285" width="400" height="230" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="280" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#0B3D2E" text-anchor="middle">Discussion</text>
+  <text x="280" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#555555" text-anchor="middle">EXPLORE</text>
+
+  <line x1="120" y1="360" x2="440" y2="360" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="280" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">"Should we do something about this?"</text>
+
+  <rect x="130" y="410" width="300" height="32" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="280" y="431" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">Open-ended challenge and debate</text>
+
+  <rect x="130" y="450" width="300" height="32" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="280" y="471" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">No commitment yet</text>
+
+  <!-- Right: Issue box -->
+  <rect x="520" y="285" width="400" height="230" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="720" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#0B3D2E" text-anchor="middle">Issue</text>
+  <text x="720" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#555555" text-anchor="middle">COMMIT</text>
+
+  <line x1="560" y1="360" x2="880" y2="360" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="720" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">"We have decided to act on this."</text>
+
+  <rect x="570" y="410" width="300" height="32" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="720" y="431" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">Assigned and trackable</text>
+
+  <rect x="570" y="450" width="300" height="32" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="720" y="471" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">Closable when done</text>
+
+  <!-- Conversion arrow between them -->
+  <line x1="480" y1="400" x2="520" y2="400" stroke="#4ADE80" stroke-width="2" stroke-dasharray="6 3"/>
+  <polygon points="520,400 508,394 508,406" fill="#4ADE80"/>
+  <text x="500" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#4ADE80" text-anchor="middle" transform="rotate(-90 500 385)">converts</text>
+
+  <!-- Bottom takeaway -->
+  <rect x="200" y="535" width="600" height="44" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="500" y="563" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">Both stay attached to the work, not floating in a chat feed.</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1000 600" width="1000" height="600" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Monday demo flow</text>
+
+  <!-- Step 1 -->
+  <circle cx="100" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="100" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">1</text>
+  <rect x="50" y="250" width="100" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="100" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Create repo</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="128" y1="200" x2="212" y2="200" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="208,193 220,200 208,207" fill="#4ADE80"/>
+
+  <!-- Step 2 -->
+  <circle cx="250" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="250" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">2</text>
+  <rect x="200" y="250" width="100" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="250" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Add doc</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="278" y1="200" x2="362" y2="200" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="358,193 370,200 358,207" fill="#4ADE80"/>
+
+  <!-- Step 3 -->
+  <circle cx="400" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="400" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">3</text>
+  <rect x="340" y="250" width="120" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="400" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Propose change</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="428" y1="200" x2="512" y2="200" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="508,193 520,200 508,207" fill="#4ADE80"/>
+
+  <!-- Step 4 -->
+  <circle cx="550" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="550" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">4</text>
+  <rect x="500" y="250" width="100" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="550" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Review</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="578" y1="200" x2="662" y2="200" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="658,193 670,200 658,207" fill="#4ADE80"/>
+
+  <!-- Step 5 -->
+  <circle cx="700" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="700" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">5</text>
+  <rect x="650" y="250" width="100" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="700" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Compare</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="728" y1="200" x2="812" y2="200" stroke="#4ADE80" stroke-width="2"/>
+  <polygon points="808,193 820,200 808,207" fill="#4ADE80"/>
+
+  <!-- Step 6 -->
+  <circle cx="850" cy="200" r="28" fill="#0B3D2E"/>
+  <text x="850" y="207" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">6</text>
+  <rect x="800" y="250" width="100" height="50" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="850" y="280" font-size="14" fill="#0B3D2E" text-anchor="middle" font-weight="bold">Ask AI</text>
+
+  <!-- Bottom banner -->
+  <rect x="250" y="400" width="500" height="60" rx="10" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="500" y="437" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Small workflow, big mental shift.</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>

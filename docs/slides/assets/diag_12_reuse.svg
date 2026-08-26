@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" text-anchor="middle">Tribal Knowledge vs. Team Infrastructure</text>
+
+  <!-- Top section: Before (red) -->
+  <rect x="30" y="70" width="940" height="200" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="80" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#dc2626">Before</text>
+  <text x="200" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#555555">Knowledge trapped in heads</text>
+
+  <!-- Person 1 with thought bubble -->
+  <circle cx="160" cy="175" r="24" fill="#FFFFFF" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="160" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle">PM 1</text>
+  <rect x="110" y="120" width="100" height="30" rx="15" fill="#FFFFFF" stroke="#dc2626" stroke-width="1"/>
+  <text x="160" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">my template</text>
+
+  <!-- Person 2 with thought bubble -->
+  <circle cx="400" cy="175" r="24" fill="#FFFFFF" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="400" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle">PM 2</text>
+  <rect x="350" y="120" width="100" height="30" rx="15" fill="#FFFFFF" stroke="#dc2626" stroke-width="1"/>
+  <text x="400" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">my prompt</text>
+
+  <!-- Person 3 with thought bubble -->
+  <circle cx="640" cy="175" r="24" fill="#FFFFFF" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="640" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle">PM 3</text>
+  <rect x="590" y="120" width="100" height="30" rx="15" fill="#FFFFFF" stroke="#dc2626" stroke-width="1"/>
+  <text x="640" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">my checklist</text>
+
+  <!-- Summary text in before section -->
+  <text x="500" y="245" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#555555" text-anchor="middle">When they leave, the practice leaves with them.</text>
+
+  <!-- Arrow down -->
+  <line x1="500" y1="275" x2="500" y2="310" stroke="#0B3D2E" stroke-width="2"/>
+  <polygon points="500,320 494,308 506,308" fill="#0B3D2E"/>
+  <text x="540" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E">versioned + structured</text>
+
+  <!-- Bottom section: After (green) -->
+  <rect x="30" y="330" width="940" height="220" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="80" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0B3D2E">After</text>
+  <text x="170" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#555555">Versioned, shared assets</text>
+
+  <!-- Card 1: Templates -->
+  <rect x="60" y="380" width="200" height="110" rx="8" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1.5"/>
+  <rect x="60" y="380" width="200" height="34" rx="8" fill="#0B3D2E"/>
+  <text x="160" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Templates</text>
+  <text x="160" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">research-brief.md</text>
+  <text x="160" y="452" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">competitive-scan.md</text>
+  <text x="160" y="478" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">v2.1</text>
+
+  <!-- Card 2: Prompts -->
+  <rect x="290" y="380" width="200" height="110" rx="8" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1.5"/>
+  <rect x="290" y="380" width="200" height="34" rx="8" fill="#0B3D2E"/>
+  <text x="390" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Prompts</text>
+  <text x="390" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">market-analysis.md</text>
+  <text x="390" y="452" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">user-interview.md</text>
+  <text x="390" y="478" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">v1.4</text>
+
+  <!-- Card 3: Criteria -->
+  <rect x="520" y="380" width="200" height="110" rx="8" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1.5"/>
+  <rect x="520" y="380" width="200" height="34" rx="8" fill="#0B3D2E"/>
+  <text x="620" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Criteria</text>
+  <text x="620" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">go-no-go.md</text>
+  <text x="620" y="452" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">vendor-eval.md</text>
+  <text x="620" y="478" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">v3.0</text>
+
+  <!-- Card 4: Checklists -->
+  <rect x="750" y="380" width="200" height="110" rx="8" fill="#FFFFFF" stroke="#0B3D2E" stroke-width="1.5"/>
+  <rect x="750" y="380" width="200" height="34" rx="8" fill="#0B3D2E"/>
+  <text x="850" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Checklists</text>
+  <text x="850" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">launch-checklist.md</text>
+  <text x="850" y="452" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">review-gates.md</text>
+  <text x="850" y="478" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0B3D2E" text-anchor="middle">v2.0</text>
+
+  <!-- Bottom label -->
+  <text x="500" y="525" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#555555" text-anchor="middle">Versioned. Reviewable. Improvable by anyone on the team.</text>
+
+  <!-- Bottom takeaway -->
+  <rect x="200" y="545" width="600" height="36" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="500" y="569" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">Practices stop being "something one person figured out once."</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>

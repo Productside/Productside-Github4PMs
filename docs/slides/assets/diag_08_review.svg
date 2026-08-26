@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <rect width="1000" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" text-anchor="middle">Pull Request Review Flow</text>
+
+  <!-- Main branch line -->
+  <line x1="60" y1="120" x2="940" y2="120" stroke="#0B3D2E" stroke-width="3"/>
+  <text x="60" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#0B3D2E">main</text>
+  <text x="60" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555">The accepted version</text>
+
+  <!-- Commit dots on main -->
+  <circle cx="160" cy="120" r="8" fill="#0B3D2E"/>
+  <circle cx="860" cy="120" r="8" fill="#0B3D2E"/>
+
+  <!-- Branch off -->
+  <line x1="160" y1="120" x2="200" y2="220" stroke="#0B3D2E" stroke-width="2"/>
+  <line x1="200" y1="220" x2="620" y2="220" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="210" y="208" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#0B3D2E">proposed change</text>
+
+  <!-- Commits on branch -->
+  <circle cx="280" cy="220" r="6" fill="#0B3D2E"/>
+  <circle cx="380" cy="220" r="6" fill="#0B3D2E"/>
+  <circle cx="480" cy="220" r="6" fill="#0B3D2E"/>
+
+  <text x="280" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">edit</text>
+  <text x="380" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">revise</text>
+  <text x="480" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">refine</text>
+
+  <!-- Pull Request box -->
+  <rect x="560" y="185" width="160" height="70" rx="8" fill="#f8f8f8" stroke="#0B3D2E" stroke-width="2"/>
+  <text x="640" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="1" fill="#0B3D2E" text-anchor="middle">PULL REQUEST</text>
+  <text x="640" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="middle">open for review</text>
+
+  <!-- Diff view mockup -->
+  <rect x="100" y="290" width="700" height="170" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="450" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a" text-anchor="middle">The Review</text>
+
+  <!-- Red removed line -->
+  <rect x="130" y="340" width="640" height="30" rx="4" fill="#fef2f2"/>
+  <text x="150" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#dc2626" text-anchor="start">- Our target market is enterprise SaaS companies</text>
+
+  <!-- Green added line -->
+  <rect x="130" y="375" width="640" height="30" rx="4" fill="#f0fdf4"/>
+  <text x="150" y="395" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#0B3D2E" text-anchor="start">+ Our target market is mid-market SaaS (200-2000 seats)</text>
+
+  <!-- Comment -->
+  <rect x="150" y="415" width="540" height="32" rx="8" fill="#FFFFFF" stroke="#999999" stroke-width="1"/>
+  <text x="170" y="436" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555555" text-anchor="start">VP Product: "Do we have data supporting the 200 floor?"</text>
+
+  <!-- Merge arrow -->
+  <line x1="720" y1="220" x2="860" y2="120" stroke="#4ADE80" stroke-width="2" stroke-dasharray="6 3"/>
+  <polygon points="860,120 845,130 850,115" fill="#4ADE80"/>
+
+  <!-- Gate label -->
+  <rect x="790" y="72" width="150" height="36" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="865" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0B3D2E" text-anchor="middle">Now it is truth</text>
+
+  <!-- Bottom: approval states -->
+  <rect x="100" y="490" width="200" height="40" rx="8" fill="#f0fdf4" stroke="#0B3D2E" stroke-width="1.5"/>
+  <text x="200" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0B3D2E" text-anchor="middle">Approved</text>
+
+  <rect x="380" y="490" width="240" height="40" rx="8" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="500" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#555555" text-anchor="middle">Changes requested</text>
+
+  <rect x="700" y="490" width="200" height="40" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="800" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#dc2626" text-anchor="middle">Blocked</text>
+
+  <!-- Bottom takeaway -->
+  <text x="500" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">Review is a gate, not a ritual.</text>
+
+  <!-- Footer -->
+  <text x="970" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#999" text-anchor="end">Productside</text>
+</svg>
