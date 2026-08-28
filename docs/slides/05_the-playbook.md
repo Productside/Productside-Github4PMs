@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 160" width="960" height="160">
   <rect width="960" height="160" rx="12" fill="#4ADE80"/>
   <text x="48" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#0B3D2E" text-anchor="start">THE PLAYBOOK</text>
-  <text x="48" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#0B3D2E" text-anchor="start">9 Workflows</text>
+  <text x="48" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#0B3D2E" text-anchor="start">5 Motions, 9 Workflows</text>
   <text x="48" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#0B3D2E" text-anchor="start">for your AI Harness.</text>
 </svg>
 
@@ -9,23 +9,25 @@
 
 # The Playbook
 
-## 9 Workflows for your AI Harness.
+## 5 Motions, 9 Workflows for your AI Harness.
 
 Verbatim instructions to manage product context safely. No coding required.
 
 &nbsp;
 
-| # | Workflow | Capability |
+| Motion | # | Workflow |
 |---|---|---|
-| 1 | Check tools & connect to GitHub | Setup |
-| 2 | Clone a shared library & install its skills | **Share** |
-| 3 | Run a skill the team already built | **Collaborate** |
-| 4 | Open a PR for Dean to approve | **Review** |
-| 5 | Commit the change with the reasoning | **Trace** |
-| 6 | Branch to improve what you know best | **Experiment** |
-| 7 | Give AI the same context as the team | **Augment** |
-| 8 | Dean merges. The library improves. | **Reuse** |
-| 9 | Walk into the meeting knowing what changed | All seven |
+| **Context** | 1 | Check tools & connect to GitHub |
+| **Context** | 2 | Clone a shared library & install its skills |
+| **Communications** | 3 | Run a skill the team already built |
+| **Communications** | 4 | Open a PR for Dean to approve |
+| **Confidence** | 5 | Commit the change with the reasoning |
+| **Confidence** | 6 | Branch to improve what you know best |
+| **Context** | 7 | Give AI the same context as the team |
+| **Community** | 8 | Dean merges. The library improves. |
+| **Communications** | 9 | Walk into the meeting knowing what changed |
+
+**Constitution** is the thread that makes the other four safe: `CONSTITUTION.md` ships with the repo (WF2), the Content Guard action fires on every PR (WF4), and AI reads the guardrails before it acts (WF7).
 
 &nbsp;
 

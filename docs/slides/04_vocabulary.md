@@ -31,4 +31,4 @@
 
 ---
 
-[← Previous](03_the-operator.md) · [Next: The Playbook →](05_the-playbook.md) · [Run](run.md)
+[← Previous](03_the-operator.md) · [Next: The 5 Motions →](04b_five-motions.md) · [Run](run.md)
