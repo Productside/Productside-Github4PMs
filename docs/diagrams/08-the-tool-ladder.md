@@ -1,6 +1,6 @@
 # The tool ladder
 
-**The frame · 0:07**
+**Capability: Share**
 
 Three rungs. The browser is the floor, and every failure recovery drops back to it.
 

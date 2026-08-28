@@ -1,6 +1,6 @@
 # The guard runs before anything lands
 
-**Play 4 · Constitution · 0:34**
+**Guardrails and governance**
 
 ```mermaid
 flowchart LR

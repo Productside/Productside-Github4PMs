@@ -1,6 +1,6 @@
 # Session starter, or durable context
 
-**Play 1 · Context · 0:09**
+**Capability: Augment**
 
 The abstract's hardest promise, and the reason this matters to an AI-shaped team.
 
@@ -21,8 +21,6 @@ flowchart LR
     N2 -.->|"the record compounds"| F
   end
 ```
-
----
 
 ---
 

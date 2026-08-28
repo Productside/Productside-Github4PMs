@@ -1,6 +1,6 @@
 # The participation system
 
-**Play 5 · Community · 0:40**
+**Capability: Reuse**
 
 The wider loop the contribution sits inside. Candidate closing visual for the whole show.
 

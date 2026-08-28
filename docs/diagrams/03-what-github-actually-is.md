@@ -1,6 +1,6 @@
 # What GitHub actually is
 
-**Cold open · 0:00**
+**The problem and the reframe**
 
 Four familiar categories stacked, rather than one abstract metaphor. Dean's own framing.
 
@@ -19,8 +19,6 @@ flowchart TD
 ```
 
 **The straw man to kill first:** search results will tell you it's an alternative to Jira. That's the wrong answer to the wrong question.
-
----
 
 ---
 

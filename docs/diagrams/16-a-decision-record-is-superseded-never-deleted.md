@@ -1,6 +1,6 @@
 # A decision record is superseded, never deleted
 
-**Play 1 · Context · 0:09**
+**Capability: Trace**
 
 ```mermaid
 flowchart LR

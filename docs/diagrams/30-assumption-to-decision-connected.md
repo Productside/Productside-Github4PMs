@@ -1,6 +1,6 @@
 # Assumption to decision, connected
 
-**Play 3 · Confidence · 0:25**
+**Guardrails and governance**
 
 ```mermaid
 flowchart LR
