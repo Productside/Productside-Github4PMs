@@ -32,4 +32,4 @@ A useful commit creates a checkpoint around a meaningful change. **The reasoning
 
 ---
 
-[← Previous](16_when-to-use-what.md) · [Next: Close →](18_close.md) · [Run](run.md)
+[← Previous](16c_comparison.md) · [Next: Close →](18_close.md) · [Run](run.md)
