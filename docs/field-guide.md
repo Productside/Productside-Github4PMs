@@ -142,8 +142,9 @@ gh auth status
 **The situation:** Productside publishes a market intelligence skills library on GitHub with 22 skills and 22 prompts. You want to bring it onto your machine, install the skills into your AI harness, and start using them.
 
 ~~~
-Clone the Productside Market Intelligence Skills repository into
-my Projects directory and install the skills. Show me what's
+Clone the repository
+https://github.com/Productside/Productside-Market-Intelligence-Skills.git
+into my Documents folder and install the skills. Show me what's
 available.
 ~~~
 
