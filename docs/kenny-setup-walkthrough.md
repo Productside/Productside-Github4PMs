@@ -11,53 +11,66 @@ Kenny stays in **Claude Desktop** the entire time. Claude Code runs as an MCP se
 
 ## Slack-Ready Commands
 
-Copy-paste these to Kenny one at a time. Each block is one message. Tell him to open PowerShell (search "PowerShell" in the Windows Start menu) and paste each one.
+Copy-paste these to Kenny one at a time via Slack. Each block is one message.
 
 ---
 
-**Message 1 — Install Git**
+**Message 1 — Open PowerShell**
 
-> Paste this into PowerShell and hit Enter. It'll install Git. Say yes if it asks for permission.
+> On your Windows machine, click the Start menu and search for **PowerShell**. Open it. You'll see a dark window with a blinking cursor. That's where the next six messages go.
+
+---
+
+**Message 2 — Install Git (in PowerShell)**
+
+> In that **PowerShell window**, paste this and hit Enter. It'll install Git. Say yes if Windows asks for permission.
 >
 > `winget install Git.Git`
 
 ---
 
-**Message 2 — Install GitHub CLI**
+**Message 3 — Install GitHub CLI (in PowerShell)**
 
-> Same thing. This installs the GitHub command-line tool.
+> Still in **PowerShell**. Paste this and hit Enter. It installs the GitHub command-line tool.
 >
 > `winget install GitHub.cli`
 
 ---
 
-**Message 3 — Close and reopen PowerShell**
+**Message 4 — Close and reopen PowerShell**
 
-> Close PowerShell and open a fresh one so it picks up the new installs.
+> Close that PowerShell window (just X it out) and open a fresh one the same way — Start menu, search "PowerShell." The new window picks up the stuff you just installed. The old one won't.
 
 ---
 
-**Message 4 — Install Claude Code**
+**Message 5 — Install Claude Code (in PowerShell)**
 
-> Paste this. It installs the engine that connects Claude Desktop to GitHub.
+> In the **new PowerShell window**, paste this and hit Enter. It installs the engine that connects Claude Desktop to GitHub.
 >
 > `irm https://claude.ai/install.ps1 | iex`
 
 ---
 
-**Message 5 — Log into GitHub**
+**Message 6 — Log into GitHub (in PowerShell)**
 
-> Paste this. It'll ask you three questions — pick GitHub.com, HTTPS, and Login with a web browser. Then it gives you a code to paste in the browser.
+> Still in **PowerShell**. Paste this and hit Enter:
 >
 > `gh auth login`
+>
+> It asks three questions. Pick these answers:
+> 1. **GitHub.com** (not Enterprise)
+> 2. **HTTPS**
+> 3. **Login with a web browser**
+>
+> It gives you a one-time code. Your browser opens. Paste the code there.
 >
 > If GitHub asks about setting up a passkey (fingerprint / Windows Hello), say yes.
 
 ---
 
-**Message 6 — Set your name**
+**Message 7 — Set your name (in PowerShell)**
 
-> Paste these two lines (one at a time). Use the email on your GitHub account.
+> Still in **PowerShell**. Paste these two lines one at a time, hitting Enter after each. Use the email on your GitHub account.
 >
 > `git config --global user.name "Kenny Kranseler"`
 >
@@ -65,17 +78,19 @@ Copy-paste these to Kenny one at a time. Each block is one message. Tell him to 
 
 ---
 
-**Message 7 — Confirm it all works**
+**Message 8 — Confirm it all works (in PowerShell)**
 
-> Paste this. You should see your GitHub username and version numbers. Screenshot it for me.
+> Still in **PowerShell**. Paste this and hit Enter. You should see your GitHub username and three version numbers. Screenshot it and send it to me.
 >
 > `gh auth status && git --version && claude --version`
 
 ---
 
-**Message 8 — Wire Claude Desktop to Claude Code**
+**Message 9 — Wire Claude Desktop to Claude Code (in Claude Desktop, not PowerShell)**
 
-> In Claude Desktop, go to **Settings → Developer → Edit Config**. Replace everything in that file with this, then save:
+> Now switch to **Claude Desktop** (the app, not the PowerShell window).
+>
+> Go to **Settings → Developer → Edit Config**. It opens a text file. Replace everything in that file with this, then save:
 >
 > ```
 > {
@@ -88,21 +103,21 @@ Copy-paste these to Kenny one at a time. Each block is one message. Tell him to 
 > }
 > ```
 >
-> Then **quit Claude Desktop completely** (not just close the window — right-click the icon in the system tray and quit) and reopen it.
+> Then **quit Claude Desktop completely** — not just close the window. Right-click the Claude icon in the system tray (bottom-right of your screen, near the clock) and click Quit. Then reopen it from the Start menu.
 
 ---
 
-**Message 9 — Test it**
+**Message 10 — Test it (in Claude Desktop)**
 
-> In a new Claude Desktop conversation, type this:
+> Open **Claude Desktop** and start a new conversation. Type this into the **Claude Desktop chat box** (not PowerShell):
 >
 > `Check whether Git and GitHub CLI are installed and whether this computer is already authenticated with GitHub. Tell me who I'm logged in as.`
 >
-> It should show your GitHub username. Screenshot it for me.
+> It should show your GitHub username. Screenshot it and send it to me.
 
 ---
 
-**That's it. Close PowerShell. You're done with it.** Everything from here happens in Claude Desktop.
+**That's it. Close PowerShell. You're done with it forever.** Everything from here happens in Claude Desktop.
 
 ---
 
@@ -112,13 +127,13 @@ Copy-paste these to Kenny one at a time. Each block is one message. Tell him to 
 
 | What | Why | How Kenny got it |
 |---|---|---|
-| Git for Windows | The version control engine | Message 1 |
-| GitHub CLI (gh) | Authenticates with GitHub | Message 2 |
-| Claude Code CLI | The MCP server Claude Desktop calls | Message 4 |
-| gh auth | Passkey/browser login to GitHub | Message 5 |
-| MCP config | Tells Claude Desktop to use Claude Code | Message 8 |
+| Git for Windows | The version control engine | Message 2 |
+| GitHub CLI (gh) | Authenticates with GitHub | Message 3 |
+| Claude Code CLI | The MCP server Claude Desktop calls | Message 5 |
+| gh auth | Passkey/browser login to GitHub | Message 6 |
+| MCP config | Tells Claude Desktop to use Claude Code | Message 9 |
 
-Kenny doesn't need to understand any of this. He just needs the screenshot from Message 9 showing his GitHub username.
+Kenny doesn't need to understand any of this. He just needs the screenshot from Message 10 showing his GitHub username.
 
 ---
 
@@ -126,7 +141,11 @@ Kenny doesn't need to understand any of this. He just needs the screenshot from 
 
 ## Phase 2 — First Clone (5 min)
 
+Everything from here happens in **Claude Desktop** — the app with the chat window, not PowerShell.
+
 ### 2.1 — Pull down the repo
+
+Kenny types this into the **Claude Desktop chat box**:
 
 ```
 Create a folder called Projects in my home directory if it
@@ -137,6 +156,8 @@ Intelligence Skills repository from GitHub into it.
 Kenny sees Claude report the clone. 22 skills, 22 prompts, a CONSTITUTION.md.
 
 ### 2.2 — Let the AI read the room
+
+Still in the **Claude Desktop chat box**:
 
 ```
 Read that repository you just cloned and tell me what's
@@ -154,7 +175,11 @@ This is the moment: the AI just got the same context as the team, from the repo,
 
 ## Phase 3 — First Branch + Edit (10 min)
 
+All of these go into the **Claude Desktop chat box**.
+
 ### 3.1 — Create a safe space to work
+
+In the **Claude Desktop chat box**:
 
 ```
 Go to the Market Intelligence Skills repo you just cloned.
@@ -166,7 +191,7 @@ create a new branch called kennys-first-edit.
 
 Let Kenny pick. The edit should be his idea, not yours.
 
-**Option A — Improve wording:**
+**Option A — Improve wording** (in the **Claude Desktop chat box**):
 
 ```
 Open the battle card builder prompt and read it to me. Then
@@ -175,7 +200,7 @@ clearer instruction or a better example — and make the
 change.
 ```
 
-**Option B — Add a section:**
+**Option B — Add a section** (in the **Claude Desktop chat box**):
 
 ```
 Open the battle card builder prompt. Add a section called
@@ -186,6 +211,8 @@ and the top three objections they hear from buyers.
 
 ### 3.3 — See what changed
 
+In the **Claude Desktop chat box**:
+
 ```
 Show me exactly what I changed. I want to see the
 before-and-after diff.
@@ -194,6 +221,8 @@ before-and-after diff.
 This is Kenny's first line-level diff on his own work.
 
 ### 3.4 — Save it with the reasoning
+
+In the **Claude Desktop chat box**:
 
 ```
 Help me write a commit message that explains what I changed
@@ -210,7 +239,11 @@ Claude proposes a message. Kenny says "yes" or adjusts it. Committed.
 
 ## Phase 4 — First Pull Request (5 min)
 
+Still in the **Claude Desktop chat box** unless noted otherwise.
+
 ### 4.1 — Propose it to the team
+
+In the **Claude Desktop chat box**:
 
 ```
 Push my branch to GitHub and create a pull request to the
@@ -218,11 +251,11 @@ main repository. Summarize what I changed and why in the PR
 description.
 ```
 
-A PR URL appears in the chat. Kenny clicks it. He's looking at his pull request on github.com — the diff, the description, the review interface.
+A PR URL appears in the chat. Kenny clicks it. He's looking at his pull request on **github.com in the browser** — the diff, the description, the review interface.
 
 ### 4.2 — Dean reviews and merges
 
-Dean opens the same PR. Shows Kenny:
+Dean does this in a **web browser at github.com**. Shows Kenny:
 
 - The **diff** — line-by-line changes
 - The **conversation** — where reviewers comment
@@ -231,7 +264,7 @@ Dean opens the same PR. Shows Kenny:
 
 ### 4.3 — Kenny confirms
 
-Back in Claude Desktop:
+Back in the **Claude Desktop chat box**:
 
 ```
 What happened with my pull request? Was it merged?
