@@ -42,8 +42,9 @@ Dean says: "Kenny, pull down the Productside skills library."
 **Claude Code prompt:**
 
 ```
-Clone the Productside Market Intelligence Skills repository
-into my Projects directory and install the skills so I can
+Clone the repository
+https://github.com/Productside/Productside-Market-Intelligence-Skills.git
+into my Documents folder and install the skills so I can
 use them.
 ```
 
