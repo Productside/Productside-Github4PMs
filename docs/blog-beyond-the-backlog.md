@@ -10,6 +10,23 @@ The hard part is not creating another document. It is keeping the team oriented 
 
 GitHub solves that problem. Not as a developer tool you are borrowing. As the layer underneath your product work where thinking compounds instead of evaporating.
 
+```mermaid
+flowchart LR
+  T["What you<br/>actually figured out"]
+  N["A doc<br/>nobody reopens"]
+  S["A thread<br/>nobody can find"]
+  D["A deck rebuilt<br/>from scratch<br/>every quarter"]
+  X["Gone"]
+  AI["Every AI tool<br/>you touch"]
+  Z["Starts from zero<br/>you re-explain<br/>the product again"]
+
+  T --> N --> X
+  T --> S --> X
+  T --> D --> X
+  AI --> Z
+  X -.->|"nothing it can read"| AI
+```
+
 ---
 
 ## What GitHub actually is (for you)
@@ -104,6 +121,24 @@ In practice: a product manager opens an AI coding assistant inside their team's 
 
 **In plain English:** the team and its AI work from the same persistent memory. Re-explaining your product every morning is over.
 
+```mermaid
+flowchart LR
+  subgraph B["What most people do"]
+    H1["You re-explain<br/>the product"]
+    A1["The tool answers"]
+    E1["Session ends<br/>context evaporates"]
+    H1 --> A1 --> E1
+    E1 -.->|"tomorrow, again<br/>from scratch"| H1
+  end
+  subgraph G["What a repo does"]
+    F["Files in the repo<br/>strategy, decisions,<br/>research"]
+    A2["The tool reads them"]
+    N2["New findings<br/>written back"]
+    F --> A2 --> N2
+    N2 -.->|"the record compounds"| F
+  end
+```
+
 **The honest limit:** an AI that reads your repo is only as good as what is in the repo. Garbage context produces confident, well-cited garbage. This capability rewards the teams that already write things down and punishes the ones that do not, faster than any previous tool.
 
 ---
@@ -117,6 +152,21 @@ A repository is not just a workspace. It is a publishable artifact. The skills, 
 In practice: a product team publishes a library of market intelligence skills. Another PM clones it, runs a skill against their own domain, and gets structured, cited output. They find a gap, improve one skill, and contribute the improvement back through a pull request. The library gets better every time someone uses it.
 
 **In plain English:** tribal knowledge becomes team infrastructure. The next person who runs that skill gets your improvements automatically.
+
+```mermaid
+flowchart LR
+  PB["Published library<br/>skills, templates,<br/>frameworks"]
+  CL["Clone it"]
+  RN["Run a skill<br/>on your domain"]
+  OP["Structured output<br/>cited, formatted"]
+  WR["Written into<br/>your repo"]
+  FG["Find a gap<br/>or an improvement"]
+  PR["Contribute back<br/>via pull request"]
+
+  PB --> CL --> RN --> OP --> WR
+  WR -.->|"over time"| FG --> PR
+  PR -.->|"merged: the library<br/>improves for everyone"| PB
+```
 
 **The honest limit:** to contribute inside a private repository, a person has to be added to it. GitHub does not hand you open public participation because you turned on Issues. This is a real constraint, and the workaround is simple: add people deliberately, the same way you would add someone to a shared drive.
 
