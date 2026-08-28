@@ -1,75 +1,124 @@
 # Kenny's Setup Walkthrough
 
 30-minute session. Dean on Mac, Kenny on Windows.
-Goal: Kenny leaves with a working Claude Code → GitHub pipeline and one merged PR under his belt.
+Kenny stays in **Claude Desktop** the entire time. Claude Code runs as an MCP server inside it — Kenny never sees a terminal after the one-time setup.
 
-**What Kenny already has:** GitHub account (github.com/kennykranseler or similar).
-
-**What Kenny needs installed before the call (or in the first 5 min):**
-
-- Git for Windows — https://git-scm.com/downloads/win
-- GitHub CLI — https://cli.github.com
-- Claude Code — PowerShell: `irm https://claude.ai/install.ps1 | iex`
-
-If these aren't installed yet, have Kenny do them while you talk through what's coming. All three are "next, next, finish" installers.
+**What Kenny already has:** GitHub account, Claude Desktop installed.
 
 ---
 
 &nbsp;
 
-## Phase 1 — Connect (10 min)
+## Slack-Ready Commands
 
-### 1.1 — Authenticate GitHub CLI
+Copy-paste these to Kenny one at a time. Each block is one message. Tell him to open PowerShell (search "PowerShell" in the Windows Start menu) and paste each one.
 
-Kenny opens **PowerShell** (not CMD).
+---
 
-```powershell
-gh auth login
-```
+**Message 1 — Install Git**
 
-It will ask:
+> Paste this into PowerShell and hit Enter. It'll install Git. Say yes if it asks for permission.
+>
+> `winget install Git.Git`
 
-| Prompt | Kenny picks |
-|---|---|
-| What account? | **GitHub.com** |
-| Preferred protocol? | **HTTPS** |
-| Authenticate how? | **Login with a web browser** |
+---
 
-A one-time code appears in the terminal. Kenny copies it, the browser opens, he pastes the code, and authenticates.
+**Message 2 — Install GitHub CLI**
 
-**Passkey note:** If Kenny's GitHub account doesn't have a passkey yet, GitHub will prompt him to set one up during this browser login. He should say yes — it replaces passwords with fingerprint/Windows Hello. If he already has one, it just works.
+> Same thing. This installs the GitHub command-line tool.
+>
+> `winget install GitHub.cli`
 
-### 1.2 — Confirm the connection
+---
 
-```powershell
-gh auth status
-```
+**Message 3 — Close and reopen PowerShell**
 
-Should show: `Logged in to github.com account kennykranseler` (or whatever his handle is).
+> Close PowerShell and open a fresh one so it picks up the new installs.
 
-```powershell
-git config --global user.name "Kenny Kranseler"
-git config --global user.email "kenny's-github-email@example.com"
-```
+---
 
-### 1.3 — Open Claude Code
+**Message 4 — Install Claude Code**
 
-```powershell
-claude
-```
+> Paste this. It installs the engine that connects Claude Desktop to GitHub.
+>
+> `irm https://claude.ai/install.ps1 | iex`
 
-First launch will ask Kenny to sign in to his Anthropic/Claude account (browser opens). Once signed in, he's in the Claude Code terminal.
+---
 
-**Confirm it can reach GitHub:**
+**Message 5 — Log into GitHub**
 
-```
-Check whether Git and GitHub CLI are installed and whether
-this computer is already authenticated with GitHub.
-```
+> Paste this. It'll ask you three questions — pick GitHub.com, HTTPS, and Login with a web browser. Then it gives you a code to paste in the browser.
+>
+> `gh auth login`
+>
+> If GitHub asks about setting up a passkey (fingerprint / Windows Hello), say yes.
 
-Claude should report all green. If `gh auth status` fails inside Claude Code, Kenny needs to close Claude Code, re-run `gh auth login` in PowerShell, then reopen `claude`.
+---
 
-**Phase 1 done when:** `gh auth status` works both in PowerShell and inside Claude Code.
+**Message 6 — Set your name**
+
+> Paste these two lines (one at a time). Use the email on your GitHub account.
+>
+> `git config --global user.name "Kenny Kranseler"`
+>
+> `git config --global user.email "kenny@example.com"`
+
+---
+
+**Message 7 — Confirm it all works**
+
+> Paste this. You should see your GitHub username and version numbers. Screenshot it for me.
+>
+> `gh auth status && git --version && claude --version`
+
+---
+
+**Message 8 — Wire Claude Desktop to Claude Code**
+
+> In Claude Desktop, go to **Settings → Developer → Edit Config**. Replace everything in that file with this, then save:
+>
+> ```
+> {
+>   "mcpServers": {
+>     "claude-code": {
+>       "command": "claude",
+>       "args": ["mcp"]
+>     }
+>   }
+> }
+> ```
+>
+> Then **quit Claude Desktop completely** (not just close the window — right-click the icon in the system tray and quit) and reopen it.
+
+---
+
+**Message 9 — Test it**
+
+> In a new Claude Desktop conversation, type this:
+>
+> `Check whether Git and GitHub CLI are installed and whether this computer is already authenticated with GitHub. Tell me who I'm logged in as.`
+>
+> It should show your GitHub username. Screenshot it for me.
+
+---
+
+**That's it. Close PowerShell. You're done with it.** Everything from here happens in Claude Desktop.
+
+---
+
+&nbsp;
+
+## Phase 0 recap — what the messages above install
+
+| What | Why | How Kenny got it |
+|---|---|---|
+| Git for Windows | The version control engine | Message 1 |
+| GitHub CLI (gh) | Authenticates with GitHub | Message 2 |
+| Claude Code CLI | The MCP server Claude Desktop calls | Message 4 |
+| gh auth | Passkey/browser login to GitHub | Message 5 |
+| MCP config | Tells Claude Desktop to use Claude Code | Message 8 |
+
+Kenny doesn't need to understand any of this. He just needs the screenshot from Message 9 showing his GitHub username.
 
 ---
 
@@ -77,43 +126,27 @@ Claude should report all green. If `gh auth status` fails inside Claude Code, Ke
 
 ## Phase 2 — First Clone (5 min)
 
-### 2.1 — Create a Projects folder
-
-Still in Claude Code:
+### 2.1 — Pull down the repo
 
 ```
 Create a folder called Projects in my home directory if it
-doesn't exist, then clone the Productside Market Intelligence
-Skills repository into it.
+doesn't already exist. Then clone the Productside Market
+Intelligence Skills repository from GitHub into it.
 ```
 
-Or if Kenny prefers to pick the location:
+Kenny sees Claude report the clone. 22 skills, 22 prompts, a CONSTITUTION.md.
 
-```powershell
-mkdir C:\Users\Kenny\Projects
-cd C:\Users\Kenny\Projects
-```
-
-Then in Claude Code:
+### 2.2 — Let the AI read the room
 
 ```
-Clone the Productside Market Intelligence Skills repository
-into this directory.
+Read that repository you just cloned and tell me what's
+here. What skills are available? What rules does the
+CONSTITUTION say I should follow?
 ```
 
-**What Kenny sees:** The repo downloads. 22 skills, 22 prompts, a CONSTITUTION.md, a CLAUDE.md.
+This is the moment: the AI just got the same context as the team, from the repo, with no copy-paste.
 
-### 2.2 — Look around
-
-```
-Read this repository and tell me what's here. What skills
-are available? What rules does the CONSTITUTION say I
-should follow?
-```
-
-Let Kenny read Claude's summary. This is the "AI gets the same context as the team" moment.
-
-**Phase 2 done when:** Kenny has the repo locally and Claude can read it.
+**Phase 2 done when:** Kenny has the repo locally and Claude can summarize it.
 
 ---
 
@@ -121,94 +154,92 @@ Let Kenny read Claude's summary. This is the "AI gets the same context as the te
 
 ## Phase 3 — First Branch + Edit (10 min)
 
-### 3.1 — Create a branch
+### 3.1 — Create a safe space to work
 
 ```
-Make sure I'm on the main branch and it's up to date, then
+Go to the Market Intelligence Skills repo you just cloned.
+Make sure I'm on the main branch and it's current, then
 create a new branch called kennys-first-edit.
 ```
 
-Claude runs `git switch main`, `git pull`, `git switch -c kennys-first-edit`.
+### 3.2 — Make a real change
 
-### 3.2 — Make a real edit
+Let Kenny pick. The edit should be his idea, not yours.
 
-Pick something small and real. Options:
-
-**Option A — Fix a typo or improve wording in a prompt:**
+**Option A — Improve wording:**
 
 ```
-Open the battle card builder prompt and read it. Find one
-thing you'd improve in the wording — a clearer instruction,
-a better example — and make the change.
+Open the battle card builder prompt and read it to me. Then
+find one thing you'd improve in the wording — maybe a
+clearer instruction or a better example — and make the
+change.
 ```
 
-**Option B — Add a section to a skill:**
+**Option B — Add a section:**
 
 ```
 Open the battle card builder prompt. Add a section called
-"Deal Context" after the competitor overview that asks the
-user for their typical deal size and top three objections
-they hear.
+"Deal Context" after the competitor overview. It should ask
+the user for their typical deal size, sales cycle length,
+and the top three objections they hear from buyers.
 ```
 
-Let Kenny pick. The edit should be his, not yours.
-
-### 3.3 — Review what changed
+### 3.3 — See what changed
 
 ```
-Show me exactly what I changed. Just the diff.
+Show me exactly what I changed. I want to see the
+before-and-after diff.
 ```
 
-Kenny reads the diff. This is the first time he sees red/green line-level changes on his own work.
+This is Kenny's first line-level diff on his own work.
 
-### 3.4 — Commit with a message
+### 3.4 — Save it with the reasoning
 
 ```
 Help me write a commit message that explains what I changed
-and why, then commit it.
+and why. Then commit it.
 ```
 
-Claude proposes a message, Kenny approves, the commit happens.
+Claude proposes a message. Kenny says "yes" or adjusts it. Committed.
 
-**Phase 3 done when:** Kenny has a commit on his branch with a meaningful message.
+**Phase 3 done when:** Kenny has a commit on a branch with a meaningful message.
 
 ---
 
 &nbsp;
 
-## Phase 4 — First PR (5 min)
+## Phase 4 — First Pull Request (5 min)
 
-### 4.1 — Push and open the PR
-
-```
-Push my branch to GitHub and create a pull request.
-Summarize what I changed and why in the PR description.
-```
-
-Claude runs `git push -u origin kennys-first-edit` then `gh pr create`.
-
-A URL appears. Kenny clicks it. He sees his PR on github.com.
-
-### 4.2 — Dean reviews (live)
-
-Dean opens the PR on his machine. Shows Kenny:
-
-- The diff tab (line-level changes)
-- The conversation tab (where comments go)
-- The "Files changed" view
-- The content guard check (if it runs)
-
-Dean leaves a comment, approves, merges.
-
-### 4.3 — Kenny sees the merge
+### 4.1 — Propose it to the team
 
 ```
-Check the status of my pull request.
+Push my branch to GitHub and create a pull request to the
+main repository. Summarize what I changed and why in the PR
+description.
 ```
 
-Or Kenny just refreshes the browser. Merged. His name is on a commit in the Productside org.
+A PR URL appears in the chat. Kenny clicks it. He's looking at his pull request on github.com — the diff, the description, the review interface.
 
-**Phase 4 done when:** PR merged. Kenny has contributed to a public repository without typing a git command.
+### 4.2 — Dean reviews and merges
+
+Dean opens the same PR. Shows Kenny:
+
+- The **diff** — line-by-line changes
+- The **conversation** — where reviewers comment
+- The **content guard** check — automated guardrails ran
+- The **merge button** — Dean approves and merges
+
+### 4.3 — Kenny confirms
+
+Back in Claude Desktop:
+
+```
+What happened with my pull request? Was it merged?
+```
+
+Claude checks and confirms. Kenny's name is on a merged commit in the Productside org. Zero terminal commands typed.
+
+**Phase 4 done when:** PR merged. Kenny is a contributor.
 
 ---
 
@@ -216,41 +247,45 @@ Or Kenny just refreshes the browser. Merged. His name is on a commit in the Prod
 
 ## Troubleshooting
 
-**"gh: command not found" inside Claude Code**
-Close Claude Code, install GitHub CLI, reopen. Claude Code inherits the PATH from the shell it launched in.
+**Claude Desktop says "No tools available" or can't run commands**
+The MCP config didn't load. Check:
+1. The JSON is valid (no trailing commas, no typos in `"claude"`)
+2. Claude Desktop was fully restarted (quit, not just closed)
+3. `claude --version` works in PowerShell (the CLI is in PATH)
 
-**"Permission denied (publickey)"**
-Kenny is trying SSH but only set up HTTPS. Fix:
+If `claude` isn't in PATH after install, Kenny may need to close and reopen PowerShell, or add it manually. The installer usually tells you.
 
-```powershell
-gh auth setup-git
+**"gh: command not found" when Claude tries to use it**
+Same PATH issue. Close Claude Desktop, open PowerShell, run `gh --version` to confirm it's installed, then reopen Claude Desktop. The MCP server inherits the PATH from when Claude Desktop launched.
+
+**"Permission denied" or auth errors**
+Kenny's `gh auth login` didn't stick, or the credential helper isn't set. In Claude Desktop:
+
+```
+Run gh auth setup-git to configure Git to use the GitHub
+CLI for authentication, then try again.
 ```
 
-This configures git to use `gh` as the credential helper for HTTPS.
-
 **"fatal: not a git repository"**
-Kenny isn't in the repo directory. In Claude Code:
+Claude is looking at the wrong folder. In Claude Desktop:
 
 ```
 Find the Productside Market Intelligence Skills folder on
-this computer and go to it.
+my computer and work from there.
 ```
 
-**Claude Code can't find Git Bash**
-If Claude defaults to PowerShell and you want Bash, add to Claude Code settings:
+**Passkey setup fails at GitHub**
+Fall back to password + 2FA. Kenny can set up the passkey later; it's not blocking.
 
-```json
-{
-  "env": {
-    "CLAUDE_CODE_GIT_BASH_PATH": "C:\\Program Files\\Git\\bin\\bash.exe"
-  }
-}
+**Nuclear restart**
+If everything is sideways, have Kenny open PowerShell one more time:
+
+```powershell
+gh auth login
+claude --version
 ```
 
-But PowerShell works fine for everything in this walkthrough. Don't bother unless something breaks.
-
-**Passkey setup fails**
-Fall back to a classic password + 2FA. GitHub will keep prompting for passkey setup on future logins; Kenny can do it later.
+Confirm both work, restart Claude Desktop.
 
 ---
 
@@ -258,12 +293,13 @@ Fall back to a classic password + 2FA. GitHub will keep prompting for passkey se
 
 ## What Kenny walks away with
 
+- [x] Claude Desktop wired to Claude Code (permanent — survives restarts)
 - [x] GitHub CLI authenticated via passkey/HTTPS
-- [x] Claude Code connected to his GitHub identity
 - [x] A local clone of the MI Skills repo
-- [x] One branch created, one edit made, one commit with reasoning
+- [x] One branch, one edit, one commit with reasoning
 - [x] One PR opened, reviewed, and merged
 - [x] His name on a commit in a Productside repository
+- [x] A workflow he can repeat tomorrow without opening a terminal
 
 ---
 
