@@ -1,6 +1,6 @@
 # Confidence stacks across independent sources
 
-**Play 3 · Confidence · 0:25**
+**Guardrails and governance**
 
 Why six sources can be two disciplines — the trap the library exists to catch.
 

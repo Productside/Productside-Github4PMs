@@ -1,6 +1,6 @@
 # An issue closes with an outcome, not silence
 
-**Play 2 · Communications · 0:18**
+**Capability: Collaborate**
 
 ```mermaid
 flowchart LR

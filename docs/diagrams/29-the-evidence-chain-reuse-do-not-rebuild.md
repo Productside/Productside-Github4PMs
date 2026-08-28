@@ -1,6 +1,6 @@
 # The evidence chain — reuse, do not rebuild
 
-**Play 3 · Confidence · 0:25**
+**Guardrails and governance**
 
 **This diagram already exists** in `Productside-Market-Intelligence-Skills/README.md` — `Instantiate → Collect → Fuse → Act → Monitor`, with a dotted "what changed" edge feeding the next run.
 

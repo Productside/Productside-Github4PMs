@@ -1,6 +1,6 @@
 # What goes in the repo
 
-**Play 1 · Context · 0:09**
+**Capability: Share**
 
 Anatomy of Kenny's domain research Project. Stubs are fine and honest.
 

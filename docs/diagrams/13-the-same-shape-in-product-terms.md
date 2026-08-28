@@ -1,6 +1,6 @@
 # The same shape, in product terms
 
-**How git got here · 0:04**
+**Capability: Review**
 
 Why a product manager should care about a mechanic built for source code.
 
@@ -17,8 +17,6 @@ flowchart LR
 ```
 
 **The line:** a branch is a proposal, a pull request is the argument, and a merge is the moment it becomes what the team believes. That is a product process that happens to be implemented in git.
-
----
 
 ---
 

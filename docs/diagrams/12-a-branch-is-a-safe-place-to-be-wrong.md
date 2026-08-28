@@ -1,6 +1,6 @@
 # A branch is a safe place to be wrong
 
-**How git got here · 0:04**
+**Capability: Review**
 
 The whole idea, at the only granularity a product audience needs. Work happens off to the side. The main line keeps working the entire time.
 

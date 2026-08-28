@@ -1,6 +1,6 @@
 # The commit history is the strategy timeline
 
-**Play 1 · Context · 0:09**
+**Capability: Trace**
 
 The payoff shot, drawn. Every dot is a dated, attributed, recoverable change.
 
