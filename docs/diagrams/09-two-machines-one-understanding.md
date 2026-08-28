@@ -1,6 +1,6 @@
 # Two machines, one understanding
 
-**Play 2 · Communications · 0:18**
+**Capability: Collaborate**
 
 Windows and macOS, different paths, same repo. The objection this kills: *"I'd need the same setup as my engineers."*
 

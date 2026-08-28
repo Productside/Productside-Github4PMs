@@ -1,6 +1,6 @@
 # Nothing is born public
 
-**Play 4 · Constitution · 0:34**
+**Guardrails and governance**
 
 ```mermaid
 flowchart LR

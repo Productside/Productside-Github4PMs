@@ -1,6 +1,6 @@
 # Should we, or have we decided
 
-**Play 2 · Communications · 0:18**
+**Capability: Collaborate**
 
 The fork most teams have no home for.
 

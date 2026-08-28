@@ -1,12 +1,12 @@
 # The contribution loop
 
-**Play 5 · Community · 0:40**
+**Capability: Reuse**
 
 The segment Kenny rehearses most.
 
 ```mermaid
 flowchart LR
-  C["Clone<br/>already done<br/>in Play 3"]
+  C["Clone<br/>already done"]
   BR["Branch"]
   A["Add the artifact"]
   PU["Commit and push"]

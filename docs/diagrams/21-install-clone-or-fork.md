@@ -1,6 +1,6 @@
 # Install, clone, or fork
 
-**Play 5 · Community · 0:40**
+**Capability: Reuse**
 
 Three ways to consume the same library, for three different intents.
 

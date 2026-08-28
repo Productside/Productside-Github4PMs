@@ -1,6 +1,6 @@
 # Two repos, two jobs
 
-**The frame · 0:07**
+**Capability: Share**
 
 The architecture of the whole session. Kenny's work never leaves private.
 

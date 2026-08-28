@@ -1,6 +1,6 @@
 # Four steps, none of them planned
 
-**How git got here · 0:04**
+**The problem and the reframe**
 
 ```mermaid
 flowchart LR
@@ -13,6 +13,8 @@ flowchart LR
 ```
 
 **The handoff line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
+
+---
 
 ---
 
