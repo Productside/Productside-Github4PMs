@@ -1,6 +1,6 @@
 # Which materials may go public
 
-**Play 4 · Constitution · 0:34**
+**Guardrails and governance**
 
 Productside's own classification. The category decides the answer far more often than the platform does.
 
@@ -25,8 +25,6 @@ flowchart TD
 ```
 
 **And the rule that governs the gray middle:** material published for public training may be published; bespoke customer material may not. Where something serves both, publish with public in mind and never identify a customer.
-
----
 
 ---
 

@@ -1,6 +1,6 @@
 # Where thinking dies
 
-**Cold open · 0:00**
+**The problem and the reframe**
 
 Three destinations, all terminal, and the reason every AI session starts from zero.
 

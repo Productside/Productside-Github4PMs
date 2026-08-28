@@ -6,32 +6,37 @@ Edit [`../diagrams.md`](../diagrams.md) and run `python3 scripts/split-diagrams.
 | # | Diagram | Beat |
 |---|---|---|
 | 1 | [The notation, once](01-the-notation-once.md) | How to read these |
-| 2 | [Where thinking dies](02-where-thinking-dies.md) | Cold open · 0:00 |
-| 3 | [What GitHub actually is](03-what-github-actually-is.md) | Cold open · 0:00 |
-| 4 | [Four steps, none of them planned](04-four-steps-none-of-them-planned.md) | How git got here · 0:04 |
-| 5 | [A branch is a safe place to be wrong](05-a-branch-is-a-safe-place-to-be-wrong.md) | How git got here · 0:04 |
-| 6 | [The same shape, in product terms](06-the-same-shape-in-product-terms.md) | How git got here · 0:04 |
-| 7 | [Two repos, two jobs](07-two-repos-two-jobs.md) | The frame · 0:07 |
-| 8 | [The tool ladder](08-the-tool-ladder.md) | The frame · 0:07 |
-| 9 | [What goes in the repo](09-what-goes-in-the-repo.md) | Play 1 · Context · 0:09 |
-| 10 | [Three layers, and which one wins](10-three-layers-and-which-one-wins.md) | Play 1 · Context · 0:09 |
-| 11 | [The commit history is the strategy timeline](11-the-commit-history-is-the-strategy-timeline.md) | Play 1 · Context · 0:09 |
-| 12 | [A decision record is superseded, never deleted](12-a-decision-record-is-superseded-never-deleted.md) | Play 1 · Context · 0:09 |
-| 13 | [Session starter, or durable context](13-session-starter-or-durable-context.md) | Play 1 · Context · 0:09 |
-| 14 | [Two machines, one understanding](14-two-machines-one-understanding.md) | Play 2 · Communications · 0:18 |
-| 15 | [Should we, or have we decided](15-should-we-or-have-we-decided.md) | Play 2 · Communications · 0:18 |
-| 16 | [An issue closes with an outcome, not silence](16-an-issue-closes-with-an-outcome-not-silence.md) | Play 2 · Communications · 0:18 |
-| 17 | [The evidence chain — reuse, do not rebuild *(note, no diagram)*](17-the-evidence-chain-reuse-do-not-rebuild.md) | Play 3 · Confidence · 0:25 |
-| 18 | [Assumption to decision, connected](18-assumption-to-decision-connected.md) | Play 3 · Confidence · 0:25 |
-| 19 | [Confidence stacks across independent sources](19-confidence-stacks-across-independent-sources.md) | Play 3 · Confidence · 0:25 |
-| 20 | [The guard runs before anything lands](20-the-guard-runs-before-anything-lands.md) | Play 4 · Constitution · 0:34 |
-| 21 | [Why the pull request path exists](21-why-the-pull-request-path-exists.md) | Play 4 · Constitution · 0:34 |
-| 22 | [Nothing is born public](22-nothing-is-born-public.md) | Play 4 · Constitution · 0:34 |
-| 23 | [Which materials may go public](23-which-materials-may-go-public.md) | Play 4 · Constitution · 0:34 |
-| 24 | [Install, clone, or fork](24-install-clone-or-fork.md) | Play 5 · Community · 0:40 |
-| 25 | [The contribution loop](25-the-contribution-loop.md) | Play 5 · Community · 0:40 |
-| 26 | [The participation system](26-the-participation-system.md) | Play 5 · Community · 0:40 |
-| 27 | [The five plays as one story](27-the-five-plays-as-one-story.md) | The spine and the runbook |
-| 28 | [When something breaks on camera](28-when-something-breaks-on-camera.md) | The spine and the runbook |
-| 29 | [The hour](29-the-hour.md) | The spine and the runbook |
-| 30 | [Kenny's ten days](30-kenny-s-ten-days.md) | The spine and the runbook |
+| 2 | [Where thinking dies](02-where-thinking-dies.md) | The problem and the reframe |
+| 3 | [What GitHub actually is](03-what-github-actually-is.md) | The problem and the reframe |
+| 4 | [Four steps, none of them planned](04-four-steps-none-of-them-planned.md) | The problem and the reframe |
+| 5 | [What goes in the repo](05-what-goes-in-the-repo.md) | Capability: Share |
+| 6 | [Three layers, and which one wins](06-three-layers-and-which-one-wins.md) | Capability: Share |
+| 7 | [Two repos, two jobs](07-two-repos-two-jobs.md) | Capability: Share |
+| 8 | [The tool ladder](08-the-tool-ladder.md) | Capability: Share |
+| 9 | [Two machines, one understanding](09-two-machines-one-understanding.md) | Capability: Collaborate |
+| 10 | [Should we, or have we decided](10-should-we-or-have-we-decided.md) | Capability: Collaborate |
+| 11 | [An issue closes with an outcome, not silence](11-an-issue-closes-with-an-outcome-not-silence.md) | Capability: Collaborate |
+| 12 | [A branch is a safe place to be wrong](12-a-branch-is-a-safe-place-to-be-wrong.md) | Capability: Review |
+| 13 | [The same shape, in product terms](13-the-same-shape-in-product-terms.md) | Capability: Review |
+| 14 | [Why the pull request path exists](14-why-the-pull-request-path-exists.md) | Capability: Review |
+| 15 | [The commit history is the strategy timeline](15-the-commit-history-is-the-strategy-timeline.md) | Capability: Trace |
+| 16 | [A decision record is superseded, never deleted](16-a-decision-record-is-superseded-never-deleted.md) | Capability: Trace |
+| 17 | [What changed, who changed it, and why](17-what-changed-who-changed-it-and-why.md) | Capability: Trace |
+| 18 | [Try a different approach without touching what the team trusts](18-try-a-different-approach-without-touching-what-the-team-trusts.md) | Capability: Experiment |
+| 19 | [Session starter, or durable context](19-session-starter-or-durable-context.md) | Capability: Augment |
+| 20 | [What the AI reads when it opens the repo](20-what-the-ai-reads-when-it-opens-the-repo.md) | Capability: Augment |
+| 21 | [Install, clone, or fork](21-install-clone-or-fork.md) | Capability: Reuse |
+| 22 | [The library consumption loop](22-the-library-consumption-loop.md) | Capability: Reuse |
+| 23 | [The contribution loop](23-the-contribution-loop.md) | Capability: Reuse |
+| 24 | [The participation system](24-the-participation-system.md) | Capability: Reuse |
+| 25 | [Pull latest and see what moved](25-pull-latest-and-see-what-moved.md) | Capability: Catchup |
+| 26 | [The guard runs before anything lands](26-the-guard-runs-before-anything-lands.md) | Guardrails and governance |
+| 27 | [Nothing is born public](27-nothing-is-born-public.md) | Guardrails and governance |
+| 28 | [Which materials may go public](28-which-materials-may-go-public.md) | Guardrails and governance |
+| 29 | [The evidence chain — reuse, do not rebuild *(note, no diagram)*](29-the-evidence-chain-reuse-do-not-rebuild.md) | Guardrails and governance |
+| 30 | [Assumption to decision, connected](30-assumption-to-decision-connected.md) | Guardrails and governance |
+| 31 | [Confidence stacks across independent sources](31-confidence-stacks-across-independent-sources.md) | Guardrails and governance |
+| 32 | [The seven capabilities as one story](32-the-seven-capabilities-as-one-story.md) | The spine and the runbook |
+| 33 | [When something breaks on camera](33-when-something-breaks-on-camera.md) | The spine and the runbook |
+| 34 | [The hour](34-the-hour.md) | The spine and the runbook |
+| 35 | [Kenny's ten days](35-kenny-s-ten-days.md) | The spine and the runbook |

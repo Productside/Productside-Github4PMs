@@ -1,6 +1,6 @@
 # Three layers, and which one wins
 
-**Play 1 · Context · 0:09**
+**Capability: Share**
 
 Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
 
@@ -15,7 +15,7 @@ flowchart TD
   CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
 ```
 
-**Three files, three jobs, and the third one wins.** Say it here; call back to it in Play 4.
+**Three files, three jobs, and the third one wins.** Say it here; call back to it in the Constitution capability.
 
 ---
 

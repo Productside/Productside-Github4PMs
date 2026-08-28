@@ -1,6 +1,6 @@
 # Why the pull request path exists
 
-**Play 4 · Constitution · 0:34**
+**Capability: Review**
 
 Branch protection is what makes review real rather than ceremonial.
 
@@ -19,7 +19,9 @@ flowchart LR
   W --> BR --> PR --> RV --> M
 ```
 
-**Without this, the review in Play 5 is theatre** — the contributor could have pushed straight to main.
+**Without this, the review is theatre** — the contributor could have pushed straight to main.
+
+---
 
 ---
 

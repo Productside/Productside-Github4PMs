@@ -1,6 +1,6 @@
 # Diagrams
 
-The visual bench for the webinar, **ordered by when each beat happens**. Not all of these go on screen — that's a live call. The point is to have more than you need and choose.
+The visual bench for the webinar, **organized by capability**. Not all of these go on screen — that's a live call. The point is to have more than you need and choose.
 
 Every diagram here is mermaid in markdown, which GitHub renders natively — so each one is text, version-controlled, and diffable in a pull request. **Say that out loud the first time one appears.** A diagram you can diff is the thesis of this session; a downloaded PNG quietly contradicts it.
 
@@ -41,7 +41,7 @@ flowchart LR
 ---
 ---
 
-# Cold open · 0:00
+# The problem and the reframe
 
 ## 2. Where thinking dies
 
@@ -86,11 +86,6 @@ flowchart TD
 
 **The straw man to kill first:** search results will tell you it's an alternative to Jira. That's the wrong answer to the wrong question.
 
----
----
-
-# How git got here · 0:04
-
 ## 4. Four steps, none of them planned
 
 ```mermaid
@@ -105,50 +100,49 @@ flowchart LR
 
 **The handoff line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
 
-
-## 5. A branch is a safe place to be wrong
-
-The whole idea, at the only granularity a product audience needs. Work happens off to the side. The main line keeps working the entire time.
-
-```mermaid
-gitGraph
-  commit id: "main is good"
-  commit id: "still good"
-  branch proposal
-  commit id: "try something"
-  commit id: "revise it"
-  checkout main
-  commit id: "unaffected"
-  merge proposal
-  commit id: "now everyone has it"
-```
-
-**The two things to point at:** the main line never broke while the work was happening, and nothing became shared until somebody merged it deliberately.
-
-**What not to do here:** do not name the branching models. Gitflow, trunk-based, and the rest are conventions engineering teams argue about, and none of that helps this audience. If someone asks, the answer is "there are named patterns for this, your engineers have opinions, you do not need them today."
-
-## 6. The same shape, in product terms
-
-Why a product manager should care about a mechanic built for source code.
-
-```mermaid
-flowchart LR
-  M["main<br/>what the team<br/>currently agrees"]
-  B["branch<br/>a proposed change<br/>nobody has agreed to yet"]
-  R["pull request<br/>the conversation about<br/>whether to agree"]
-  M2["main<br/>what the team<br/>now agrees"]
-
-  M -->|"someone proposes"| B --> R
-  R -->|"approved"| M2
-  R -.->|"declined, with a reason<br/>anyone can read later"| B
-```
-
-**The line:** a branch is a proposal, a pull request is the argument, and a merge is the moment it becomes what the team believes. That is a product process that happens to be implemented in git.
-
 ---
 ---
 
-# The frame · 0:07
+# Capability: Share
+
+## 5. What goes in the repo
+
+Anatomy of Kenny's domain research Project. Stubs are fine and honest.
+
+```mermaid
+flowchart TD
+  R["domain-research"]
+  RM["README.md<br/>what this domain is,<br/>why the team cares"]
+  WK["what-we-know.md<br/>current understanding"]
+  OQ["open-questions.md<br/>what we have not settled"]
+  GL["glossary.md<br/>words this domain<br/>uses differently"]
+  SR["sources.md<br/>where it came from"]
+  DC["decisions<br/>one file per<br/>decision, dated"]
+
+  R --> RM
+  R --> WK
+  R --> OQ
+  R --> GL
+  R --> SR
+  R --> DC
+```
+
+## 6. Three layers, and which one wins
+
+Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
+
+```mermaid
+flowchart TD
+  CN["Constitution<br/>what we will not do<br/>CONSTITUTION.md"]
+  CT["Contract<br/>how we work here<br/>CLAUDE.md"]
+  CX["Context<br/>what we know and decided<br/>README and the files"]
+
+  CN -->|"overrides"| CT
+  CT -->|"overrides"| CX
+  CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
+```
+
+**Three files, three jobs, and the third one wins.** Say it here; call back to it in the Constitution capability.
 
 ## 7. Two repos, two jobs
 
@@ -192,110 +186,9 @@ flowchart TD
 ---
 ---
 
-# Play 1 · Context · 0:09
+# Capability: Collaborate
 
-## 9. What goes in the repo
-
-Anatomy of Kenny's domain research Project. Stubs are fine and honest.
-
-```mermaid
-flowchart TD
-  R["domain-research"]
-  RM["README.md<br/>what this domain is,<br/>why the team cares"]
-  WK["what-we-know.md<br/>current understanding"]
-  OQ["open-questions.md<br/>what we have not settled"]
-  GL["glossary.md<br/>words this domain<br/>uses differently"]
-  SR["sources.md<br/>where it came from"]
-  DC["decisions<br/>one file per<br/>decision, dated"]
-
-  R --> RM
-  R --> WK
-  R --> OQ
-  R --> GL
-  R --> SR
-  R --> DC
-```
-
-## 10. Three layers, and which one wins
-
-Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
-
-```mermaid
-flowchart TD
-  CN["Constitution<br/>what we will not do<br/>CONSTITUTION.md"]
-  CT["Contract<br/>how we work here<br/>CLAUDE.md"]
-  CX["Context<br/>what we know and decided<br/>README and the files"]
-
-  CN -->|"overrides"| CT
-  CT -->|"overrides"| CX
-  CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
-```
-
-**Three files, three jobs, and the third one wins.** Say it here; call back to it in Play 4.
-
-## 11. The commit history is the strategy timeline
-
-The payoff shot, drawn. Every dot is a dated, attributed, recoverable change.
-
-```mermaid
-gitGraph
-  commit id: "what we know v1"
-  commit id: "added glossary"
-  branch discovery
-  commit id: "plant manager interviews"
-  commit id: "throughput assumption challenged"
-  checkout main
-  merge discovery
-  commit id: "primary metric changed"
-  commit id: "open question closed"
-```
-
-**The line:** no more "ask Dean, he remembers why we changed that."
-
-## 12. A decision record is superseded, never deleted
-
-```mermaid
-flowchart LR
-  D1["0001<br/>we optimize<br/>for throughput"]
-  N["New evidence<br/>arrives"]
-  D2["0002<br/>we optimize for<br/>changeover time"]
-  H["0001 stays,<br/>marked superseded<br/>by 0002"]
-
-  D1 --> N --> D2
-  D1 --> H
-  D2 -.->|"links back to<br/>what it replaced"| H
-```
-
-**Why it matters:** you can revert a belief. You cannot revert a market. The record tells you which one you are looking at.
-
-## 13. Session starter, or durable context
-
-The abstract's hardest promise, and the reason this matters to an AI-shaped team.
-
-```mermaid
-flowchart LR
-  subgraph B["What most people do"]
-    H1["You re-explain<br/>the product"]
-    A1["The tool answers"]
-    E1["Session ends<br/>context evaporates"]
-    H1 --> A1 --> E1
-    E1 -.->|"tomorrow, again<br/>from scratch"| H1
-  end
-  subgraph G["What a repo does"]
-    F["Files in the repo<br/>strategy, decisions,<br/>research"]
-    A2["The tool reads them"]
-    N2["New findings<br/>written back"]
-    F --> A2 --> N2
-    N2 -.->|"the record compounds"| F
-  end
-```
-
----
----
-
-# Play 2 · Communications · 0:18
-
-## 14. Two machines, one understanding
+## 9. Two machines, one understanding
 
 Windows and macOS, different paths, same repo. The objection this kills: *"I'd need the same setup as my engineers."*
 
@@ -311,7 +204,7 @@ flowchart LR
   R -.->|"pull"| D
 ```
 
-## 15. Should we, or have we decided
+## 10. Should we, or have we decided
 
 The fork most teams have no home for.
 
@@ -334,7 +227,7 @@ flowchart TD
 
 **The line:** arguing in a Discussion costs nothing. Arguing in a roadmap costs a quarter.
 
-## 16. An issue closes with an outcome, not silence
+## 11. An issue closes with an outcome, not silence
 
 ```mermaid
 flowchart LR
@@ -355,15 +248,403 @@ flowchart LR
 ---
 ---
 
-# Play 3 · Confidence · 0:25
+# Capability: Review
 
-## 17. The evidence chain — reuse, do not rebuild
+## 12. A branch is a safe place to be wrong
+
+The whole idea, at the only granularity a product audience needs. Work happens off to the side. The main line keeps working the entire time.
+
+```mermaid
+gitGraph
+  commit id: "main is good"
+  commit id: "still good"
+  branch proposal
+  commit id: "try something"
+  commit id: "revise it"
+  checkout main
+  commit id: "unaffected"
+  merge proposal
+  commit id: "now everyone has it"
+```
+
+**The two things to point at:** the main line never broke while the work was happening, and nothing became shared until somebody merged it deliberately.
+
+**What not to do here:** do not name the branching models. Gitflow, trunk-based, and the rest are conventions engineering teams argue about, and none of that helps this audience. If someone asks, the answer is "there are named patterns for this, your engineers have opinions, you do not need them today."
+
+## 13. The same shape, in product terms
+
+Why a product manager should care about a mechanic built for source code.
+
+```mermaid
+flowchart LR
+  M["main<br/>what the team<br/>currently agrees"]
+  B["branch<br/>a proposed change<br/>nobody has agreed to yet"]
+  R["pull request<br/>the conversation about<br/>whether to agree"]
+  M2["main<br/>what the team<br/>now agrees"]
+
+  M -->|"someone proposes"| B --> R
+  R -->|"approved"| M2
+  R -.->|"declined, with a reason<br/>anyone can read later"| B
+```
+
+**The line:** a branch is a proposal, a pull request is the argument, and a merge is the moment it becomes what the team believes. That is a product process that happens to be implemented in git.
+
+## 14. Why the pull request path exists
+
+Branch protection is what makes review real rather than ceremonial.
+
+```mermaid
+flowchart LR
+  W["Someone wants<br/>to change main"]
+  D1{"Direct push<br/>to main"}
+  X["Blocked"]
+  BR["Branch"]
+  PR["Pull request"]
+  RV["Review<br/>by another human"]
+  M["Merged"]
+
+  W --> D1 --> X
+  X -.->|"the only<br/>way through"| BR
+  W --> BR --> PR --> RV --> M
+```
+
+**Without this, the review is theatre** — the contributor could have pushed straight to main.
+
+---
+---
+
+# Capability: Trace
+
+## 15. The commit history is the strategy timeline
+
+The payoff shot, drawn. Every dot is a dated, attributed, recoverable change.
+
+```mermaid
+gitGraph
+  commit id: "what we know v1"
+  commit id: "added glossary"
+  branch discovery
+  commit id: "plant manager interviews"
+  commit id: "throughput assumption challenged"
+  checkout main
+  merge discovery
+  commit id: "primary metric changed"
+  commit id: "open question closed"
+```
+
+**The line:** no more "ask Dean, he remembers why we changed that."
+
+## 16. A decision record is superseded, never deleted
+
+```mermaid
+flowchart LR
+  D1["0001<br/>we optimize<br/>for throughput"]
+  N["New evidence<br/>arrives"]
+  D2["0002<br/>we optimize for<br/>changeover time"]
+  H["0001 stays,<br/>marked superseded<br/>by 0002"]
+
+  D1 --> N --> D2
+  D1 --> H
+  D2 -.->|"links back to<br/>what it replaced"| H
+```
+
+**Why it matters:** you can revert a belief. You cannot revert a market. The record tells you which one you are looking at.
+
+## 17. What changed, who changed it, and why
+
+The workflow-level view: a PM asks a question, the history answers it without a meeting.
+
+```mermaid
+flowchart LR
+  Q["Someone asks:<br/>why does the brief<br/>say this now"]
+  H["Open file history"]
+  D["The diff<br/>what changed,<br/>line by line"]
+  A["The author<br/>who changed it"]
+  M["The message<br/>why they changed it"]
+  AN["Answered<br/>without a meeting"]
+
+  Q --> H --> D
+  H --> A
+  H --> M
+  D --> AN
+  A --> AN
+  M --> AN
+```
+
+**In plain English:** the trace is only as good as the commit message. "Updated file" tells you nothing. "Added deal-context section after Q1 loss review" tells you everything.
+
+---
+---
+
+# Capability: Experiment
+
+## 18. Try a different approach without touching what the team trusts
+
+The PM-facing version: you do not need permission to be wrong, you need a safe place for it.
+
+```mermaid
+flowchart TD
+  M["main<br/>the positioning<br/>the team trusts today"]
+  B["branch<br/>a different positioning<br/>approach"]
+  W["Work on it<br/>without touching main"]
+  R{"Was it<br/>better"}
+  MR["Merge it<br/>main improves"]
+  DL["Delete the branch<br/>main never changed"]
+
+  M -->|"create a branch"| B --> W --> R
+  R -->|"yes"| MR
+  R -->|"no"| DL
+  MR -.->|"the team now<br/>trusts the new version"| M
+```
+
+**In plain English:** a branch is a safe place to be wrong. If the experiment fails, delete it. Main never changed.
+
+---
+---
+
+# Capability: Augment
+
+## 19. Session starter, or durable context
+
+The abstract's hardest promise, and the reason this matters to an AI-shaped team.
+
+```mermaid
+flowchart LR
+  subgraph B["What most people do"]
+    H1["You re-explain<br/>the product"]
+    A1["The tool answers"]
+    E1["Session ends<br/>context evaporates"]
+    H1 --> A1 --> E1
+    E1 -.->|"tomorrow, again<br/>from scratch"| H1
+  end
+  subgraph G["What a repo does"]
+    F["Files in the repo<br/>strategy, decisions,<br/>research"]
+    A2["The tool reads them"]
+    N2["New findings<br/>written back"]
+    F --> A2 --> N2
+    N2 -.->|"the record compounds"| F
+  end
+```
+
+## 20. What the AI reads when it opens the repo
+
+The file-level view: the AI assistant does not start from zero because the context is already there.
+
+```mermaid
+flowchart TD
+  AI["AI assistant<br/>opens the repo"]
+  CO["CONSTITUTION.md<br/>what it must not do"]
+  CL["CLAUDE.md<br/>how to work here"]
+  RE["README.md<br/>what this is about"]
+  RS["research/<br/>evidence and sources"]
+  DC["decisions/<br/>what the team settled"]
+  SK["skills/<br/>what it can run"]
+
+  AI --> CO
+  AI --> CL
+  AI --> RE
+  AI --> RS
+  AI --> DC
+  AI --> SK
+```
+
+**The line:** the team and its AI work from the same persistent memory. Re-explaining your product every morning is over.
+
+---
+---
+
+# Capability: Reuse
+
+## 21. Install, clone, or fork
+
+Three ways to consume the same library, for three different intents.
+
+```mermaid
+flowchart TD
+  W{"What do you<br/>want to do"}
+  I["Install<br/>two lines,<br/>nothing to manage"]
+  C["Clone<br/>a copy you can<br/>read and change"]
+  F["Fork<br/>your own copy<br/>on GitHub"]
+  U["Just run the skills"]
+  CH["Change it and<br/>contribute back"]
+  OW["Take it your<br/>own direction"]
+
+  W --> U --> I
+  W --> CH --> C
+  W --> OW --> F
+```
+
+**Kenny clones**, because a pull request needs a branch and a branch needs a clone.
+
+## 22. The library consumption loop
+
+How a team turns published assets into adopted practice, and how improvements flow back.
+
+```mermaid
+flowchart LR
+  PB["Published library<br/>skills, templates,<br/>frameworks"]
+  CL["Clone it"]
+  RN["Run a skill<br/>on your domain"]
+  OP["Structured output<br/>cited, formatted"]
+  WR["Written into<br/>your repo"]
+  FG["Find a gap<br/>or an improvement"]
+  PR["Contribute back<br/>via pull request"]
+
+  PB --> CL --> RN --> OP --> WR
+  WR -.->|"over time"| FG --> PR
+  PR -.->|"merged: the library<br/>improves for everyone"| PB
+```
+
+**In plain English:** tribal knowledge becomes team infrastructure. The next person who runs that skill gets your improvements automatically.
+
+## 23. The contribution loop
+
+The segment Kenny rehearses most.
+
+```mermaid
+flowchart LR
+  C["Clone<br/>already done"]
+  BR["Branch"]
+  A["Add the artifact"]
+  PU["Commit and push"]
+  PR["Open the<br/>pull request"]
+  G{"Content guard<br/>runs as a check"}
+  RV["Dean reviews<br/>on his Mac"]
+  M["Merge to main"]
+
+  C --> BR --> A --> PU --> PR --> G
+  G -->|"green"| RV
+  G -->|"red"| A
+  RV --> M
+```
+
+**The red path is not a failure state.** A guard that catches something on camera is worth more than a green tick.
+
+## 24. The participation system
+
+The wider loop the contribution sits inside. Candidate closing visual for the whole show.
+
+```mermaid
+flowchart LR
+  CV["Conversation<br/>someone has a problem"]
+  SB["Structured submission<br/>a template, not a paragraph"]
+  AC["Automated check<br/>the guard runs"]
+  TR["Triage<br/>labelled and routed"]
+  HD["Human decision<br/>yes, no, or not yet"]
+  SH["Shipped"]
+  RC["Visible record<br/>of what happened next"]
+
+  CV --> SB --> AC --> TR --> HD --> SH --> RC
+  RC -.->|"the next person<br/>starts informed"| CV
+  HD -.->|"declined, with a reason<br/>anyone can read"| RC
+```
+
+**The line:** this is not repository literacy. It is designing a participation system.
+
+**The caveat that goes with it:** to comment or contribute inside a private repo, a person has to be added to it. GitHub does not hand you open participation because you turned on Issues.
+
+---
+---
+
+# Capability: Catchup
+
+## 25. Pull latest and see what moved
+
+The workflow a PM runs every morning: what changed since I was last here, and why.
+
+```mermaid
+flowchart LR
+  PM["PM opens<br/>the repo"]
+  PL["Pull latest<br/>from main"]
+  DF["See the diff<br/>what changed overnight"]
+  CM["Read commit messages<br/>who changed it and why"]
+  IS["Check issues<br/>new questions or decisions"]
+  PR["Check pull requests<br/>pending reviews"]
+  OR["Oriented<br/>without a standup"]
+
+  PM --> PL --> DF --> CM --> OR
+  PM --> IS --> OR
+  PM --> PR --> OR
+```
+
+**In plain English:** the standup you do not have to schedule. The repo is the standup.
+
+---
+---
+
+# Guardrails and governance
+
+## 26. The guard runs before anything lands
+
+```mermaid
+flowchart LR
+  C["A change<br/>is proposed"]
+  G{"Content guard"}
+  B1["Client or customer name"]
+  B2["Credential-shaped string"]
+  B3["Oversized or<br/>wrong file type"]
+  R["Rejected,<br/>with the reason"]
+  P["Allowed through<br/>to review"]
+
+  C --> G
+  G --> B1 --> R
+  G --> B2 --> R
+  G --> B3 --> R
+  G -->|"clean"| P
+```
+
+**Dean's shape, verbatim:** the obvious concern is, could we accidentally expose something sensitive? Yes, if we were sloppy. Which is why we are not being sloppy.
+
+## 27. Nothing is born public
+
+```mermaid
+flowchart LR
+  N["New Project"]
+  PV["Private<br/>by default"]
+  RV{"Publication<br/>review"}
+  SC["Scrub, license,<br/>attribution, guard"]
+  PB["Public,<br/>deliberately"]
+
+  N --> PV --> RV
+  RV -->|"not yet"| PV
+  RV -->|"ready"| SC --> PB
+```
+
+**The line:** start private. Make it public only when you mean to. Turning something public should feel like a small launch, not a casual settings change.
+
+## 28. Which materials may go public
+
+Productside's own classification. The category decides the answer far more often than the platform does.
+
+```mermaid
+flowchart TD
+  Q["Something you<br/>want to publish"]
+  C1{"Did a client<br/>bring it"}
+  C2{"Was it created during<br/>a client engagement"}
+  C3{"Are the rights<br/>solely ours"}
+  NO1["No · client IP,<br/>never ours to license"]
+  NO2["No · vests in the client<br/>as work made for hire"]
+  NO3["No · not ours<br/>to grant alone"]
+  YES["Yes, after<br/>publication review"]
+
+  Q --> C1
+  C1 -->|"yes"| NO1
+  C1 -->|"no"| C2
+  C2 -->|"yes"| NO2
+  C2 -->|"no"| C3
+  C3 -->|"no"| NO3
+  C3 -->|"yes"| YES
+```
+
+**And the rule that governs the gray middle:** material published for public training may be published; bespoke customer material may not. Where something serves both, publish with public in mind and never identify a customer.
+
+## 29. The evidence chain — reuse, do not rebuild
 
 **This diagram already exists** in `Productside-Market-Intelligence-Skills/README.md` — `Instantiate → Collect → Fuse → Act → Monitor`, with a dotted "what changed" edge feeding the next run.
 
 Pull it up from the Project on screen. That the library documents its own method is the point, and showing it live beats reproducing it here.
 
-## 18. Assumption to decision, connected
+## 30. Assumption to decision, connected
 
 ```mermaid
 flowchart LR
@@ -382,7 +663,7 @@ flowchart LR
 
 **The one most teams cannot do:** the bottom path. A finding that says *we were wrong* is only valuable if it is findable later.
 
-## 19. Confidence stacks across independent sources
+## 31. Confidence stacks across independent sources
 
 Why six sources can be two disciplines — the trap the library exists to catch.
 
@@ -410,187 +691,27 @@ flowchart LR
 ---
 ---
 
-# Play 4 · Constitution · 0:34
-
-## 20. The guard runs before anything lands
-
-```mermaid
-flowchart LR
-  C["A change<br/>is proposed"]
-  G{"Content guard"}
-  B1["Client or customer name"]
-  B2["Credential-shaped string"]
-  B3["Oversized or<br/>wrong file type"]
-  R["Rejected,<br/>with the reason"]
-  P["Allowed through<br/>to review"]
-
-  C --> G
-  G --> B1 --> R
-  G --> B2 --> R
-  G --> B3 --> R
-  G -->|"clean"| P
-```
-
-**Dean's shape, verbatim:** the obvious concern is, could we accidentally expose something sensitive? Yes, if we were sloppy. Which is why we are not being sloppy.
-
-## 21. Why the pull request path exists
-
-Branch protection is what makes review real rather than ceremonial.
-
-```mermaid
-flowchart LR
-  W["Someone wants<br/>to change main"]
-  D1{"Direct push<br/>to main"}
-  X["Blocked"]
-  BR["Branch"]
-  PR["Pull request"]
-  RV["Review<br/>by another human"]
-  M["Merged"]
-
-  W --> D1 --> X
-  X -.->|"the only<br/>way through"| BR
-  W --> BR --> PR --> RV --> M
-```
-
-**Without this, the review in Play 5 is theatre** — the contributor could have pushed straight to main.
-
-## 22. Nothing is born public
-
-```mermaid
-flowchart LR
-  N["New Project"]
-  PV["Private<br/>by default"]
-  RV{"Publication<br/>review"}
-  SC["Scrub, license,<br/>attribution, guard"]
-  PB["Public,<br/>deliberately"]
-
-  N --> PV --> RV
-  RV -->|"not yet"| PV
-  RV -->|"ready"| SC --> PB
-```
-
-**The line:** start private. Make it public only when you mean to. Turning something public should feel like a small launch, not a casual settings change.
-
-## 23. Which materials may go public
-
-Productside's own classification. The category decides the answer far more often than the platform does.
-
-```mermaid
-flowchart TD
-  Q["Something you<br/>want to publish"]
-  C1{"Did a client<br/>bring it"}
-  C2{"Was it created during<br/>a client engagement"}
-  C3{"Are the rights<br/>solely ours"}
-  NO1["No · client IP,<br/>never ours to license"]
-  NO2["No · vests in the client<br/>as work made for hire"]
-  NO3["No · not ours<br/>to grant alone"]
-  YES["Yes, after<br/>publication review"]
-
-  Q --> C1
-  C1 -->|"yes"| NO1
-  C1 -->|"no"| C2
-  C2 -->|"yes"| NO2
-  C2 -->|"no"| C3
-  C3 -->|"no"| NO3
-  C3 -->|"yes"| YES
-```
-
-**And the rule that governs the gray middle:** material published for public training may be published; bespoke customer material may not. Where something serves both, publish with public in mind and never identify a customer.
-
----
----
-
-# Play 5 · Community · 0:40
-
-## 24. Install, clone, or fork
-
-Three ways to consume the same library, for three different intents.
-
-```mermaid
-flowchart TD
-  W{"What do you<br/>want to do"}
-  I["Install<br/>two lines,<br/>nothing to manage"]
-  C["Clone<br/>a copy you can<br/>read and change"]
-  F["Fork<br/>your own copy<br/>on GitHub"]
-  U["Just run the skills"]
-  CH["Change it and<br/>contribute back"]
-  OW["Take it your<br/>own direction"]
-
-  W --> U --> I
-  W --> CH --> C
-  W --> OW --> F
-```
-
-**Kenny clones**, because a pull request needs a branch and a branch needs a clone.
-
-## 25. The contribution loop
-
-The segment Kenny rehearses most.
-
-```mermaid
-flowchart LR
-  C["Clone<br/>already done<br/>in Play 3"]
-  BR["Branch"]
-  A["Add the artifact"]
-  PU["Commit and push"]
-  PR["Open the<br/>pull request"]
-  G{"Content guard<br/>runs as a check"}
-  RV["Dean reviews<br/>on his Mac"]
-  M["Merge to main"]
-
-  C --> BR --> A --> PU --> PR --> G
-  G -->|"green"| RV
-  G -->|"red"| A
-  RV --> M
-```
-
-**The red path is not a failure state.** A guard that catches something on camera is worth more than a green tick.
-
-## 26. The participation system
-
-The wider loop the contribution sits inside. Candidate closing visual for the whole show.
-
-```mermaid
-flowchart LR
-  CV["Conversation<br/>someone has a problem"]
-  SB["Structured submission<br/>a template, not a paragraph"]
-  AC["Automated check<br/>the guard runs"]
-  TR["Triage<br/>labelled and routed"]
-  HD["Human decision<br/>yes, no, or not yet"]
-  SH["Shipped"]
-  RC["Visible record<br/>of what happened next"]
-
-  CV --> SB --> AC --> TR --> HD --> SH --> RC
-  RC -.->|"the next person<br/>starts informed"| CV
-  HD -.->|"declined, with a reason<br/>anyone can read"| RC
-```
-
-**The line:** this is not repository literacy. It is designing a participation system.
-
-**The caveat that goes with it:** to comment or contribute inside a private repo, a person has to be added to it. GitHub does not hand you open participation because you turned on Issues.
-
----
----
-
 # The spine and the runbook
 
-## 27. The five plays as one story
+## 32. The seven capabilities as one story
 
-Not five demos. One person with one problem, five times.
+Not seven demos. One team's thinking, compounding across seven capabilities.
 
 ```mermaid
 flowchart TD
-  P1["Context<br/>Kenny needs a home for<br/>what he is learning"]
-  P2["Communications<br/>Dean joins him;<br/>they build it together"]
-  P3["Confidence<br/>opinions need evidence,<br/>so he borrows the library"]
-  P4["Constitution<br/>some of what he collects<br/>must never leak"]
-  P5["Community<br/>he finds a gap<br/>and contributes back"]
+  S["Share<br/>a home for what<br/>the team knows"]
+  CO["Collaborate<br/>work together without<br/>trampling each other"]
+  RV["Review<br/>changes are reviewable<br/>before they become truth"]
+  TR["Trace<br/>what changed,<br/>who, and why"]
+  EX["Experiment<br/>explore without breaking<br/>what works"]
+  AU["Augment<br/>AI reads the same<br/>context as the team"]
+  RE["Reuse<br/>practices become assets<br/>another team can adopt"]
 
-  P1 --> P2 --> P3 --> P4 --> P5
-  P5 -.->|"the library improves,<br/>the next team starts ahead"| P1
+  S --> CO --> RV --> TR --> EX --> AU --> RE
+  RE -.->|"the library improves,<br/>the next team starts ahead"| S
 ```
 
-## 28. When something breaks on camera
+## 33. When something breaks on camera
 
 The thirty-second rule. Dean's real job during the build.
 
@@ -610,7 +731,7 @@ flowchart TD
 
 **Never re-run a failed step live.** One attempt, then fallback. Owning it out loud is stronger than hiding it.
 
-## 29. The hour
+## 34. The hour
 
 ```mermaid
 gantt
@@ -637,7 +758,7 @@ gantt
   Q and A                :00:54, 6m
 ```
 
-## 30. Kenny's ten days
+## 35. Kenny's ten days
 
 ```mermaid
 gantt
