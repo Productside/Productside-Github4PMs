@@ -22,8 +22,9 @@ One command gives you a versioned local copy of 22 skills and 22 prompts. You ca
 > **The AI Prompt**
 >
 > ```
-> Clone the Productside Market Intelligence Skills repository
-> into my Projects directory and install the skills. Show me
+> Clone the repository
+> https://github.com/Productside/Productside-Market-Intelligence-Skills.git
+> into my Documents folder and install the skills. Show me
 > what's available.
 > ```
 >
