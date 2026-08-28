@@ -14,41 +14,49 @@ Click through in order. Each page has Previous / Next links at the bottom.
 
 **4** &nbsp; [Git Vocabulary](04_vocabulary.md)
 
-**5** &nbsp; [The Playbook](05_the-playbook.md)
+**5** &nbsp; [The 5 Motions](04b_five-motions.md)
+
+**6** &nbsp; [The Playbook](05_the-playbook.md)
 
 &nbsp;
 
-## The 9 Workflows
+## 5 Motions, 9 Workflows
 
-**6** &nbsp; [Workflow 1 · Check tools & connect](06_wf-setup.md)
+**7** &nbsp; [Workflow 1 · Check tools & connect](06_wf-setup.md) — **Context**
 
-**7** &nbsp; [Workflow 2 · Clone a shared library & install its skills](07_wf-share.md) — **Share**
+**8** &nbsp; [Workflow 2 · Clone a shared library & install its skills](07_wf-share.md) — **Context**
 
-**8** &nbsp; [Workflow 3 · Run a skill the team already built](08_wf-collaborate.md) — **Collaborate**
+**9** &nbsp; [Workflow 3 · Run a skill the team already built](08_wf-collaborate.md) — **Communications**
 
-**9** &nbsp; [Workflow 4 · Open a PR for Dean to approve](09_wf-review.md) — **Review**
+**10** &nbsp; [Workflow 4 · Open a PR for Dean to approve](09_wf-review.md) — **Communications**
 
-**10** &nbsp; [Workflow 5 · Commit the change with the reasoning](10_wf-trace.md) — **Trace**
+**11** &nbsp; [Workflow 5 · Commit the change with the reasoning](10_wf-trace.md) — **Confidence**
 
-**11** &nbsp; [Workflow 6 · Branch to improve what you know best](11_wf-experiment.md) — **Experiment**
+**12** &nbsp; [Workflow 6 · Branch to improve what you know best](11_wf-experiment.md) — **Confidence**
 
-**12** &nbsp; [Workflow 7 · Give AI the same context as the team](12_wf-augment.md) — **Augment**
+**13** &nbsp; [Workflow 7 · Give AI the same context as the team](12_wf-augment.md) — **Context**
 
-**13** &nbsp; [Workflow 8 · Dean merges. The library improves.](13_wf-reuse.md) — **Reuse**
+**14** &nbsp; [Workflow 8 · Dean merges. The library improves.](13_wf-reuse.md) — **Community**
 
-**14** &nbsp; [Workflow 9 · Walk into the meeting knowing what changed](14_wf-catchup.md)
+**15** &nbsp; [Workflow 9 · Walk into the meeting knowing what changed](14_wf-catchup.md) — **Communications**
+
+**Constitution** is the thread: `CONSTITUTION.md` ships with the repo, Content Guard fires on every PR, AI reads the guardrails before it acts.
 
 &nbsp;
 
 ## Close
 
-**15** &nbsp; [Prompts Worth Stealing](15_prompts-worth-stealing.md)
+**16** &nbsp; [Prompts Worth Stealing](15_prompts-worth-stealing.md)
 
-**16** &nbsp; [When to Use What](16_when-to-use-what.md)
+**17** &nbsp; [Why GitHub](16_why-github.md)
 
-**17** &nbsp; [The Mindset Shift](17_mindset-shift.md)
+**18** &nbsp; ["But we already have..."](16b_why-not.md)
 
-**18** &nbsp; [Close](18_close.md)
+**19** &nbsp; [Where Each Tool Fits](16c_comparison.md)
+
+**20** &nbsp; [The Mindset Shift](17_mindset-shift.md)
+
+**21** &nbsp; [Close](18_close.md)
 
 &nbsp;
 

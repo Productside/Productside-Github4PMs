@@ -51,4 +51,4 @@
 
 ---
 
-[← Previous](14_wf-catchup.md) · [Next: When to Use What →](16_when-to-use-what.md) · [Run](run.md)
+[← Previous](14_wf-catchup.md) · [Next: Why GitHub →](16_why-github.md) · [Run](run.md)
