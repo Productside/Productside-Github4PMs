@@ -2,7 +2,7 @@
 
 **Capability: Share**
 
-Anatomy of Kenny's domain research Project. Stubs are fine and honest.
+Anatomy of a starter product research repository. Stubs are fine and honest.
 
 ```mermaid
 flowchart TD
@@ -24,4 +24,4 @@ flowchart TD
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

@@ -2,7 +2,7 @@
 
 **The problem and the reframe**
 
-Four familiar categories stacked, rather than one abstract metaphor. Dean's own framing.
+Four familiar categories stacked, rather than one abstract metaphor.
 
 ```mermaid
 flowchart TD
@@ -18,8 +18,8 @@ flowchart TD
   G --> M
 ```
 
-**The straw man to kill first:** search results will tell you it's an alternative to Jira. That's the wrong answer to the wrong question.
+**The mistake to avoid:** search results will tell you GitHub is an alternative to Jira. That's the wrong answer to the wrong question.
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

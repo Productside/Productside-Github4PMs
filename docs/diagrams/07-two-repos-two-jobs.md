@@ -2,26 +2,26 @@
 
 **Capability: Share**
 
-The architecture of the whole session. Kenny's work never leaves private.
+A common workplace pattern: private product context stays private, while reusable team assets can be published after review.
 
 ```mermaid
 flowchart LR
-  subgraph K["Kenny's machine · Windows"]
+  subgraph L["Local workspace"]
     KR["Domain research<br/>PRIVATE, stays private<br/>what the team believes"]
-    ML["Market intelligence<br/>cloned copy<br/>22 skills, 22 prompts"]
+    ML["Shared skills library<br/>cloned copy<br/>skills, prompts,<br/>templates"]
   end
-  subgraph P["Productside org"]
-    MI["Market Intelligence<br/>PUBLIC<br/>published before the show"]
+  subgraph O["Team or company org"]
+    MI["Reusable library<br/>PUBLIC or internal<br/>published after review"]
   end
-  D["Dean's machine · Mac"]
+  R["Reviewer"]
 
   MI -->|"clone, once"| ML
   ML -->|"run a sweep,<br/>write the evidence"| KR
-  D -->|"collaborator:<br/>issues and commits"| KR
+  R -->|"questions and<br/>review"| KR
   ML -->|"branch and<br/>pull request"| MI
-  MI -.->|"review and merge"| D
+  MI -.->|"review and merge"| R
 ```
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

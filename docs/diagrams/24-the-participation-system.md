@@ -2,7 +2,7 @@
 
 **Capability: Reuse**
 
-The wider loop the contribution sits inside. Candidate closing visual for the whole show.
+The wider loop the contribution sits inside.
 
 ```mermaid
 flowchart LR
@@ -27,4 +27,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

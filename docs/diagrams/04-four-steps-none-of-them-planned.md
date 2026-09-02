@@ -12,10 +12,10 @@ flowchart LR
   G --> W --> H --> P
 ```
 
-**The handoff line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
+**The useful line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
 
 ---
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

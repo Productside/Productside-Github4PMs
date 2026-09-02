@@ -6,8 +6,8 @@
 flowchart LR
   N["New Project"]
   PV["Private<br/>by default"]
-  RV{"Publication<br/>review"}
-  SC["Scrub, license,<br/>attribution, guard"]
+  RV{"Review"}
+  SC["Review, license,<br/>attribution, guard"]
   PB["Public,<br/>deliberately"]
 
   N --> PV --> RV
@@ -15,8 +15,8 @@ flowchart LR
   RV -->|"ready"| SC --> PB
 ```
 
-**The line:** start private. Make it public only when you mean to. Turning something public should feel like a small launch, not a casual settings change.
+**The line:** start private. Share deliberately. Public work deserves review, not vibes.
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

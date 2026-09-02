@@ -2,7 +2,7 @@
 
 **How to read these**
 
-Every diagram in this set uses the same four marks. Learn them here and they never change — which is the point. If you show more than two diagrams live, show this one first.
+Every diagram in this set uses the same four marks. Learn them here and they never change.
 
 ```mermaid
 flowchart LR
@@ -29,4 +29,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

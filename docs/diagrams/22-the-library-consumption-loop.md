@@ -7,7 +7,7 @@ How a team turns published assets into adopted practice, and how improvements fl
 ```mermaid
 flowchart LR
   PB["Published library<br/>skills, templates,<br/>frameworks"]
-  CL["Clone it"]
+  CL["Browse or<br/>clone it"]
   RN["Run a skill<br/>on your domain"]
   OP["Structured output<br/>cited, formatted"]
   WR["Written into<br/>your repo"]
@@ -23,4 +23,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

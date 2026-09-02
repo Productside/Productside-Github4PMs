@@ -17,8 +17,8 @@ gitGraph
   commit id: "open question closed"
 ```
 
-**The line:** no more "ask Dean, he remembers why we changed that."
+**The line:** no more "ask the one person who remembers why we changed that."
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

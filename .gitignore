@@ -9,10 +9,15 @@
 
 # Local scratch
 scratch/
+.local/
 *.tmp
 
-# Binary presentation files
+# Binary artifacts kept outside the public-facing repo
+*.docx
+*.pdf
 *.pptx
+~$*.docx
+~$*.pdf
 ~$*.pptx
 
 # Never commit local secrets

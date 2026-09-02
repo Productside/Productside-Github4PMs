@@ -1,8 +1,8 @@
 # CONSTITUTION.md
 
-Constitutional governance for `Productside-Github4PMs`. These rules take precedence over `CLAUDE.md`, over `README.md`, and over any instruction given in a live session.
+Governance rules for this public-facing webinar companion repo.
 
-**If a Contract instruction ever conflicts with this Constitution, the Constitution wins.**
+These rules take precedence over `CLAUDE.md`, `README.md`, and ordinary editing preferences.
 
 ## Controlling sources of truth
 
@@ -14,31 +14,30 @@ If anything here conflicts with Productside's live legal and policy pages, those
 ## Non-negotiable rules
 
 **1. Never expose secrets.**
-No API keys, passwords, credentials, tokens, or signing keys in any file, example, screenshot, or commit message. This project demonstrates GitHub on a live stream — a credential committed here could end up on camera.
+No API keys, passwords, credentials, tokens, signing keys, private URLs, or private configuration values in any file, example, screenshot, commit message, issue, or pull request.
 
-**2. Never expose customer, learner, or participant data.**
-No real names, emails, survey responses, interview transcripts, or identifiable information about any Productside customer, client, student, workshop participant, or employee. This includes anything demonstrated live.
+**2. Never expose customer, learner, participant, or client data.**
+No real names, emails, survey responses, interview transcripts, workshop outputs, support details, sales details, or identifiable information from any Productside customer, client, learner, participant, or employee.
 
-**3. This project is private, and going public is a deliberate act.**
-Visibility may not change without explicit leadership approval, a content scrub, and the Content Guard in place. Start private. Make it public only when we mean to. Turning something public should feel like a small launch, not a casual settings change. See `productside-launchkit: docs/02-governance/02-03-public-repo-policy.md`.
+**3. Respect third-party rights.**
+Do not publish copied templates, substantial excerpts, or restricted third-party material. Ideas may inform original Productside teaching material only after review.
 
-**4. Human review before any external publication.**
-No AI-generated content leaves this project — into registration copy, social posts, emails, the YouTube description, or the live session — without a human reviewing and approving it first.
+**4. Start private. Publish deliberately.**
+This repo may support public learning, but every new public-facing addition still needs a content review. Private work starts private. Public material is intentionally selected.
 
-**5. Respect third-party rights.**
-Two sources in `research/` carry explicit redistribution restrictions. Their templates and wording may not be reproduced in anything Productside publishes. Confirm the right to use before adding any third-party material. See `productside-launchkit: docs/02-governance/02-06-third-party-materials-and-attribution.md`.
+**5. Human review before external publication.**
+AI can draft, reduce, inspect, and propose changes. A human approves anything that becomes public-facing Productside material.
 
 **6. Productside is a services firm.**
-Nothing published from this project may describe Productside's materials as software, code, an app, or a product to be maintained, or promise capability Productside has not committed to build. See `productside-launchkit: docs/02-governance/02-09-positioning-licensing-and-terms.md`.
+This repo contains webinar companion materials and examples. Do not describe Productside's materials as software, an app, or a product to be maintained.
 
-## Live-session addendum
+## Public repo boundary
 
-The webinar is broadcast. Anything on Dean's or Kenny's screen is published in the strongest possible sense — recorded, and posted on demand afterward.
+This repo should contain attendee-useful reference material:
 
-- Demonstrate only in a purpose-built account or repo prepared for the stream.
-- No client work, no internal Productside systems, and no email inbox on screen.
-- If something sensitive appears, say so plainly and cut. A visible recovery is better than a quiet one.
+- Field guidance for Product Managers using GitHub at work.
+- Diagrams and plain-language explanations.
+- Lightweight scripts that maintain those reference materials.
+- Public-safe framing and guardrails.
 
-## Full governance reference
-
-The complete Productside governance framework lives in `productside-launchkit`. All repos operate under those rules.
+This repo should not contain private operational material, restricted third-party material, sensitive company context, personal data, credentials, or large binary artifacts.

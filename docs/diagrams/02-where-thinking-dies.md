@@ -2,14 +2,14 @@
 
 **The problem and the reframe**
 
-Three destinations, all terminal, and the reason every AI session starts from zero.
+Three dead ends, and the reason every AI session starts from zero.
 
 ```mermaid
 flowchart LR
   T["What you<br/>actually figured out"]
   N["A doc<br/>nobody reopens"]
   S["A thread<br/>nobody can find"]
-  D["A deck rebuilt<br/>from scratch<br/>every quarter"]
+  D["A strategy<br/>presentation rebuilt<br/>from scratch"]
   X["Gone"]
   AI["Every AI tool<br/>you touch"]
   Z["Starts from zero<br/>you re-explain<br/>the product again"]
@@ -25,4 +25,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

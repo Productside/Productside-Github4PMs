@@ -10,7 +10,7 @@ flowchart TD
   CO["CONSTITUTION.md<br/>what it must not do"]
   CL["CLAUDE.md<br/>how to work here"]
   RE["README.md<br/>what this is about"]
-  RS["research/<br/>evidence and sources"]
+  RS["evidence/<br/>sources and observations"]
   DC["decisions/<br/>what the team settled"]
   SK["skills/<br/>what it can run"]
 
@@ -28,4 +28,4 @@ flowchart TD
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

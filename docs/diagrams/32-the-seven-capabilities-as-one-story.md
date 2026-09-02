@@ -1,6 +1,6 @@
 # The seven capabilities as one story
 
-**The spine and the runbook**
+**The complete model**
 
 Not seven demos. One team's thinking, compounding across seven capabilities.
 
@@ -20,4 +20,4 @@ flowchart TD
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

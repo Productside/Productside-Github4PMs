@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Split docs/diagrams.md into one file per diagram in docs/diagrams/.
 
-docs/diagrams.md is the source of truth and the reading order for the runbook.
+docs/diagrams.md is the source of truth and the reading order for the diagram set.
 This regenerates the individual files from it, so the two can never drift.
 
     python3 scripts/split-diagrams.py
@@ -66,7 +66,7 @@ def main() -> int:
             f"**{beat}**\n\n"
             f"{clean}\n\n"
             f"---\n\n"
-            f"[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)\n"
+            f"[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)\n"
         )
         (OUT / name).write_text(page, encoding="utf-8")
         rows.append((int(number), title, beat, name, has_diagram))

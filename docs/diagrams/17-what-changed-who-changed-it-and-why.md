@@ -2,7 +2,7 @@
 
 **Capability: Trace**
 
-The workflow-level view: a PM asks a question, the history answers it without a meeting.
+The workflow-level view: a Product Manager asks a question, the history answers it without a meeting.
 
 ```mermaid
 flowchart LR
@@ -27,4 +27,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

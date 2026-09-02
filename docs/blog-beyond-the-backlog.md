@@ -2,7 +2,7 @@
 
 *Your best thinking is dying in three places right now.*
 
-A Notion doc nobody reopens. A Slack thread nobody can find. A strategy deck rebuilt from scratch every quarter because the last one is "somewhere in the drive."
+A Notion doc nobody reopens. A Slack thread nobody can find. A strategy presentation rebuilt from scratch every quarter because the last one is "somewhere in the drive."
 
 Meanwhile, every AI tool your team touches starts from zero. You paste context into a chat window, get something useful back, and watch it vanish when the session ends. Tomorrow you will re-explain your product to the same tool, from scratch, again.
 
@@ -15,7 +15,7 @@ flowchart LR
   T["What you<br/>actually figured out"]
   N["A doc<br/>nobody reopens"]
   S["A thread<br/>nobody can find"]
-  D["A deck rebuilt<br/>from scratch<br/>every quarter"]
+  D["A strategy<br/>presentation rebuilt<br/>from scratch"]
   X["Gone"]
   AI["Every AI tool<br/>you touch"]
   Z["Starts from zero<br/>you re-explain<br/>the product again"]
@@ -37,7 +37,7 @@ GitHub is not Jira with a different logo. Think of it as part digital vault, par
 
 The version-control layer underneath does not care whether the files are source code, research notes, a decision record, or a competitive brief. It tracks what changed, who changed it, and why, the same way for all of them. The collaboration layer on top adds discussions, reviews, permissions, and automation that coordinate people, not just files.
 
-Not everything belongs there. Not everything should be public. And nobody is being asked to become a developer. What follows are seven capabilities that answer one question: does your product team have a place where its thinking can compound?
+Not everything belongs there. Not everything should be public. And nobody is being asked to become a developer. If GitHub has always looked like an engineering cockpit, start smaller: learn what to look at, ask an AI assistant to explain what you are seeing, and make one small product note reviewable. What follows are seven capabilities that answer one question: does your product team have a place where its thinking can compound?
 
 ---
 
@@ -49,7 +49,7 @@ A repository gives the team a single place where research, strategy, decisions, 
 
 In practice: a product manager working a new domain creates a private repo with a README explaining what the domain is and why the team cares, then stub files for what they know, what they do not know yet, and where they are looking. The files start near-empty, and that is honest. The value is not the content on day one. The value is that when someone asks "what do we know about this?" six months from now, the answer is a link, not a meeting.
 
-**In plain English:** the commit history on those two files IS your strategy timeline. No more "ask Dean, he remembers why we cut that feature."
+**In plain English:** the commit history on those two files IS your strategy timeline. No more "ask the one person who remembers why we cut that feature."
 
 **The honest limit:** a repository will not make anyone write things down. It is a place for the record, not a reason to keep one. If your team does not currently write decisions anywhere, this changes where nothing gets written.
 
@@ -149,14 +149,14 @@ flowchart LR
 
 A repository is not just a workspace. It is a publishable artifact. The skills, templates, frameworks, and guardrails your team builds can be shared, versioned, and improved by other teams. Not as a PDF emailed around, but as a living library that accepts contributions and runs its own quality checks.
 
-In practice: a product team publishes a library of market intelligence skills. Another PM clones it, runs a skill against their own domain, and gets structured, cited output. They find a gap, improve one skill, and contribute the improvement back through a pull request. The library gets better every time someone uses it.
+In practice: a product team publishes a library of market intelligence skills. Another Product Manager browses it, asks an AI assistant to explain how it works, and runs one skill against their own domain. Later, when they are ready, they can suggest an improvement through a pull request. The library gets better every time someone uses it.
 
 **In plain English:** tribal knowledge becomes team infrastructure. The next person who runs that skill gets your improvements automatically.
 
 ```mermaid
 flowchart LR
   PB["Published library<br/>skills, templates,<br/>frameworks"]
-  CL["Clone it"]
+  CL["Browse or<br/>clone it"]
   RN["Run a skill<br/>on your domain"]
   OP["Structured output<br/>cited, formatted"]
   WR["Written into<br/>your repo"]
@@ -176,7 +176,7 @@ flowchart LR
 
 Every capability above carried its own limit. These are the ones that belong to no single capability.
 
-**The interface overwhelms non-technical people.** This is real, and it is the most common reason adoption dies in week two. The fix is onboarding, not avoidance. A 30-minute walkthrough with an AI assistant handling the mechanics removes the entire learning curve.
+**The interface overwhelms non-technical people.** This is real, and it is the most common reason adoption dies in week two. The fix is onboarding, not avoidance. Start in the browser, give people a tiny first win, and let an AI assistant explain the mechanics before it performs them.
 
 **No Gantt charts.** Milestones are not timelines. If you run client-deadline work, you will still need a project management tool.
 
@@ -200,9 +200,9 @@ Your strategy doc gets rewritten every Monday. Your repository does not have to.
 
 You do not need to adopt all seven capabilities at once. Start with one repository, one README, and one other person.
 
-**If you want to see it done live**, [watch the recording of our September 2 webinar](https://productside.com/) where we built a working GitHub setup from scratch, on screen, in under an hour. No slides about GitHub. No command line. Just two product people and an AI assistant.
+**If you want the walkthrough**, [watch the recording of our September 2 webinar](https://productside.com/) for a practical tour of GitHub as a product-team workspace.
 
-**If you want to try it yourself**, the [Productside Market Intelligence Skills library](https://github.com/Productside/Productside-Market-Intelligence-Skills) is public. Clone it, run a skill, and see what a shared product library looks like in practice.
+**If you want to try it yourself**, browse the [Productside Market Intelligence Skills library](https://github.com/Productside/Productside-Market-Intelligence-Skills), ask an AI assistant to orient you, then clone it only when you want a local working copy.
 
 **If you want to go deeper**, explore [Productside's product management courses](https://productside.com/product-management-courses/) and the [tools and templates](https://productside.com/tools-and-templates/) that support them.
 

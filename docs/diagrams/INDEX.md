@@ -25,7 +25,7 @@ Edit [`../diagrams.md`](../diagrams.md) and run `python3 scripts/split-diagrams.
 | 18 | [Try a different approach without touching what the team trusts](18-try-a-different-approach-without-touching-what-the-team-trusts.md) | Capability: Experiment |
 | 19 | [Session starter, or durable context](19-session-starter-or-durable-context.md) | Capability: Augment |
 | 20 | [What the AI reads when it opens the repo](20-what-the-ai-reads-when-it-opens-the-repo.md) | Capability: Augment |
-| 21 | [Install, clone, or fork](21-install-clone-or-fork.md) | Capability: Reuse |
+| 21 | [Browse, clone, or fork](21-browse-clone-or-fork.md) | Capability: Reuse |
 | 22 | [The library consumption loop](22-the-library-consumption-loop.md) | Capability: Reuse |
 | 23 | [The contribution loop](23-the-contribution-loop.md) | Capability: Reuse |
 | 24 | [The participation system](24-the-participation-system.md) | Capability: Reuse |
@@ -36,7 +36,4 @@ Edit [`../diagrams.md`](../diagrams.md) and run `python3 scripts/split-diagrams.
 | 29 | [The evidence chain — reuse, do not rebuild *(note, no diagram)*](29-the-evidence-chain-reuse-do-not-rebuild.md) | Guardrails and governance |
 | 30 | [Assumption to decision, connected](30-assumption-to-decision-connected.md) | Guardrails and governance |
 | 31 | [Confidence stacks across independent sources](31-confidence-stacks-across-independent-sources.md) | Guardrails and governance |
-| 32 | [The seven capabilities as one story](32-the-seven-capabilities-as-one-story.md) | The spine and the runbook |
-| 33 | [When something breaks on camera](33-when-something-breaks-on-camera.md) | The spine and the runbook |
-| 34 | [The hour](34-the-hour.md) | The spine and the runbook |
-| 35 | [Kenny's ten days](35-kenny-s-ten-days.md) | The spine and the runbook |
+| 32 | [The seven capabilities as one story](32-the-seven-capabilities-as-one-story.md) | The complete model |

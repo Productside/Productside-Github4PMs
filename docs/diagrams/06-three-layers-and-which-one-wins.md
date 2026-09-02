@@ -2,7 +2,7 @@
 
 **Capability: Share**
 
-Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
+One useful repo anatomy pattern. The mechanism is **precedence**.
 
 ```mermaid
 flowchart TD
@@ -15,8 +15,8 @@ flowchart TD
   CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
 ```
 
-**Three files, three jobs, and the third one wins.** Say it here; call back to it in the Constitution capability.
+**Three files, three jobs, and the third one wins.**
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

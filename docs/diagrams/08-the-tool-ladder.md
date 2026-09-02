@@ -15,10 +15,10 @@ flowchart TD
   CD -.->|"if anything stalls"| B
 ```
 
-**Kenny never types a git command at any rung.** He says sentences.
+**The adoption idea:** the person using the workflow can ask for outcomes in plain English while the tool handles the mechanics.
 
 ---
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

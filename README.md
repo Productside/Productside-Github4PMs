@@ -1,93 +1,104 @@
-# Productside-Github4PMs
+# Beyond the Backlog
 
-Working project for the Productside webinar **"Beyond the Backlog: How GitHub Compounds Your Product Team's Thinking"** — Wednesday, September 2, 2026, 1PM ET / 10AM PT.
+**A webinar companion for Product Managers who want to start using GitHub at work.**
 
-**Status: private.** Nothing here is published. See [CONSTITUTION.md](CONSTITUTION.md) before that changes.
+GitHub can feel like it belongs to engineers. This repo is here to make it useful for Product Managers too: as a place to keep product context, decisions, evidence, experiments, reviews, and reusable practices where the team and its AI assistants can find them again.
 
-## What this project is
+You do not need to code to get value from this repo.
 
-A live, hands-on webinar in which Dean Peters and Kenny Kranseler build a GitHub setup from scratch, on screen, in the wild. No slides about GitHub. No net. Attendees can follow along in their own browser and leave with a working repo instead of notes about one.
+If GitHub makes you nervous, start in the browser and do not clone anything yet. Your job is to read the product context, ask better questions, and make small changes reviewable. The tools can handle the mechanics later.
 
-The session is organized around seven capabilities that answer one question: *Does your product team have a place where its thinking can compound?*
+## Start Here
 
-| Capability | The promise |
+Your first win is to understand one workflow well enough to try it safely.
+
+1. Open the [Field Guide](docs/field-guide.md).
+2. Do the browser-only exercise in **First Win: Read a Repo Like a Product Manager**.
+3. Then try the second or third win when you are ready.
+
+## Three Quick Wins
+
+| Win | What you will do | Where to start |
+|---|---|---|
+| **First win** | Read a repo and know what matters | [Read a repo like a Product Manager](docs/field-guide.md#first-win-read-a-repo-like-a-product-manager) |
+| **Second win** | Ask an AI assistant to orient you without touching anything | [Ask for orientation](docs/field-guide.md#second-win-ask-for-orientation) |
+| **Third win** | Make one small product note reviewable | [Make one change safely](docs/field-guide.md#third-win-make-one-change-safely) |
+
+## What GitHub Helps Product Teams Do
+
+| Workflow | In plain English |
 |---|---|
-| **Share** | A complete product workspace where research, strategy, decisions, and evidence live together |
-| **Collaborate** | Work together without trampling each other: discussions for questions, issues for commitments |
-| **Review** | Make changes reviewable before they become truth |
+| **Share** | Give product context one durable home |
+| **Collaborate** | Keep questions, commitments, and disagreement visible |
+| **Review** | Check proposed changes before they become accepted context |
 | **Trace** | See what changed, who changed it, and why |
-| **Experiment** | Explore alternatives without breaking what works |
-| **Augment** | Give AI the same persistent context as the team |
-| **Reuse** | Turn practices into reusable assets another PM or team can adopt and improve |
+| **Experiment** | Try alternatives without disturbing the version the team trusts |
+| **Augment** | Let AI read the same durable context as the team |
+| **Reuse** | Turn useful practices into assets another Product Manager or team can adopt |
 
-Beyond September 2, this material is intended for reuse in Productside classes, workshops, and advisory engagements.
+Open [The seven capabilities as one story](docs/diagrams/32-the-seven-capabilities-as-one-story.md) if you want the whole model on one page.
 
-## What lives here
+## Use The Prompts
 
-```
-docs/
-  run-of-show.md         The live-build script: timings, who does what, failure recovery
-  polls.md               The two audience polls — SOURCE OF TRUTH for question and option text
-  seed-questions.md      Seven Q&A seeds for Kenny to ask if the room is quiet
-  slide-plan.md          Deck spec, built on the canonical Productside webinar template
-  kenny-prep.md          Kenny's 10-day track: what he sets up, what he rehearses, by when
-  mi-repo-publication.md Audit + checklist for making the market intelligence Project public
-  diagrams.md            All 29 diagrams in runbook reading order — SOURCE OF TRUTH
-  diagrams/              The same diagrams, one file each, plus INDEX.md (generated)
-  slides/
-    00_the-problem.md .. 10_the-honest-part.md   Branded play pages for the teaching middle
-    run.md             Teleprompter page linking all 11 play pages sequentially
-    assets/            Exported diagram PNGs (mermaid + Figma) — not tracked by git
-    *.pptx             The deck — not tracked by git
-  *.docx                 Dean's source documents (abstract template, internal training proposal)
-scripts/
-  split-diagrams.py      Regenerates docs/diagrams/ from docs/diagrams.md
-research/
-  findings/              Digested, cross-referenced source material — START HERE
-  web-searches/          8 AI-generated research docs (Claude, GPT, Gemini, Google)
-  youtube-transcripts/   4 transcripts; the Anne Thomas talk is the strongest single source
-HANDOFF.md               Current state, critical path to Sept 2, deck spec, publication plan
-CLAUDE.md                How AI assistance works in this project
-CONSTITUTION.md          Non-negotiable rules that override everything else
+Copy one of these into Claude Code, Codex, GitHub Copilot, or whatever AI assistant can see your files.
+
+```text
+Explain this repo for a Product Manager. What is the purpose,
+what files matter most, what decisions are visible, and what
+should I avoid changing without review?
 ```
 
-`research/findings/README.md` is the index between the raw sources and the outline. Read it before touching the content.
+```text
+Turn this unresolved product question into a GitHub issue with
+context, options, and a clear decision needed.
+```
 
-## Decisions already made
+```text
+Show me what changed, summarize the product impact, and suggest
+what a teammate should review before this becomes accepted.
+```
 
-- **Title is final:** "Beyond the Backlog." The subtitle "How GitHub Compounds Your Product Team's Thinking" is a placeholder; Dean decides. The old title ("Five GitHub Plays for Product Teams") and the original title ("How to Set Up a GitHub for Your Product Team") both appear in older research notes; ignore them.
-- **Format is live and hands-on**, not slides. Mistakes stay in.
-- **Kenny is a co-presenter at the keyboard**, not just a moderator — he builds, hits the snags, and gets unstuck on camera. Dean narrates and rescues. The abstract document's "Moderator" field understates this.
-- **One webinar, not two.** The Five Plays session and the draft in `productside-launchkit` are the same September 2 event. The Constitution play absorbs the launchkit's category-trap, licensing, and secrets material.
-- **The internal Lunch & Learn is a separate build** — different audience (Productside staff), different stakes. Shared source material, distinct outline.
-- **Session length is written for 60 minutes**, with 45-minute cut marks in the run-of-show. Confirm the actual slot with marketing.
-- **Two repos, two jobs.** Kenny's domain-research repo is **private and stays private** — the session never violates its own "start private" rule. The Productside market intelligence repo is public, and Kenny is a collaborator on it.
-- **Kenny clones the market intelligence repo once**, in Play 3, and works from it standalone. A pull request needs a branch and a branch needs a clone, so the clone happens early and openly.
-- **Kenny is on Windows, Dean is on a Mac.** Narrated, not hidden — it's what a real team looks like, and it kills the "I'd need my engineers' setup" objection.
-- **Tool handoff:** Claude Desktop reads and writes the local folder; Claude Code does the git. Kenny never types a git command.
-- **Dean opens with a three-minute git origin story** on his own terminal — history, not a tutorial.
-- **The seven capabilities are one continuous story**, not seven demos: the team needs a shared workspace, they need to collaborate and review, trace decisions, experiment safely, let AI work from the same context, and turn what works into reusable assets.
+## Clone This Repo When You Are Ready
 
-## Start here
+You can read everything in the browser. Clone it only when you want a local copy to annotate, adapt, or inspect with an AI assistant. Cloning is a later win, not the price of admission.
 
-[`HANDOFF.md`](HANDOFF.md) — current state, the dated critical path to September 2, the deck spec, and the plan for publishing this Project afterward.
+```bash
+mkdir -p ~/Projects
+cd ~/Projects
+git clone https://github.com/Productside/Productside-Github4PMs.git
+cd Productside-Github4PMs
+```
 
-## Next ten days
+After cloning, ask:
 
-Kenny is the student and the audience's proxy. His prep track is in [`docs/kenny-prep.md`](docs/kenny-prep.md) — two joint dry runs (Wed Aug 26, Fri Aug 28), a tech check Sep 1, and a deliberately empty weekend buffer.
+```text
+Orient me to this repo as a first-time Product Manager reader.
+What should I read first, what should I try first, and what
+should I ignore for now?
+```
 
-- **The contribution piece is a new framework skill** — McKinsey Growth Pyramid or BCG growth-share matrix, neither of which exists in the library. Leaning Growth Pyramid because Kenny has presented on it and can speak to it fluently if the demo stalls. Must be prefabbed and green against the validator before Aug 27.
+## What Lives Here
 
-## Still open
+| Path | Purpose |
+|---|---|
+| [docs/field-guide.md](docs/field-guide.md) | The main practical guide |
+| [docs/diagrams/INDEX.md](docs/diagrams/INDEX.md) | Reusable workflow diagrams |
+| [docs/diagrams.md](docs/diagrams.md) | Editable source for the diagram set |
+| [docs/blog-beyond-the-backlog.md](docs/blog-beyond-the-backlog.md) | Longer-form webinar framing |
+| [CLAUDE.md](CLAUDE.md) | Guidance for AI assistants working in this repo |
+| [CONSTITUTION.md](CONSTITUTION.md) | Safety, privacy, and reuse rules |
 
-- The takeaway artifact: is there a template repo attendees clone afterward, or is the on-screen build the whole deliverable?
-- Marketing copy is unwritten — LinkedIn Live, four social posts, four emails, and the YouTube description are all still `[insert copy here]` in the abstract document.
-- The Copilot standardization rule appears in Dean's internal training document but not in the launchkit's `CONSTITUTION.md`. Reconcile, or use it in the webinar only.
-- `productside-launchkit` 02-09's "Training Deliverables → No" row reads stricter than the actual rule and invites a wrong reading. Consider rewording to "materials whose rights are not solely Productside's." 
+## Use This Safely At Work
 
-## Provenance and reuse
+Start private. Keep sensitive product, customer, learner, and company material out of public repositories. Make sharing a deliberate review step, not a casual settings change.
 
-Two research sources carry redistribution restrictions and must not be copied into anything published. See the top of `research/findings/third-party-gems.md` before reusing any template or wording from third-party material.
+Before sharing anything from your organization, ask:
+
+- Does this include customer, employee, learner, or client information?
+- Does this include confidential product, sales, support, finance, or strategy context?
+- Did we copy wording, templates, or assets from someone else?
+- Would we be comfortable with this appearing in search results?
+- Has a human reviewed it?
 
 ---
 

@@ -1,4 +1,4 @@
-# Install, clone, or fork
+# Browse, clone, or fork
 
 **Capability: Reuse**
 
@@ -7,10 +7,10 @@ Three ways to consume the same library, for three different intents.
 ```mermaid
 flowchart TD
   W{"What do you<br/>want to do"}
-  I["Install<br/>two lines,<br/>nothing to manage"]
+  I["Browse<br/>learn without<br/>changing anything"]
   C["Clone<br/>a copy you can<br/>read and change"]
   F["Fork<br/>your own copy<br/>on GitHub"]
-  U["Just run the skills"]
+  U["Understand<br/>how it works"]
   CH["Change it and<br/>contribute back"]
   OW["Take it your<br/>own direction"]
 
@@ -19,8 +19,8 @@ flowchart TD
   W --> OW --> F
 ```
 
-**Kenny clones**, because a pull request needs a branch and a branch needs a clone.
+**Why browse first:** you can learn the pattern before you touch the machinery.
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

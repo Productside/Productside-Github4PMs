@@ -1,17 +1,14 @@
 # Content Guard
 #
-# Rejects material that must never enter a Productside Project:
-#   1. blocked terms (client and customer names) sourced from a repository
-#      or organization secret, never from a file in the tree
-#   2. file types that belong in SharePoint, per 01-05 Choosing Where Work Lives
+# Rejects material that should not enter this repository:
+#   1. configured blocked terms sourced from a repository or organization
+#      secret, never from a file in the tree
+#   2. binary document formats that do not belong in a lightweight reference repo
 #   3. oversized files that make every clone slower forever
 #   4. anything that looks like a credential
 #
-# Install: copy to .github/workflows/content-guard.yml in the target Project.
-#
-# Configure: add a repository or organization secret named BLOCKED_TERMS
-# containing one term per line. Keep it as a secret, not a file. A list of
-# client names committed to a public Project is itself a client list.
+# Configure the blocked-term secret in GitHub repository or organization
+# settings. Keep sensitive term lists out of the repository.
 
 name: Content Guard
 
@@ -24,7 +21,7 @@ jobs:
   guard:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the full history
+      - name: Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -46,18 +43,18 @@ jobs:
           echo "Files changed:"
           cat /tmp/changed.txt
 
-      - name: Reject file types that belong in SharePoint
+      - name: Reject binary document formats
         run: |
           BAD=$(grep -iE '\.(docx?|pptx?|xlsx?|pdf|msg|eml)$' /tmp/changed.txt || true)
           if [ -n "$BAD" ]; then
-            echo "::error::These file types belong in SharePoint, not in a Project:"
+            echo "::error::These binary document formats do not belong in this reference repo:"
             echo "$BAD"
             echo ""
-            echo "See 01-05 Choosing Where Work Lives. If you open it in Word,"
-            echo "PowerPoint, Excel, or Outlook, it is a SharePoint file."
+            echo "Keep large editable documents in the team's document system"
+            echo "and link to approved public resources when needed."
             exit 1
           fi
-          echo "No SharePoint file types found."
+          echo "No blocked binary document formats found."
 
       - name: Reject oversized files
         run: |
@@ -73,9 +70,9 @@ jobs:
           done < /tmp/changed.txt
           if [ "$FAIL" = "1" ]; then
             echo ""
-            echo "Large files make every clone slower for everyone, forever,"
-            echo "even after the file is deleted. Put it in SharePoint and"
-            echo "link to it instead."
+            echo "Large files make every clone slower for everyone."
+            echo "Keep them in the team's document system and link to approved"
+            echo "public resources when needed."
             exit 1
           fi
           echo "No oversized files."
@@ -88,15 +85,12 @@ jobs:
         run: |
           if [ -z "$BLOCKED_TERMS" ]; then
             if [ "$IS_PRIVATE" != "true" ] && [ "$IS_FORK_PR" != "true" ]; then
-              echo "::error::No BLOCKED_TERMS secret is configured, so client"
-              echo "and customer names are NOT being checked, and this Project"
-              echo "is public. Grant the organization secret BLOCKED_TERMS to"
-              echo "this repository before publishing."
+              echo "::error::Required blocked-term checking is not configured."
+              echo "Configure the repository or organization secret used by this workflow."
               exit 1
             fi
-            echo "::warning::No BLOCKED_TERMS secret is configured, so client"
-            echo "and customer names are NOT being checked. Add a repository or"
-            echo "organization secret named BLOCKED_TERMS, one term per line."
+            echo "::warning::Blocked-term checking is not configured."
+            echo "Configure the repository or organization secret used by this workflow."
             exit 0
           fi
           FAIL=0
@@ -114,9 +108,8 @@ jobs:
           done <<< "$BLOCKED_TERMS"
           if [ "$FAIL" = "1" ]; then
             echo ""
-            echo "A blocked term is a client or customer name that must not"
-            echo "appear in any Project, public or private. When in doubt,"
-            echo "leave it out. Ask before working around this."
+            echo "A blocked term matched this change. Remove it or get"
+            echo "explicit approval before proceeding."
             exit 1
           fi
           echo "No blocked terms found."
@@ -136,8 +129,7 @@ jobs:
           if [ "$FAIL" = "1" ]; then
             echo ""
             echo "If a real credential reached this branch, treat it as an"
-            echo "incident: rotate the key first, then remove it. Deleting the"
-            echo "file does not remove it from history."
+            echo "incident: rotate the key first, then remove it."
             exit 1
           fi
           echo "No credential patterns found."

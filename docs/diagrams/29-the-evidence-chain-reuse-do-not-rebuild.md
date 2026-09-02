@@ -2,10 +2,10 @@
 
 **Guardrails and governance**
 
-**This diagram already exists** in `Productside-Market-Intelligence-Skills/README.md` — `Instantiate → Collect → Fuse → Act → Monitor`, with a dotted "what changed" edge feeding the next run.
+Use a reusable evidence chain when a team repeats the same product-learning workflow across markets, customers, competitors, or releases.
 
-Pull it up from the Project on screen. That the library documents its own method is the point, and showing it live beats reproducing it here.
+The useful pattern is: instantiate the workflow, collect evidence, fuse what was found, act on the result, monitor what changes, then feed those changes into the next run.
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

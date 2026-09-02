@@ -2,7 +2,7 @@
 
 **Capability: Experiment**
 
-The PM-facing version: you do not need permission to be wrong, you need a safe place for it.
+The Product Manager-facing version: you do not need permission to be wrong, you need a safe place for it.
 
 ```mermaid
 flowchart TD
@@ -25,4 +25,4 @@ flowchart TD
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)

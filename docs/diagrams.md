@@ -1,12 +1,12 @@
 # Diagrams
 
-The visual bench for the webinar, **organized by capability**. Not all of these go on screen — that's a live call. The point is to have more than you need and choose.
+The visual bench for the webinar companion repo, **organized by capability**. These diagrams are meant to help Product Managers explain, adopt, and adapt GitHub as a product-team workspace.
 
-Every diagram here is mermaid in markdown, which GitHub renders natively — so each one is text, version-controlled, and diffable in a pull request. **Say that out loud the first time one appears.** A diagram you can diff is the thesis of this session; a downloaded PNG quietly contradicts it.
+Every diagram here is Mermaid in Markdown, which GitHub renders natively. Each diagram is text, version-controlled, and reviewable like any other product note.
 
-**This file is the source of truth.** Individual per-diagram files live in [`diagrams/`](diagrams/INDEX.md) and are generated — edit here, then run `python3 scripts/split-diagrams.py`.
+**This file is the source of truth.** Individual per-diagram files live in [`diagrams/`](diagrams/INDEX.md) and are generated. Edit here, then run `python3 scripts/split-diagrams.py`.
 
-House style, matching `Productside-Market-Intelligence-Skills` and `Productside-Precedents-Thinking`: `flowchart` with quoted labels, `<br/>` for line breaks, dotted edges for feedback, no color. **Labels must never contain `](`** — the link validator reads raw text including fenced blocks and would misread it as a broken relative link.
+House style: `flowchart` with quoted labels, `<br/>` for line breaks, dotted edges for feedback, no color. Labels should stay short and readable.
 
 ---
 ---
@@ -15,7 +15,7 @@ House style, matching `Productside-Market-Intelligence-Skills` and `Productside-
 
 ## 1. The notation, once
 
-Every diagram in this set uses the same four marks. Learn them here and they never change — which is the point. If you show more than two diagrams live, show this one first.
+Every diagram in this set uses the same four marks. Learn them here and they never change.
 
 ```mermaid
 flowchart LR
@@ -45,14 +45,14 @@ flowchart LR
 
 ## 2. Where thinking dies
 
-Three destinations, all terminal, and the reason every AI session starts from zero.
+Three dead ends, and the reason every AI session starts from zero.
 
 ```mermaid
 flowchart LR
   T["What you<br/>actually figured out"]
   N["A doc<br/>nobody reopens"]
   S["A thread<br/>nobody can find"]
-  D["A deck rebuilt<br/>from scratch<br/>every quarter"]
+  D["A strategy<br/>presentation rebuilt<br/>from scratch"]
   X["Gone"]
   AI["Every AI tool<br/>you touch"]
   Z["Starts from zero<br/>you re-explain<br/>the product again"]
@@ -68,7 +68,7 @@ flowchart LR
 
 ## 3. What GitHub actually is
 
-Four familiar categories stacked, rather than one abstract metaphor. Dean's own framing.
+Four familiar categories stacked, rather than one abstract metaphor.
 
 ```mermaid
 flowchart TD
@@ -84,7 +84,7 @@ flowchart TD
   G --> M
 ```
 
-**The straw man to kill first:** search results will tell you it's an alternative to Jira. That's the wrong answer to the wrong question.
+**The mistake to avoid:** search results will tell you GitHub is an alternative to Jira. That's the wrong answer to the wrong question.
 
 ## 4. Four steps, none of them planned
 
@@ -98,7 +98,7 @@ flowchart LR
   G --> W --> H --> P
 ```
 
-**The handoff line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
+**The useful line:** every one of those steps was somebody discovering the tool did more than it was built to do. We're just the next ones to notice.
 
 ---
 ---
@@ -107,7 +107,7 @@ flowchart LR
 
 ## 5. What goes in the repo
 
-Anatomy of Kenny's domain research Project. Stubs are fine and honest.
+Anatomy of a starter product research repository. Stubs are fine and honest.
 
 ```mermaid
 flowchart TD
@@ -129,7 +129,7 @@ flowchart TD
 
 ## 6. Three layers, and which one wins
 
-Productside's own repo anatomy — not a GitHub feature. The mechanism is **precedence**.
+One useful repo anatomy pattern. The mechanism is **precedence**.
 
 ```mermaid
 flowchart TD
@@ -142,28 +142,28 @@ flowchart TD
   CX -.->|"a conflict escalates upward,<br/>never the other way"| CN
 ```
 
-**Three files, three jobs, and the third one wins.** Say it here; call back to it in the Constitution capability.
+**Three files, three jobs, and the third one wins.**
 
 ## 7. Two repos, two jobs
 
-The architecture of the whole session. Kenny's work never leaves private.
+A common workplace pattern: private product context stays private, while reusable team assets can be published after review.
 
 ```mermaid
 flowchart LR
-  subgraph K["Kenny's machine · Windows"]
+  subgraph L["Local workspace"]
     KR["Domain research<br/>PRIVATE, stays private<br/>what the team believes"]
-    ML["Market intelligence<br/>cloned copy<br/>22 skills, 22 prompts"]
+    ML["Shared skills library<br/>cloned copy<br/>skills, prompts,<br/>templates"]
   end
-  subgraph P["Productside org"]
-    MI["Market Intelligence<br/>PUBLIC<br/>published before the show"]
+  subgraph O["Team or company org"]
+    MI["Reusable library<br/>PUBLIC or internal<br/>published after review"]
   end
-  D["Dean's machine · Mac"]
+  R["Reviewer"]
 
   MI -->|"clone, once"| ML
   ML -->|"run a sweep,<br/>write the evidence"| KR
-  D -->|"collaborator:<br/>issues and commits"| KR
+  R -->|"questions and<br/>review"| KR
   ML -->|"branch and<br/>pull request"| MI
-  MI -.->|"review and merge"| D
+  MI -.->|"review and merge"| R
 ```
 
 ## 8. The tool ladder
@@ -181,7 +181,7 @@ flowchart TD
   CD -.->|"if anything stalls"| B
 ```
 
-**Kenny never types a git command at any rung.** He says sentences.
+**The adoption idea:** the person using the workflow can ask for outcomes in plain English while the tool handles the mechanics.
 
 ---
 ---
@@ -190,13 +190,13 @@ flowchart TD
 
 ## 9. Two machines, one understanding
 
-Windows and macOS, different paths, same repo. The objection this kills: *"I'd need the same setup as my engineers."*
+Different machines, different paths, same repo. The objection this helps with: *"I'd need the same setup as my engineers."*
 
 ```mermaid
 flowchart LR
-  K["Kenny · Windows<br/>C:\\Users\\...\\Documents"]
+  K["Product Manager<br/>Windows<br/>C:\\Users\\...\\Documents"]
   R["The repo<br/>does not care"]
-  D["Dean · Mac<br/>~/Documents"]
+  D["Teammate<br/>Mac<br/>~/Projects"]
 
   K -->|"commit and push"| R
   D -->|"commit and push"| R
@@ -332,7 +332,7 @@ gitGraph
   commit id: "open question closed"
 ```
 
-**The line:** no more "ask Dean, he remembers why we changed that."
+**The line:** no more "ask the one person who remembers why we changed that."
 
 ## 16. A decision record is superseded, never deleted
 
@@ -352,7 +352,7 @@ flowchart LR
 
 ## 17. What changed, who changed it, and why
 
-The workflow-level view: a PM asks a question, the history answers it without a meeting.
+The workflow-level view: a Product Manager asks a question, the history answers it without a meeting.
 
 ```mermaid
 flowchart LR
@@ -380,7 +380,7 @@ flowchart LR
 
 ## 18. Try a different approach without touching what the team trusts
 
-The PM-facing version: you do not need permission to be wrong, you need a safe place for it.
+The Product Manager-facing version: you do not need permission to be wrong, you need a safe place for it.
 
 ```mermaid
 flowchart TD
@@ -436,7 +436,7 @@ flowchart TD
   CO["CONSTITUTION.md<br/>what it must not do"]
   CL["CLAUDE.md<br/>how to work here"]
   RE["README.md<br/>what this is about"]
-  RS["research/<br/>evidence and sources"]
+  RS["evidence/<br/>sources and observations"]
   DC["decisions/<br/>what the team settled"]
   SK["skills/<br/>what it can run"]
 
@@ -455,17 +455,17 @@ flowchart TD
 
 # Capability: Reuse
 
-## 21. Install, clone, or fork
+## 21. Browse, clone, or fork
 
 Three ways to consume the same library, for three different intents.
 
 ```mermaid
 flowchart TD
   W{"What do you<br/>want to do"}
-  I["Install<br/>two lines,<br/>nothing to manage"]
+  I["Browse<br/>learn without<br/>changing anything"]
   C["Clone<br/>a copy you can<br/>read and change"]
   F["Fork<br/>your own copy<br/>on GitHub"]
-  U["Just run the skills"]
+  U["Understand<br/>how it works"]
   CH["Change it and<br/>contribute back"]
   OW["Take it your<br/>own direction"]
 
@@ -474,7 +474,7 @@ flowchart TD
   W --> OW --> F
 ```
 
-**Kenny clones**, because a pull request needs a branch and a branch needs a clone.
+**Why browse first:** you can learn the pattern before you touch the machinery.
 
 ## 22. The library consumption loop
 
@@ -483,7 +483,7 @@ How a team turns published assets into adopted practice, and how improvements fl
 ```mermaid
 flowchart LR
   PB["Published library<br/>skills, templates,<br/>frameworks"]
-  CL["Clone it"]
+  CL["Browse or<br/>clone it"]
   RN["Run a skill<br/>on your domain"]
   OP["Structured output<br/>cited, formatted"]
   WR["Written into<br/>your repo"]
@@ -499,7 +499,7 @@ flowchart LR
 
 ## 23. The contribution loop
 
-The segment Kenny rehearses most.
+The reusable contribution path.
 
 ```mermaid
 flowchart LR
@@ -509,7 +509,7 @@ flowchart LR
   PU["Commit and push"]
   PR["Open the<br/>pull request"]
   G{"Content guard<br/>runs as a check"}
-  RV["Dean reviews<br/>on his Mac"]
+  RV["A teammate reviews"]
   M["Merge to main"]
 
   C --> BR --> A --> PU --> PR --> G
@@ -518,11 +518,11 @@ flowchart LR
   RV --> M
 ```
 
-**The red path is not a failure state.** A guard that catches something on camera is worth more than a green tick.
+**The red path is not a failure state.** A guard that catches something early is worth more than a false green check.
 
 ## 24. The participation system
 
-The wider loop the contribution sits inside. Candidate closing visual for the whole show.
+The wider loop the contribution sits inside.
 
 ```mermaid
 flowchart LR
@@ -550,11 +550,11 @@ flowchart LR
 
 ## 25. Pull latest and see what moved
 
-The workflow a PM runs every morning: what changed since I was last here, and why.
+The workflow a Product Manager runs every morning: what changed since I was last here, and why.
 
 ```mermaid
 flowchart LR
-  PM["PM opens<br/>the repo"]
+  PM["Product Manager<br/>opens the repo"]
   PL["Pull latest<br/>from main"]
   DF["See the diff<br/>what changed overnight"]
   CM["Read commit messages<br/>who changed it and why"]
@@ -593,7 +593,7 @@ flowchart LR
   G -->|"clean"| P
 ```
 
-**Dean's shape, verbatim:** the obvious concern is, could we accidentally expose something sensitive? Yes, if we were sloppy. Which is why we are not being sloppy.
+**The useful shape:** the obvious concern is, could we accidentally expose something sensitive? Yes, if we were sloppy. Which is why we are not being sloppy.
 
 ## 27. Nothing is born public
 
@@ -601,8 +601,8 @@ flowchart LR
 flowchart LR
   N["New Project"]
   PV["Private<br/>by default"]
-  RV{"Publication<br/>review"}
-  SC["Scrub, license,<br/>attribution, guard"]
+  RV{"Review"}
+  SC["Review, license,<br/>attribution, guard"]
   PB["Public,<br/>deliberately"]
 
   N --> PV --> RV
@@ -610,7 +610,7 @@ flowchart LR
   RV -->|"ready"| SC --> PB
 ```
 
-**The line:** start private. Make it public only when you mean to. Turning something public should feel like a small launch, not a casual settings change.
+**The line:** start private. Share deliberately. Public work deserves review, not vibes.
 
 ## 28. Which materials may go public
 
@@ -640,9 +640,9 @@ flowchart TD
 
 ## 29. The evidence chain — reuse, do not rebuild
 
-**This diagram already exists** in `Productside-Market-Intelligence-Skills/README.md` — `Instantiate → Collect → Fuse → Act → Monitor`, with a dotted "what changed" edge feeding the next run.
+Use a reusable evidence chain when a team repeats the same product-learning workflow across markets, customers, competitors, or releases.
 
-Pull it up from the Project on screen. That the library documents its own method is the point, and showing it live beats reproducing it here.
+The useful pattern is: instantiate the workflow, collect evidence, fuse what was found, act on the result, monitor what changes, then feed those changes into the next run.
 
 ## 30. Assumption to decision, connected
 
@@ -691,7 +691,7 @@ flowchart LR
 ---
 ---
 
-# The spine and the runbook
+# The complete model
 
 ## 32. The seven capabilities as one story
 
@@ -709,73 +709,4 @@ flowchart TD
 
   S --> CO --> RV --> TR --> EX --> AU --> RE
   RE -.->|"the library improves,<br/>the next team starts ahead"| S
-```
-
-## 33. When something breaks on camera
-
-The thirty-second rule. Dean's real job during the build.
-
-```mermaid
-flowchart TD
-  B["Something<br/>stalls"]
-  T{"Thirty<br/>seconds"}
-  N["Dean narrates<br/>the hunt out loud"]
-  F["Drop to the fallback<br/>browser, or the<br/>rehearsed saved output"]
-  S["Say what happened,<br/>and keep going"]
-
-  B --> T
-  T -->|"under"| N
-  T -->|"over"| F --> S
-  N -.->|"still stuck"| F
-```
-
-**Never re-run a failed step live.** One attempt, then fallback. Owning it out loud is stronger than hiding it.
-
-## 34. The hour
-
-```mermaid
-gantt
-  title Run of show
-  dateFormat HH:mm
-  axisFormat %H:%M
-  section Open
-  Hold and title         :00:00, 2m
-  Cold open              :00:02, 3m
-  Housekeeping           :00:05, 3m
-  Poll one               :00:08, 2m
-  How git got here       :00:10, 2m
-  Rules of the show      :00:12, 1m
-  section The build
-  Context                :00:13, 7m
-  Communications         :00:20, 6m
-  Confidence             :00:26, 8m
-  Constitution           :00:34, 5m
-  Community              :00:39, 9m
-  section Close
-  What GitHub is bad at  :00:48, 2m
-  Close                  :00:50, 2m
-  Poll two               :00:52, 2m
-  Q and A                :00:54, 6m
-```
-
-## 35. Kenny's ten days
-
-```mermaid
-gantt
-  title Prep to September 2
-  dateFormat YYYY-MM-DD
-  section Kenny solo
-  Account and browser      :2026-08-24, 1d
-  Windows toolchain        :2026-08-25, 1d
-  Rebuild alone            :2026-08-27, 1d
-  section Together
-  Dry run one, no clock    :2026-08-26, 1d
-  Dry run two, recorded    :2026-08-28, 1d
-  Tech check               :2026-09-01, 1d
-  section Dean solo
-  Publish and configure    :2026-08-31, 1d
-  section Buffer
-  Deliberately empty       :2026-08-29, 2d
-  section Show
-  Live                     :2026-09-02, 1d
 ```

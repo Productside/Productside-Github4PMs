@@ -2,11 +2,11 @@
 
 **Capability: Catchup**
 
-The workflow a PM runs every morning: what changed since I was last here, and why.
+The workflow a Product Manager runs every morning: what changed since I was last here, and why.
 
 ```mermaid
 flowchart LR
-  PM["PM opens<br/>the repo"]
+  PM["Product Manager<br/>opens the repo"]
   PL["Pull latest<br/>from main"]
   DF["See the diff<br/>what changed overnight"]
   CM["Read commit messages<br/>who changed it and why"]
@@ -25,4 +25,4 @@ flowchart LR
 
 ---
 
-[All diagrams](INDEX.md) · [Runbook reading order](../diagrams.md)
+[All diagrams](INDEX.md) · [Diagram source](../diagrams.md)
